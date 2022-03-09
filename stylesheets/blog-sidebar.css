@@ -1,0 +1,156 @@
+/* Sidebar */
+.blogsidebar {
+    margin-left: 15px;
+    width: 351px;
+    border-radius: 15px;
+    position: relative;
+    padding: 0 15px 15px 15px;
+}
+
+.blogsidebar > div {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Search area */
+.sidebarsearch {
+    padding: 8px;
+    width: 250px;
+    outline: none;
+    border: 1px solid rgb(8, 201, 159);
+    background-color: #fdfdfd;
+    color: #333333;
+    padding-right: 60px;
+
+    border-right: none;
+    font-size: .9rem;
+    caret-color:rgb(8, 201, 159);
+}
+
+.sidebarsearch::placeholder {
+    color: #333333;
+}
+
+.searchstuff {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-search {
+    margin-left: 3px;
+    font-size: 1rem;
+}
+
+.searchbtn {
+    border: 1px solid rgb(8, 201, 159);
+    border-left: 0;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    border-radius: 0;
+    background-color: rgb(8, 201, 159);
+    color: #fdfdfd;
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.searchbtn:hover {
+    background-color: #fdfdfd;
+    color: rgb(8, 201, 159);
+    border: 1px solid rgb(8, 201, 159);
+    border-left: 0;
+}
+
+/* Categories */
+.categories {
+    margin-top: 25px;
+}
+
+/* Category 1: Categories */
+
+/* Category 2: Archives */
+.archivedate {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #353535;
+}
+
+/* Category 3: Recent/Related posts */
+
+/* Category 4: Tag cloud */
+
+
+
+.blogmain {
+    padding: 0 10px 0 5px;
+    background-color: white;
+}
+
+
+.blogtext {
+    margin: 15px 0 40px 0;
+}
+
+.blogtext p {
+    margin: 15px 0;
+    font-size: .9rem;
+}
+
+.blogtitle {
+    margin-top: 10px;
+}
+
+.cattitle {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #353535;
+    border-bottom: 1px solid rgb(8, 201, 159);
+}
+
+.categoryitems ul {
+    list-style: none;
+    font-size: .9rem;
+}
+
+.categoryitems li {
+    margin: 5px;
+}
+
+
+.relateditem {
+    font-size: .9rem;
+    margin: 5px;
+}
+
+.blogtag {
+    text-decoration: none;
+    color: #333333;
+    background-color: #fdfdfd;
+    padding: 2px 8px;
+    border: 1px solid rgb(8, 201, 159);
+    margin: 3px;
+    display: inline-block;
+    font-size: .8rem;
+    transition: .5 ease;
+}
+
+.tagactive {
+    color:white;
+    background-color:rgb(8, 201, 159);
+    border: 1px solid rgb(8, 201, 159);
+}
+
+.tagactive:hover {
+    cursor: default;
+}
+
+.blogtag:hover {
+    background-color: rgb(8, 201, 159);
+    border: 1px solid rgb(8, 201, 159);
+    color: #fdfdfd !important;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: .9rem;
+}
+

@@ -1,0 +1,287 @@
+body {
+    background: rgb(7, 29, 58);  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(120deg, #2a9688c2 0%, rgba(1, 15, 48, 0.815) 90%), url("../Headers/fabio-oyXis2kALVg-unsplash.jpg");
+    background: linear-gradient(120deg, #2a9688 0%, rgba(1, 15, 48, 0.809) 90%), url("../images/pixelated.jpg"); /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+}
+
+main {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-skills {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.abouticons {
+    font-size: 4rem;
+    margin: 10px;
+}
+
+section {
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+
+.navlinks a {
+    margin-right: 20px;
+    display: block;
+    background-color: red;
+}
+
+.navlinks {
+    display: flex;
+    height: 100%;
+    border: 1px solid red;
+}
+
+header h2 {
+    color: white;
+    margin-top: 40px;
+    font-size: 2rem;
+    word-wrap: normal;
+    margin-bottom: 0;
+}
+
+.aboutmebox {
+    width: 60%;
+}
+
+.aboutme {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+}
+
+header {
+    background: none;
+    height: 100vh;
+    padding-left: 50px;
+    align-items: flex-start;
+}
+
+#portfoliobtn {
+    margin-top: 45px;
+    width: 130px;
+    background-color: #08c99f;
+    color: white;
+    border: 1px solid #08c99f;
+    outline: none;
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s ease;
+}
+
+#portfoliobtn:hover {
+    background-color: white;
+    color: #08c99f;
+    border-color: white;
+}
+
+
+.languages {
+    display: flex;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.skills-languages ul {
+    margin-left: 20px;
+}
+
+.intermediate, .learning {
+    margin-left: 50px;
+}
+
+.about-section {
+    margin: -80px auto 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 30px;
+}
+
+.whoami ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+main h2 {
+    margin-top: 40px;
+}
+
+
+.skillset {
+}
+
+
+/* Blog section */
+.blog-section-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.blogposts {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: flex-start;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: 300;
+}
+
+hr.sep-3 {
+    margin-top: 0px;
+    border: none;
+    height: 1.5px;
+    background-image: linear-gradient(to right, #ffffff, #08e27c, #ffffff);
+  }
+  hr.sep-3::after {
+    content: '§';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    padding: 0 5px;
+    background-color: white;
+  }
+
+
+.blogpost-box {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+    margin: 15px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.blogpost-box-title {
+    font-size: 1.1rem;
+}
+
+.blogpost-box-title:hover {
+    color: #08c99f;   
+}
+
+.blogpost-box-img {
+	width: 100%;
+    height: 225px;
+}
+
+.blogpost-box-head {
+    line-height: 1.5;
+}
+
+.blogpost-box-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blogpost-box-title {
+    transition: .5s ease;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.blogpost-box-tinydetails {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-top: 0px;
+    font-size: .8rem;
+}
+
+
+.blogpost-box-tinydetails a {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 15px;
+    color: #797979;
+}
+
+.blogpost-box-tinydetails p {
+    margin-left: 5px;
+}
+
+.bloglink {
+    color: #797979;
+    display: flex;
+    align-items: center;
+}
+
+.bloglink:hover {
+    color:#08c99f;
+}
+
+
+.blogpost-box-description {
+    font-size: .9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.blogpost-box-readmore {
+    font-size: .9rem;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text-chev {
+    font-size: 1.2rem;
+    color: #08c99f;
+}
+
+.blogpost-box-readmore-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 800px) and (max-width: 1220px) {
+    .blogpost-box {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: 15px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+}
+
+@media (max-width: 799px) {
+    .blogpost-box {
+        width: 90%;
+    }
+}

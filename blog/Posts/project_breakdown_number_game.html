@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Project Breakdown: The Number Game</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marck+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Norican&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link href="../../stylesheets/Bootstrap/bootstrap.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="../../stylesheets/Bootstrap/bootstrap-theme.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="../../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
+    <link href="../../stylesheets/blog.css" rel="stylesheet"> <!-- Individual -->
+    <link href="../../stylesheets/blog-sidebar.css" rel="stylesheet"> <!-- Sidebar -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+    <div id="navbar">
+        <h2 id="logo">Sara Dunlop</h2>
+        <div id="navbar-right">
+            <a class="navlink" href="../../index.html">Home</a>
+            <a class="navlink" href="../../index.html#About">About</a>
+            <a class="navlink" href="../../main pages/portfolio.html">Portfolio</a>
+            <a class="navlink active" href="../../main pages/blog.html">Blog</a>
+            <a class="navlink" href="#">Contact</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Project Breakdown: The Number Game</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../main pages/blog.html">Blog</a></li>
+            <li class="breadcrumb-item active">Blog Post</li>
+        </ol>
+    </header>
+
+    <!-- Page content -->
+    <main>
+        <div class="pagecontent">
+
+            <!-- Blog posts -->
+            <div class="blogpost">
+                <div class="bloghead">
+                    <img src="../../images/portfolio_images/The-Number-Game.png" class="blogimg" data-category="HTML, CSS,">
+                </div>
+                <div class="blogmain">
+                    <h2 class="blogtitle" id="top">Project Breakdown: The Number Game</h2>
+
+                    <div class="tinydetails">
+                        <a href="#" class="bloglink">
+                            <i class="far fa-clock fa-sm"></i>
+                            <p class="blogdate">26 February, 2022</p>
+                        </a>
+                        <a href="#" class="bloglink">
+                            <i class="fas fa-folder fa-sm blogcat"></i>
+                            <p class="blogcategory">Project Breakdown</p>
+                        </a>
+                    </div>
+                    <div class="blogtext">
+                        <h3>Table of Contents</h3>
+                        <ol class="blogpost-toc">
+                            <li>
+                                <a href="#introduction" class="blogpost-link">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#original" class="blogpost-link">The Original Code (Vanilla JavaScript)</a>
+                            </li>
+                            <li>
+                                <a href="#repair" class="blogpost-link">The New Code (jQuery)</a>
+                            </li>
+                            <li>
+                                <a href="#learned" class="blogpost-link">What I Learned</a>
+                            </li>
+
+                        </ol>
+
+                        <h3 id="introduction">Introduction <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></a></h3>
+
+                        <p>
+                            If you'd like to check The Number Game out for yourself before reading this blog post (which I highly recommend doing), go ahead and check out the live demo below! You can also take a look at the repo for all of my files related to this project, including both the new and the old JS files.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://risclover.github.io/The-Number-Game" target="_blank">Live Demo</a>
+                            </li>
+                            <li>
+                                <a href="https://www.github.com/Risclover/The-Number-Game/" target="_blank">Code Repo</a>
+                            </li>
+                        </ul>
+                    
+                        <p>
+                            The Number Game is a number guessing game in which the player must guess the randomly-generated winning number in the least amount of  guesses possible. After each guess, the game lets the player know whether they were too high, too low, or just right.
+                        </p>
+
+                        <center><video width="500" height="340" controls class="blog-video" title="The Number Game: Round Example">
+                            <source src="../Images/pb_number_game_images/number_game_recording.mp4" type="video/mp4">
+                        </video></center>
+
+                        <p>
+                            I decided to do this project when going down the list of projects on this webpage. The original instructions were as follows:
+                        </p>
+
+                        <blockquote>
+                            Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. It counts only as one try if they input the same number multiple times consecutively.
+                        </blockquote>
+
+                        <p>
+                            This was first completed some number of months ago. Within the last week, however, I decided to revisit this project (in the hopes of writing the Project Breakdown, actually), and realized something: The code was <em>unnecessarily</em> way too long! I had put class changes on their own individual lines rather than grouping added classes and removed classes together, resulting in painful-looking code like this:
+                        </p>
+
+                        <code class="widecode">
+<pre>} <span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+    guesses.<span class="code3">push</span>(userGuess);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+    allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+    allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+        <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+    });
+    <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+    <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+    <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+}</pre>
+                        </code>
+                        
+                        <p>
+                            Yikes, amiright?
+                        </p>
+                        <p>
+                            Around this time, I was also thinking about taking my jQuery more seriously so that I at least had it in my programming toolbelt if the need ever arose. Thus, I decided to take advantage of the situation and refactor the whole thing in jQuery.
+                        </p>
+
+                        <p>
+                            That said, before we go into what I changed, let's take a look at the original code.
+                        </p>
+
+                        <h3 id="original">The Original Code (Vanilla JavaScript) <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></a></h3>
+
+                        <p>
+                            Weighing in at 152 lines of code, we have the original JavaScript code:
+                        </p>
+                        <code class="widecode">
+<pre><span class="comment">/* Write a guessing game where the user has to guess a secret number. 
+After every guess the program tells the user whether their number was too 
+large or too small. At the end the number of tries needed should be 
+printed. It counts only as one try if they input the same number multiple 
+times consecutively. */</span>
+
+<span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);
+<span class="code1">const</span> <span class="code2">guess</span> <span class="code1">=</span> document.<span class="code3">querySelector</span>(<span class="code2">'#input'</span>);
+<span class="code1">const</span> <span class="code2">submit</span> <span class="code1">=<</span> document.<span class="code3">getElementById</span>(<span class="code2">'submit'</span>);
+<span class="code1">const</span> <span class="code2">result</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'results'</span>);
+<span class="code1">const</span> <span class="code2">counting</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'counting'</span>);
+<span class="code1">const</span> <span class="code2">user</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user'</span>);
+<span class="code1">const</span> <span class="code2">user2</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user2'</span>);
+<span class="code1">const</span> <span class="code2">background</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'main'</span>);
+<span class="code1">const</span> <span class="code2">reset</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'reset'</span>);
+<span class="code1">let</span> guesses <span class="code1">=</span> [];
+<span class="code1">let</span> unique <span class="code1">=</span> [];
+
+<span class="code1">function</span> <span class="code3">onlyUnique</span>(<span class="code4">value</span>, <span class="code4">index</span>, <span class="code4">self</span>) {
+    <span class="code1">return</span> <span class="code4">self</span>.<span class="code3">indexOf</span>(<span class="code4">value</span>) <span class="code1">===</span> <span class="code4">index</span>;
+}
+
+<span class="code2">guess</span>.<span class="code3">addEventListener</span>(<span class="code2">"keyup"</span>, <span class="code1">function</span>(<span class="code4">event</span>) {
+    <span class="code1">if</span> (<span class="code4">event</span>.code <span class="code1">===</span> <span class="code2">"Enter"</span>) {
+        <span class="code4">event</span>.<span class="code3">preventDefault</span>();
+        <span class="code2">submit</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">"keydown"</span>, <span class="code1">function</span>(<span class="code4">e</span>){
+    <span class="code1">if</span>(<span class="code4">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="code4">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code2">reset</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+    <span class="code1">let</span> newNum;
+    <span class="code1">let</span> allSpans;
+    <span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;
+
+    <span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'highback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+        allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+        allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+            <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        });
+        <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+        <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        
+    } <span class="code1">else if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">0</span> <span class="code1">||</span> userGuess <span class="code1">&gt;</span> <span class="code2">100</span> <span class="code1">||</span> userGuess <span class="code1">===</span> <span class="code2">''</span> <span class="code1">||</span> userGuess <span class="code1">!=</span> (<span class="code2">/\d</span><span class="code1">+</span><span class="code2">/</span><span class="code1">ig</span>)) {
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Please enter a number from 0 - 100."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+    }
+        unique <span class="code1">=</span> guesses.<span class="code3">filter</span>(<span class="code3">onlyUnique</span>);
+        <span class="code2">counting</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Guesses: "</span> <span class="code1">+</span> unique.<span class="code2">length</span>;
+        <span class="code2">user</span>.<span class="code3">appendChild</span>(<span class="code2">user2</span>);
+        userGuess <span class="code1">=</span> <span class="code2">''</span>;
+        <span class="code2">guess</span>.value <span class="code1">=</span> <span class="code2">''</span>;
+}
+
+<span class="code1">function</span> <span class="code3">refreshPage</span>() {
+    <span class="code1">if</span> (<span class="code2">guess</span>.disabled) {
+        <span class="code2">location</span>.<span class="code3">reload</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"Are you sure that you want to reset the game?"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        }
+    }
+}</pre>
+                                                    </code>
+                        <p>
+                            Sadly, looking at this makes me cringe because of the aforementioned <code class="wordcode"><span class="code2">classList</span></code> methods that are all on individual lines. Argh. I hate it.
+                        </p>
+
+                        <h4>Part 1: The Variables</h4>
+                        
+                        <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);
+<span class="code1">const</span> <span class="code2">guess</span> <span class="code1">=</span> document.<span class="code3">querySelector</span>(<span class="code2">'#input'</span>);
+<span class="code1">const</span> <span class="code2">submit</span> <span class="code1">=<</span> document.<span class="code3">getElementById</span>(<span class="code2">'submit'</span>);
+<span class="code1">const</span> <span class="code2">result</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'results'</span>);
+<span class="code1">const</span> <span class="code2">counting</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'counting'</span>);
+<span class="code1">const</span> <span class="code2">user</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user'</span>);
+<span class="code1">const</span> <span class="code2">user2</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user2'</span>);
+<span class="code1">const</span> <span class="code2">background</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'main'</span>);
+<span class="code1">const</span> <span class="code2">reset</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'reset'</span>);
+<span class="code1">let</span> guesses <span class="code1">=</span> [];
+<span class="code1">let</span> unique <span class="code1">=</span> [];</pre>
+                        </code>
+
+                        <p>Our first several lines of code are these variables. Most of them are, of course, simply references to various DOM elements, and the last two are empty arrays. <code class="wordcode">guesses</code> will contain all of the player's, well, <em>guesses</em>, and <code class="wordcode">unique</code> exists so that only the unique guesses are counted toward the "Guesses" total. You'll see this in action soon.
+                        </p>
+
+                        <p>
+                            I'd also like to point out the very first line of code:
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);</pre>
+                        </code>
+
+                        <p>This line of code is what actually picks out the winning number (you know, the one that the player has to guess in order to win?), just in case you wanted to know how to do that.</p>
+
+                        <h4>Part 2: onlyUnique</h4>
+                        <p>
+                            I told you we'd come back to that <code class="wordcode">unique</code> array soon (well, sort of...):
+                        </p>
+
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">onlyUnique</span>(<span class="code4">value</span>, <span class="code4">index</span>, <span class="code4">self</span>) {
+    <span class="code1">return</span> <span class="code4">self</span>.<span class="code3">indexOf</span>(<span class="code4">value</span>) <span class="code1">===</span> <span class="code4">index</span>;
+}</pre>
+                        </code>
+                        <p>
+                            All this tiny function does is make sure that, as mentioned a moment ago, all of the values in the array are unique. We will set the results of this to the unique array soon enough.
+                        </p>
+
+                        <h4>Part 3: Keyboard Shortcuts</h4>
+                        <code class="widecode">
+<pre><span class="code2">guess</span>.<span class="code3">addEventListener</span>(<span class="code2">"keyup"</span>, <span class="code1">function</span>(<span class="code4">event</span>) {
+    <span class="code1">if</span> (<span class="code4">event</span>.code <span class="code1">===</span> <span class="code2">"Enter"</span>) {
+        <span class="code4">event</span>.<span class="code3">preventDefault</span>();
+        <span class="code2">submit</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">"keydown"</span>, <span class="code1">function</span>(<span class="code4">e</span>){
+    <span class="code1">if</span>(<span class="code4">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="code4">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code2">reset</span>.<span class="code3">click</span>();
+    }
+});</pre>
+                        </code>
+
+                        <p>
+                            After the onlyUnique function are these two event listeners.
+                        </p>
+                        <p>
+                            The first, a "keyup" listener on guess (which is the input box that the user inputs their guess into), contains a function that says "If the player presses Enter (while inside of the input box), treat it like the Submit button was clicked."
+                        </p>
+                        <p>
+                            The second, a "keydown" listener on the whole document, combines the shift key with the R key. If the player presses Shift + R at any point while on this page, this function treats it as if they had clicked the Reset button.
+                        </p>
+
+                        <h4>Part 4: playRound</h4>
+                        <p>
+                            This brings us to the meatiest of functions in this code - <code class="wordcode"><span class="code3">playRound</span>()</code> - which is also the main game function.
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+    <span class="code1">let</span> newNum;
+    <span class="code1">let</span> allSpans;
+    <span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;
+
+    <span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'highback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+        allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+        allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+            <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        });
+        <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+        <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        
+    } <span class="code1">else if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">0</span> <span class="code1">||</span> userGuess <span class="code1">&gt;</span> <span class="code2">100</span> <span class="code1">||</span> userGuess <span class="code1">===</span> <span class="code2">''</span> <span class="code1">||</span> userGuess <span class="code1">!=</span> (<span class="code2">/\d</span><span class="code1">+</span><span class="code2">/</span><span class="code1">ig</span>)) {
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Please enter a number from 0 - 100."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+    }
+        unique <span class="code1">=</span> guesses.<span class="code3">filter</span>(<span class="code3">onlyUnique</span>);
+        <span class="code2">counting</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Guesses: "</span> <span class="code1">+</span> unique.<span class="code2">length</span>;
+        <span class="code2">user</span>.<span class="code3">appendChild</span>(<span class="code2">user2</span>);
+        userGuess <span class="code1">=</span> <span class="code2">''</span>;
+        <span class="code2">guess</span>.value <span class="code1">=</span> <span class="code2">''</span>;
+}</pre>
+                        </code>
+                        <p>
+                            Because this is so annoyingly long itself, we're going to break this up into a few different parts, too.
+                        </p>
+
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+    <span class="code1">let</span> newNum;
+    <span class="code1">let</span> allSpans;
+    <span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;</pre>
+                        </code>
+                        <p>Here, we have the variables we'll be using within this function, which are as follows:</p>
+                        <ul>
+                            <li>
+                                <strong>userGuess</strong> - Holds the value of the user's guess, as entered by them via the input box.
+                            </li>
+                            <li>
+                                <strong>newNum</strong>, <strong>allSpans</strong> - A couple of uninitialized variables.
+                                <ul>
+                                    <li>
+                                        <strong>newNum</strong> will become a newly-created <strong>&lt;span&gt;</strong> element, and will contain the number that the user guessed. 
+                                    </li>
+                                    <li>
+                                        <strong>allSpans</strong> is just a variable that I created in order to be able to easily edit the classes for <em>all</em> of the <strong>&lt;span&gt;</strong> elements at once.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>slash</strong> - Another JS-created <strong>&lt;span&gt;</strong> element, though this one contains different text...
+                                <ul>
+                                    <li>
+                                        <strong>slash.innerText = ' / '</strong>...or, in other words, a simple slash! Who'da thought?
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <code class="widecode">
+<pre><span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+    guesses.<span class="code3">push</span>(userGuess);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+    newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+    newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+} </pre>
+                        </code>
+                        <p>
+                            Next we begin this if condition, the first part of which you're seeing above. This section is essentially saying "For all player guesses that are below the winning number and above the number 0" (or, in other words, for every <strong>low</strong> guess):
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>guesses.push(userGuess)</strong> - The player's guess number is pushed into the <strong>guesses</strong> array.
+                            </li>
+                            <li>
+                                <strong>result.classList.remove('high'), result.classList.remove('error')</strong> - The classes 'high' and 'error' are removed from the results text.
+                            </li>
+                            <li>
+                                <strong>result.textContent = "..."</strong> - Updates the text content of the results text to inform the player that their guess was too low.
+                            </li>
+                            <li>
+                                <strong>result.classList.add('low')</strong> - Adds the correct class, 'low', to the same reults text.
+                            </li>
+                            <li>
+                                <strong>newNum</strong>
+                                <ul>
+                                    <li><strong>newNum = document.createElement('span')</strong> - A new <code>&lt;span&gt;</code> element is created</li>
+                                    <li><strong>newNum.classList.add('low')</strong> - This span element is given the 'low' class to ensure it's the correct color</li>
+                                    <li><strong>newNum.innerText = guess.value + '&nbsp;'</strong> - And finally, the span's inner text is set to the user's current guess value, followed by a space.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>
+                                    user2.appendChild(newNum)
+                                </strong> and <strong>user2.appendChild(slash)</strong> - Append the guessed number with a space, and then a slash, to its correct place.
+                            </li>
+                        </ul>
+                        <p>
+                            After that, we make sure that we clear any old classes from the background and the buttons, and we add the appropriate class to these elements.
+                        </p>
+
+                        <p>
+                            The next part of this if condition is almost identical to the last. The main difference is that, instead of being for guesses that are too <em>low</em>, it's for guesses that are too <em>high</em>. It tests to see if the guess is greater than the number, greater than or equal to 0, and below the number 101. The classes, of course, are different, but the overall idea is identical. But here it is, in case you wanted to see it anyway:
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
+    guesses.<span class="code3">push</span>(userGuess);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+    <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+    newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+    newNum.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'highback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+
+}</pre>
+                        </code>
+                        <p>
+                            The third part of the if condition is almost identical as well, with a couple of small differences. This part is for when the player wins the game (by guessing the correct number, of course).
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+    guesses.<span class="code3">push</span>(userGuess);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+    allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+    allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+        <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+    });
+    <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+    <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+    <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+    
+} </pre>
+                        </code>
+                        <p>
+                            The main differences here include:
+                        </p>
+                        <code class="widecode">
+<pre>allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+    <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+});</pre>
+                        </code>
+                        <p>
+                            This is just a quick and easy way for me to set classes for all of the spans I've created so far (which can be several, since at least two are created every time the player guesses a new number).
+                        </p>
+                        <p>
+                            We also have these two lines of code:
+                        </p>
+                        <code class="widecode">
+<pre><span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+<span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;</pre>
+                        </code>
+                        <p>
+                            The top line appends the final guess to the list of guesses. This was included like this because we don't want the slash to be included.
+                        </p>
+                        <p>
+                            The bottom line disables the input box so that the player cannot try to guess anymore numbers, with the game being over and all. They must refresh the page or press the Reset button (or the keyboard shortcut for said button) if they want to play again.
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">else if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">0</span> <span class="code1">||</span> userGuess <span class="code1">&gt;</span> <span class="code2">100</span> <span class="code1">||</span> userGuess <span class="code1">===</span> <span class="code2">''</span> <span class="code1">||</span>
+userGuess <span class="code1">!=</span> (<span class="code2">/\d</span><span class="code1">+</span><span class="code2">/</span><span class="code1">ig</span>)) {
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Please enter a number from 0 - 100."</span>;
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'error'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+}</pre>
+                        </code>
+                        <p>
+                            We are at the final part of this if condition. This part tests the player's guess. If it's:
+                        </p>
+                        <ol type="a">
+                            <li>
+                                Below the number 0 (aka a negative number)
+                            </li>
+                            <li>
+                                Above the number 100
+                            </li>
+                            <li>
+                                Blank
+                            </li>
+                            <li>
+                                Anything <em>except</em> a digit
+                            </li>
+                        </ol>
+                        <p>then the game's elements turn red, and the player gets a little error message telling them to enter an appropriate guess.</p>
+                        <center><img src="Images/Numbers_Game_Error.png" class="blogimg-number"></center>
+                        <p>
+                            We're at the last few lines of code for this function, which read as such:
+                        </p>
+                        <code class="widecode">
+<pre>unique <span class="code1">=</span> guesses.<span class="code3">filter</span>(<span class="code3">onlyUnique</span>);
+<span class="code2">counting</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Guesses: "</span> <span class="code1">+</span> unique.<span class="code2">length</span>;
+<span class="code2">user</span>.<span class="code3">appendChild</span>(<span class="code2">user2</span>);
+userGuess <span class="code1">=</span> <span class="code2">''</span>;
+<span class="code2">guess</span>.value <span class="code1">=</span> <span class="code2">''</span>;
+}</pre>
+                        </code>
+                        <p>
+                            Let's go through each of these briefly.
+                        </p>
+                        <ul>
+                            <li>
+                                The <strong>unique</strong> array we discussed earlier is back to finish its job. It Filters out <em>only</em> the unqiue guesses from the <code>guesses</code> array.
+                            </li>
+                            <li>
+                                The <strong>counting</strong> element is given text content of the total number of the user's <em>unique</em> guesses, which is done by taking the <strong>unique</strong> array's length (which is why we created a separate array).
+                            </li>
+                            <li>
+                                We also append the user2 element to the page, and finish up the function by resetting the user's guess number to nothing as well as the value of the input box to nothing.
+                            </li>
+                        </ul>
+
+                        <h4>Part 5 - refreshPage</h4>
+                        <p>
+                            Our final part of this code is the <code class="wordcode"><span class="code3">refreshPage</span>()</code> function, which is executed when the player activates the Reset button.
+                        </p>
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">refreshPage</span>() {
+    <span class="code1">if</span> (<span class="code2">guess</span>.disabled) {
+        <span class="code2">location</span>.<span class="code3">reload</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"Are you sure that you want to reset the game?"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        }
+    }
+}</pre>
+                        </code>
+                        <p>
+                            This function is a little more complicated than merely refreshing the page, however. Instead, it contains an if condition that tests whether the input box is disabled (recall that it is disabled once the game is over). If this is the case, the page refreshes automatically. However, if the input box <em>isn't</em> disabled, this prompts a confirmation box to appear, asking the player whether they're sure they want to restart the game.
+                        </p>
+                        <p>
+                            This was included after I added the keyboard shortcuts. I didn't want there to be incidents where the player accidentally presses the shortcut (which, as a reminder, is simply <code>Shift + R</code>), restarting their game immediately. I made this an if condition because there's no reason to have the confirmation box appear when the game is over anyway.
+                        </p>
+                        <p>And that concludes the old code! How painful. Let's move on, shall we?</p>
+
+                        <h3 id="newcode">The New Code (jQuery) <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></a></h3>
+
+                        <p>
+                            Just as a quick recap, we are discussing the JavaScript-based code for my browser-based number guessing game, The Number Game. In the previous section, we went through the original code, which is entirely too long. I've made the decision to rewrite the entire thing in jQuery because a) I know it will reduce the length of it tremendously, and b) I need to practice jQuery to learn it anyway.
+                        </p>
+                        <p>
+                            I do already know a few things about jQuery, such as how to use the "selectors" at the beginning of each line of code, and that you can chain several methods together for one selector, which I think is pretty cool. I'm hoping that we can reduce the 152 lines of code down to under 100, which I don't doubt for a moment.
+                        </p>
+                        <p>
+                            I've already gone ahead and written the jQuery code. To clarify, although I do believe that I had a natural "talent", it didn't come without errors. My first attempt failed due to some misplaced syntax errors, and I had to google a few things, which I'll discuss as we go through it.
+                        </p>
+                        <p>
+                            For comparison's sake, I'm going to place pieces of the old code above the new code. Let's see what I came up with, shall we?
+                        </p>
+                        <code class="widecode">
+<pre><span class="comment">// Old Code (Vanilla JS):</span>
+<span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);
+<span class="code1">const</span> <span class="code2">guess</span> <span class="code1">=</span> document.<span class="code3">querySelector</span>(<span class="code2">'#input'</span>);
+<span class="code1">const</span> <span class="code2">submit</span> <span class="code1">=<</span> document.<span class="code3">getElementById</span>(<span class="code2">'submit'</span>);
+<span class="code1">const</span> <span class="code2">result</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'results'</span>);
+<span class="code1">const</span> <span class="code2">counting</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'counting'</span>);
+<span class="code1">const</span> <span class="code2">user</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user'</span>);
+<span class="code1">const</span> <span class="code2">user2</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user2'</span>);
+<span class="code1">const</span> <span class="code2">background</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'main'</span>);
+<span class="code1">const</span> <span class="code2">reset</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'reset'</span>);
+<span class="code1">let</span> guesses <span class="code1">=</span> [];
+<span class="code1">let</span> unique <span class="code1">=</span> [];
+
+
+<span class="comment">// New Code (jQuery):</span>
+<span class="code1">var</span> guesses <span class="code1">=</span> [];
+<span class="code1">var</span> allSpans;
+<span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;
+
+<span class="code1">function</span> <span class="code3">onlyUnique</span>(<span class="code4">value</span>, <span class="code4">index</span>, <span class="code4">self</span>) {
+    <span class="code1">return</span> <span class="code4">self</span>.<span class="code3">indexOf</span>(<span class="code4">value</span>) <span class="code1">===</span> <span class="code4">index</span>;
+}
+
+<span class="code3">$</span>(<span class="code2">document</span>.<span class="code3">ready</span>(<span class="code1">function</span>() {
+    <span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">100</span>)
+    <span class="code3">$</span>(<span class="code2">'#input'</span>).<span class="code3">keydown</span>(<span class="code1">function</span>(<span class="code4">e</span>) {
+        <span class="code1">if</span>(<span class="code4">e</span>.which <span class="code1">===</span> <span class="code2">13</span>) {
+            <span class="code4">e</span>.<span class="code3">preventDefault</span>();
+            <span class="code3">$</span>(<span class="code2">'#submit'</span>).<span class="code3">click</span>();
+        }
+    });
+
+    <span class="code3">$</span>(<span class="code2">document</span>).<span class="code3">keyup</span>(<span class="code1">function</span>(<span class="code4">e</span>) {
+        <span class="code1">if</span>(<span class="code4">e</span>.shiftKey <span class="code1">&&</span> <span class="code4">e</span>.key <span class="code1">===</span> <span class="code2">"R"</span>) {
+            <span class="code3">$</span>(<span class="code2">'#reset'</span>).<span class="code3">click</span>();
+        }
+    });
+
+    <span class="code3">$</span>(<span class="code2">"#reset"</span>).<span class="code3">click</span>(<span class="code1">function</span>() {
+        <span class="code1">if</span> (<span class="code3">$</span>(<span class="code2">"#input"</span>).<span class="code3">is</span>(<span class="code2">":disabled"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        } <span class="code1">else</span> {
+            <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"Are you sure that you want to reset the game?"</span>)) {
+                <span class="code2">location</span>.<span class="code3">reload</span>();
+            }
+        }
+    });
+
+<span class="code3">$</span>(<span class="code2">"#submit"</span>).<span class="code3">click</span>(<span class="code1">function</span>() {
+  <span class="code1">let</span> guessNum <span class="code1">=</span>(<span class="code2">"#input"</span>).<span class="code3">val</span>();
+  <span class="code1">if</span>(<span class="code3">$</span>(<span class="code2">"#input"</span>).<span class="code3">val</span>() <span class="code1">&lt;</span> <span class="code2">number</span>) <span class="code1">&&</span> (<span class="code3">$</span>(<span class="code2">"#input"</span>).<span class="code3">val</span>() <span class="code1">&gt;=</span> <span class="code2">0</span>)) {
+    guesses.<span class="code3">push</span>(<span class="code3">$</span>(<span class="code2">"#input"</span>.<span class="code3">val</span>());
+    <span class="code3">$</span>(<span class="code2">"#results"</span>).<span class="code3">removeClass</span>(<span class="code2">'high error'</span>).<span class="code3">addClass</span>(<span class="code2">'low'</span>).<span class="code3">text</span>(<span class="code2">"Your guess was too low! Try again."</span>)
+    <span class="code3">$</span>(<span class="code2">"&lt;span class='low'&gt;"</span> <span class="code1">+</span> guessNum <span class="code1">+</span> <span class="code2">" /&lt;/span&gt;"</span>).<span class="code3">appendTo</span>(<span class="code3">$</span>(<span class="code2">'span.high'</span>).<span class="code3">val</span>()).<span class="code3">append</span>(<span class="code2">' '</span>);
+</pre>
+                        </code>
+                        <!-- 
+                        <p>The game that I call the "Number Game" is a number guessing game with a fairly simple premise: The player guesses a number at a time in an attempt to guess the correct number, which is randomly chosen from 0 - 100 (both 0 and 100 included). The game lets the player know if their guess is too low or too high. The player must try to get the number correct in the least amount of guesses possible.</p>
+
+                        <p>Although this seemed like the kind of game that gets boring after playing it a few times (and it does), I decided to create it for the challenge itself. I was still extremely new to JavaScript at the time, and I thought that I knew just how to tackle this project (which, in retrospect, I did).</p>
+
+                        <p>I originally got this project from <a href="https://adriann.github.io/programming_problems.html" target="_blank" class="blogpost-link" data-bs-trigger="hover focus" data-bs-toggle="tooltip" data-bs-placement="top" title="Simple Programming Problems">this webpage</a>. The instructions are as follows:</p>
+
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+
+                        <blockquote>Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. It counts only as one try if they input the same number multiple times consecutively.</blockquote>
+	
+                        <p>I added various additional features myself after thinking of things from an ease-of-use standpoint, which I will discuss further in the Code Disection section.</p>
+
+
+                        <h3 id="dissection">Code Dissection  <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></a></h3>
+
+                        <p>This being my very first mostly-JS project, looking at my code now makse me cringe a little. But let's go through it as I originally published it before I try to fix it. Here is the whole thing in all its newbie glory:</p>
+
+                        <code class="widecode">
+<pre><span class="comment">/* Write a guessing game where the user has to guess a secret number. 
+After every guess the program tells the user whether their number was too 
+large or too small. At the end the number of tries needed should be 
+printed. It counts only as one try if they input the same number multiple 
+times consecutively. */</span>
+
+<span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);
+<span class="code1">const</span> <span class="code2">guess</span> <span class="code1">=</span> document.<span class="code3">querySelector</span>(<span class="code2">'#input'</span>);
+<span class="code1">const</span> <span class="code2">submit</span> <span class="code1">=<</span> document.<span class="code3">getElementById</span>(<span class="code2">'submit'</span>);
+<span class="code1">const</span> <span class="code2">result</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'results'</span>);
+<span class="code1">const</span> <span class="code2">counting</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'counting'</span>);
+<span class="code1">const</span> <span class="code2">user</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user'</span>);
+<span class="code1">const</span> <span class="code2">user2</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user2'</span>);
+<span class="code1">const</span> <span class="code2">background</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'main'</span>);
+<span class="code1">const</span> <span class="code2">reset</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'reset'</span>);
+<span class="code1">let</span> guesses <span class="code1">=</span> [];
+<span class="code1">let</span> counter <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> unique <span class="code1">=</span> [];
+
+<span class="code1">function</span> <span class="code3">onlyUnique</span>(<span class="code4">value</span>, <span class="code4">index</span>, <span class="code4">self</span>) {
+    <span class="code1">return</span> <span class="code4">self</span>.<span class="code3">indexOf</span>(<span class="code4">value</span>) <span class="code1">===</span> <span class="code4">index</span>;
+}
+
+<span class="comment">// Get the input field
+// Execute a function when the user releases a key on the keyboard</span>
+<span class="code2">guess</span>.<span class="code3">addEventListener</span>(<span class="code2">"keyup"</span>, <span class="code1">function</span>(<span class="code4">event</span>) {
+    <span class="code1">if</span> (<span class="code4">event</span>.code <span class="code1">===</span> <span class="code2">"Enter"</span>) {
+        <span class="comment">// Cancel the default action, if needed</span>
+        <span class="code4">event</span>.<span class="code3">preventDefault</span>();
+        <span class="comment">// Trigger the button element with a click</span>
+        <span class="code2">submit</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">"keydown"</span>, <span class="code1">function</span>(<span class="code4">e</span>){
+    <span class="code1">if</span>(<span class="code4">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="code4">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code2">reset</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+    <span class="code1">let</span> newNum;
+    <span class="code1">let</span> allSpans;
+    <span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;
+    <span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'highback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+        allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+        allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+            <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        });
+        <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+        <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+    } <span class="code1">else if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">0</span> <span class="code1">||</span> userGuess <span class="code1">&gt;</span> <span class="code2">100</span> <span class="code1">||</span> userGuess <span class="code1">===</span> <span class="code2">''</span> <span class="code1">||</span> userGuess <span class="code1">!=</span> (<span class="code2">/\d</span><span class="code1">+</span><span class="code2">/</span><span class="code1">ig</span>)) {
+            <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Please enter a number from 0 - 100."</span>;
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'error'</span>);
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'errorback'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+    }
+        unique <span class="code1">=</span> guesses.<span class="code3">filter</span>(<span class="code3">onlyUnique</span>);
+        <span class="code2">counting</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Guesses: "</span> <span class="code1">+</span> unique.<span class="code2">length</span>;
+        <span class="code2">user</span>.<span class="code3">appendChild</span>(<span class="code2">user2</span>);
+        userGuess <span class="code1">=</span> <span class="code2">''</span>;
+        <span class="code2">guess</span>.value <span class="code1">=</span> <span class="code2">''</span>;
+}
+
+<span class="code1">function</span> <span class="code3">refreshPage</span>() {
+    <span class="code1">if</span> (<span class="code2">guess</span>.disabled) {
+        <span class="code2">location</span>.<span class="code3">reload</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"Are you sure that you want to reset the game?"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        }
+    }
+}</pre>
+                        </code>
+
+                        <p>First we have a few lines of code that attach variables to various DOM elements. This also includes number, which is the randomly-chosen number that the player must guess to win.</p>
+
+                        <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">number</span> <span class="code1">=</span> <span class="code2">Math</span>.<span class="code2">floor</span>(<span class="code2">Math</span>.<span class="code2">random</span>() <span class="code1">*</span> <span class="code2">100</span>);
+<span class="code1">const</span> <span class="code2">guess</span> <span class="code1">=</span> document.<span class="code3">querySelector</span>(<span class="code2">'#input'</span>);
+<span class="code1">const</span> <span class="code2">submit</span> <span class="code1">=<</span> document.<span class="code3">getElementById</span>(<span class="code2">'submit'</span>);
+<span class="code1">const</span> <span class="code2">result</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'results'</span>);
+<span class="code1">const</span> <span class="code2">counting</span> <span class="code1">=</span> document.<span class="code3">getElementById</span>(<span class="code2">'counting'</span>);
+<span class="code1">const</span> <span class="code2">user</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user'</span>);
+<span class="code1">const</span> <span class="code2">user2</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'user2'</span>);
+<span class="code1">const</span> <span class="code2">background</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'main'</span>);
+<span class="code1">const</span> <span class="code2">reset</span> <span class="code1">=</span>  document.<span class="code3">getElementById</span>(<span class="code2">'reset'</span>);
+<span class="code1">let</span> guesses <span class="code1">=</span> [];
+<span class="code1">let</span> counter <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> unique <span class="code1">=</span> [];</pre>
+                        </code>
+
+                        <p>It also includes <code class="wordcode">guesses</code>, which is the array that the guesses are added to, <code class="wordcode">counter</code>, which is the counter for the guesses, and <code class="wordcode">unique</code>, which is another array that was included for the purposes of making sure that the guesses are all unique.
+                        </p>
+
+                        <p>Speaking of which, next is the <code class="wordcode"><span class="code3">onlyUnique</span></code> function.</p>
+
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">onlyUnique</span>(<span class="code4">value</span>, <span class="code4">index</span>, <span class="code4">self</span>) {
+    <span class="code1">return</span> <span class="code4">self</span>.<span class="code3">indexOf</span>(<span class="code4">value</span>) <span class="code1">===</span> <span class="code4">index</span>;
+}</pre>
+                        </code>
+
+                        <p>This is a simple function that returns the index of the value, but only when it matches the index number given. In other words, this function makes it so that the user's guesses are only counted once (if the player tries to guess the same number more than once). This feature was included because it's in the original instructions for the project: <em>It counts only as one try if they input the same number multiple times consecutively.</em>
+                        </p>
+
+                        <p>The last couple of blocks of code before the main game function are both event listeners. These add keyboard functionality by allowing the user to press the Enter key to submit their guess, and the 'd' key to reset the game. 
+                        </p>
+
+                        <code class="widecode">
+<pre><span class="comment">// Get the input field
+// Execute a function when the user releases a key on the keyboard</span>
+<span class="code2">guess</span>.<span class="code3">addEventListener</span>(<span class="code2">"keyup"</span>, <span class="code1">function</span>(<span class="code4">event</span>) {
+    <span class="code1">if</span> (<span class="code4">event</span>.code <span class="code1">===</span> <span class="code2">"Enter"</span>) {
+        <span class="comment">// Cancel the default action, if needed</span>
+        <span class="code4">event</span>.<span class="code3">preventDefault</span>();
+        <span class="comment">// Trigger the button element with a click</span>
+        <span class="code2">submit</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">"keydown"</span>, <span class="code1">function</span>(<span class="code4">e</span>){
+    <span class="code1">if</span>(<span class="code4">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="code4">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code2">reset</span>.<span class="code3">click</span>();
+    }
+});</pre>
+                        </code>
+
+                        <p>As you can see, the first event listener is a "keyup" event that acts as if the user were clicking the Submit button, and the second event listener is a "keydown" function that acts as if the user is clicking the Reset button. I decided to give these the keyboard shortcuts of <code>"Enter"</code> for the submit button (since the user is inside of an input box), and, for <em>some</em> reason, the <code>"d"</code> for the "Reset" button. If I'm being totally honest, I think I remember first trying to use <code>Ctrl + R</code> to restart the game, but then I realized that that is already the shortcut to reload a page for most of the main browsers. I suppose I must have just chosen a random letter after that.
+                        </p>
+
+                        <p>Anywho... Now we come to the maim game function, <code class="wordcode"><span class="code3">playRound</span></code>.
+                        </p>
+
+                        <p>
+                            Now we come to the main game function, aptly named <code class="wordcode"><span class="code3">playRound</span>()</code>. This concept is very simple: if the user's guess doesn't match the program's randomly-generated number, it lets them know if they were too low or too high, and adds 1 to the "Guesses" number. The majority of this function are those lines that are actually there for styling purposes.  However, I put each add/remove class on its own line instead of combining them like I should have. This is a very large part of what I'd like to fix later on in this Project Breakdown.
+                        </p>
+
+                        <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+    <span class="code1">let</span> newNum;
+    <span class="code1">let</span> allSpans;
+    <span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;
+    <span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+        <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
+        newNum.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+        <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'highback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackhigh'</span>);
+
+    } <span class="code1">else if</span> (userGuess <span class="code1">==</span> <span class="code2">number</span>) {
+        guesses.<span class="code3">push</span>(userGuess);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"You win!"</span>;
+        allSpans <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'span'</span>);
+        allSpans.<span class="code3">forEach</span>(<span class="code4">allSpan</span> <span class="code1">=&gt;</span> {
+            <span class="code4">allSpan</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>, <span class="code2">'high'</span>);
+        });
+        <span class="code2">user2</span>.<span class="code2">textContent</span> <span class="code1">+=</span> <span class="code2">guess</span>.value;
+        <span class="code2">user2</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'green'</span>);
+        <span class="code2">guess</span>.disabled <span class="code1">=</span> <span class="code2">"true"</span>;
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+        <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'winback'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+        <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+        <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackwin'</span>);
+    } <span class="code1">else if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">0</span> <span class="code1">||</span> userGuess <span class="code1">&gt;</span> <span class="code2">100</span> <span class="code1">||</span> userGuess <span class="code1">===</span> <span class="code2">''</span> <span class="code1">||</span> userGuess <span class="code1">!=</span> (<span class="code2">/\d</span><span class="code1">+</span><span class="code2">/</span><span class="code1">ig</span>)) {
+            <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Please enter a number from 0 - 100."</span>;
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'error'</span>);
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
+            <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'lowback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+            <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'errorback'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+            <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbacklow'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'submit'</span>);
+            <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbackerror'</span>);
+    }
+        unique <span class="code1">=</span> guesses.<span class="code3">filter</span>(<span class="code3">onlyUnique</span>);
+        <span class="code2">counting</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Guesses: "</span> <span class="code1">+</span> unique.<span class="code2">length</span>;
+        <span class="code2">user</span>.<span class="code3">appendChild</span>(<span class="code2">user2</span>);
+        userGuess <span class="code1">=</span> <span class="code2">''</span>;
+        <span class="code2">guess</span>.value <span class="code1">=</span> <span class="code2">''</span>;
+}
+</pre>
+                        </code>
+
+                        <p>It truly makes me cringe to look at all of those lines of code. Speaking of which, this function is quite long, so let's break it up to discuss it.
+                        </p>
+
+                        <p>First we have these variables:</p>
+
+                        <code class="widecode">
+<pre><span class="code1">let</span> userGuess <span class="code1">=</span> <span class="code2">guess</span>.value;
+<span class="code1">let</span> newNum;
+<span class="code1">let</span> allSpans;
+<span class="code1">let</span> slash <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+slash.<span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span>;</pre>
+                        </code>
+
+                        <p>We give the user's guess the variable <code class="wordcode">userGuess</code> (go figure). We also set the variables <code class="wordcode">newNum</code> and <code class="wordcode">allSpans</code>, both uninitialized so that we can treat them as global variables. Finally, there's <code class="wordcode">slash</code>, which creates a <code class="wordcode">&lt;span&gt;</code> element. It is given <code class="wordcode"><span class="code2">innerText</span> <span class="code1">=</span> <span class="code2">' / '</span></code> (or, in other words, a <em>slash</em>).</p>
+
+                        <p>Now we have the main "meat", if you will, of this function: the enormous <code class="wordcode"><span class="code1">if</span></code> condition.
+                        </p>
+
+                        <code class="widecode">
+<pre><span class="code1">if</span> (userGuess <span class="code1">&lt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;</span> <span class="code2">0</span>) {
+    guesses.<span class="code3">push</span>(userGuess);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'high'</span>);
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+    <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too low! Try again."</span>
+    <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+    newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    newNum.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'low'</span>);
+    newNum.<span class="code2">innerText</span> <span class="code3">=</span> <span class="code2">guess</span>.value <span class="code1">+</span> <span class="code2">' '</span>;
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(newNum);
+    <span class="code2">user2</span>.<span class="code3">appendChild</span>(slash);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'regback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'highback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'errorback'</span>);
+    <span class="code2">background</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'lowback'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackerror'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'btnbackhigh'</span>);
+    <span class="code2">submit</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+    <span class="code2">reset</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'btnbacklow'</span>);
+
+}</pre>
+                        </code>
+
+                        <p>
+                            The first part of this if condition says "If the user's guess is lower than the winning number and greater than 0", then:</p>
+                        <ul>
+                            <li>
+                                Push the user's guess into the <code class="wordcode"><span class="code2">guesses</span></code> array.
+                            </li>
+                            <li>
+                                Give them the result "Your guess was too low! Try again." while giving the result's text a specific color (hence the removal of the class <code class="wordcode"><span class="code2">"high"</span></code> and the addition of the class <code class="wordcode"><span class="code2">"low"</span></code>).
+                            </li>
+                            <li>
+                                Create a <code class="wordcode"><span class="code2">span</span></code> element via the <code class="wordcode">newNum</code> variable, and give it the class of <code class="wordcode"><span class="code2">"low"</span></code> as well. Its inner text is the guess value plus a space.
+                            </li>
+                            <li>
+                                Append <code class="wordcode">newNum</code> to <code class="wordcode"><span class="code2">user2</span></code> so that it appears on the page. Do the same with <code class="wordcode">slash</code>.
+                            </li>
+                        </ul>
+                        <p>
+                            Lastly, we have a whole bunch of lines that simply add and remove certain classes from certain variables. To clarify, this is because my game changes colors depending on what happens. For example:
+                            </p>
+                        <p>
+                            If the user guesses too low, the main theme changes a certain shade of blue.
+                        </p>
+                        <img src="Images/Numbers_Game_Low.png" class="blogimg-number">
+                        <p>
+                            Too high, a darker shade of blue.
+                        </p>
+                        <img src="Images/Numbers_Game_High.png" class="blogimg-number">
+                        <p>
+                            If the user wins, everything turns green.
+                        </p>
+                        <img src="Images/Numbers_Game_Win.png" class="blogimg-number">
+                        <p>
+                            And if the user gets an error, everything turns red.
+                        </p>
+                        <img src="Images/Numbers_Game_Error.png" class="blogimg-number">
+                        
+                        <p>
+                            These color changes were included as a way for the game to help communicate to the player, but in a visual way. The color key on the left helps to clarify the difference between the "Low" and "High" color themes as well.
+                        </p>
+                        <p>
+                            We're going to skip a little bit ahead now because the next part of the if condition is for if the number is too high. So it's pretty much identical to the last, except for, of course, the different classes for the color changes.
+                        </p>
+
+                        <h3 id="repair">Code Repair and Refactoring <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg></a></h3>
+                        -->
+                    </div>
+                </div>
+                <div class="tagbar">
+                    <div class="maintagbar">
+                        <a href="../Tags/programming_journey.html" class="maintag">Programming Journey</a>
+                        <a href="../Tags/code_refactoring.html" class="maintag">Code Refactoring</a>
+                        <a href="../Tags/jquery.html" class="maintag">jQuery</a>
+                    </div>
+                    <div class="socialbar">
+                        <a href="https://www.github.com/Risclover" target="_blank" class="social"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.reddit.com/user/saratheplant" target="_blank" class="social"><i class="fab fa-reddit-alien"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGwV3coXX8xWt4HTd0J6iPw" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="backforward">
+                    <div class="back">
+                        <a href="./code_discussion_portfolio_categories.html">
+                            <i class="fas fa-chevron-left fa-xs"></i>
+                            <p>Previous Post</p>
+                            </a>
+                    </div>
+                    <div class="forward">
+                        <a href="#">
+                            <p>Next Post</p>
+                            <i class="fas fa-chevron-right fa-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="blogsidebar">
+
+                <!-- Search bar -->
+                <div class="searchstuff">
+                    <input type="text" placeholder="Search..." class="sidebarsearch">
+                    <button class="searchbtn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Blog Categories -->
+                <div class="categories">
+                    <h3 class="cattitle">Categories</h3>
+                    <div class="categoryitems">
+                        <ul>
+                        <li>
+                            <a href="../Categories/code_discussion.html">Code Discussion (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>   
+                            <a href="../Categories/personal.html">Personal (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>
+                            <a href="../Categories/project_breakdown.html">Project Breakdown (<span class="categorycount">1</span>)</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Related/Recent -->
+                <div class="categories">
+                    <h3 class="cattitle">Related/Recent</h3>
+                    <div class="categoryitems">
+                        <ul>
+                            <li>
+                                <a class="relateditem active">Project Breakdown: The Number Game</a>
+                            </li>
+                            <li>
+                                <a href="./code_discussion_portfolio_categories.html" class="relateditem">Code Discussion: Portfolio Categories</a>
+                            </li>
+                            <li>
+                                <a href="./introduction.html" class="relateditem">Introduction (First Blog Post!)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Archives -->
+                <div class="categories">
+                    <h3 class="cattitle">Archives</h3>
+                    <div class="categoryitems">
+                        <ul>
+                            <li>
+                                <a href="../Archives/february.html">February 2022 (<span class="categorycount">2</span>)</a>
+                            </li>
+                            <li>
+                                <a href="../Archives/january.html">January 2022 (<span class="categorycount">1</span>)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Tags (All) -->
+                <div class="categories">
+                    <h3 class="cattitle">Tags</h3>
+                    <a href="../Tags/programming_journey.html" class="blogtag">Programming Journey</a>
+                    <a href="../Tags/learning.html" class="blogtag">Learning</a>
+                    <a href="../Tags/personal.html" class="blogtag">Personal</a>
+                    <a href="../Tags/javascript.html" class="blogtag">JavaScript</a>
+                    <a href="../Tags/jquery.html" class="blogtag">jQuery</a>
+                    <a href="../Tags/code_refactoring.html" class="blogtag">Code Refactoring</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+    </footer>
+
+
+
+    <!-- JS Scripts -->
+    <script src="../../js files/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

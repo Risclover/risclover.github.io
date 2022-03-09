@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Code Discussion: Portfolio Categories</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marck+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Norican&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link href="../../stylesheets/Bootstrap/bootstrap.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="../../stylesheets/Bootstrap/bootstrap-theme.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="../../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
+    <link href="../../stylesheets/blog.css" rel="stylesheet"> <!-- Individual -->
+    <link href="../../stylesheets/blog-sidebar.css" rel="stylesheet"> <!-- Sidebar -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="navbar">
+        <h2 id="logo">Sara Dunlop</h2>
+        <div id="navbar-right">
+            <a class="navlink" href="../../index.html">Home</a>
+            <a class="navlink" href="../../index.html#About">About</a>
+            <a class="navlink" href="../../main pages/portfolio.html">Portfolio</a>
+            <a class="navlink active" href="../../main pages/blog.html">Blog</a>
+            <a class="navlink" href="#">Contact</a>
+        </div>
+    </div>
+    <header>
+        <h1>Code Discussion: Portfolio Categories</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../main pages/blog.html">Blog</a></li>
+            <li class="breadcrumb-item active">Blog Post</li>
+        </ol>
+    </header>
+    
+    <main>
+        <div class="pagecontent">
+            <div class="blogpost">
+                <div class="bloghead">
+                    <img src="../Images/Headers/Code Discussion.png" class="blogimg" data-category="HTML, CSS,">
+                </div>
+                <div class="blogmain">
+                    <h2 class="blogtitle">Code Discussion: Portfolio Categories</h2>
+                    <div class="tinydetails">
+                        <a href="#" class="bloglink">
+                            <i class="far fa-clock fa-sm"></i>
+                            <p class="blogdate">10 February, 2022</p>
+                        </a>
+                        <a href="../Categories/code_discussion.html" class="bloglink">
+                            <i class="fas fa-folder fa-sm blogcat"></i>
+                            <p class="blogcategory">Code Discussion</p>
+                        </a>
+                    </div>
+                    <div class="blogtext">
+                        <p>I'm about to do something that may turn you off, dear reader, but you're going to have to kind of get over it because it's something I that rarely do, which is to <em>brag</em>.</p>
+
+                        <p>Okay? Okay, cool. So here it goes:</p>
+
+                        <h4>I am so fucking smart!</h4>
+
+                        <p>/ end brag</p>
+
+
+                        <p>In all seriousness, I am extremely proud of myself. I was working on my main portfolio page today and remembered that I wanted to implement a "Categories" system. To quickly summarize, there would be a series of buttons at the top of the page, and when a button is clicked, it would filter the portfolio projects to only show the ones belonging to the button's category. My categories would be based off of coding languages, frameworks, etc., so the buttons would include HTML, CSS, JavaScript, jQuery, Bootstrap, etc.</p>
+
+                        <p>Going into this, I wasn't quite sure how to implement such a system. I knew it couldn't be complicated, but I've never done it before. </p>
+
+                        <p>Relevant side story time!</p>
+
+                        <p>I used datatypes yesterday to make my portfolio system work. Hovering over one of the project images pulls up the project's text, a small description, and two buttons - one with a magnifying glass icon, and one with an eye icon. When you click on the button with the magnifying glass icon, the project image and its caption appears in the modal that pops up.</p>
+
+                        <p>I actually had a bit of difficulty with this task. No matter what I did, the only modal picture popping up was the one for the very first portfolio project. I kid you not, I think I spent hours on this, but that was mainly because I was trying to use JavaScript to automate the whole thing rather than to attach individual IDs to each and every element of each and every project div/modal. </p>
+
+                        <p>I was actually (mostly) successful in this task shortly after beginning. I was able to get each individual button to get their respective modals to appear, and each modal had its own X button in the corner to close it. This was neatly packaged into a single for loop. If I could get this to work in one loop, I was certain I could also get the image and its caption to work in that same loop.</p> 
+
+                        <p>The thing that caused me hours of anguish was getting the individual images to appear in their modals. For the life of me, I couldn't accomplish this. I did a lot of research on Google, but a lot of the solutions were for clicking on the image and having it appear in a modal, which works easily enough with the use of this. What I was trying to do was to click on a button and have a unique image appear for each modal. </p>
+
+                        <p>My thought process was that, since I was using a loop, I needed to have a portfolio image array and a modal image array. I would then use JavaScript to pull all of the image src's from the page (rather than type them in individually) via the portfolio image array, and to then put them into the modal image array. I thought that if I could get that far, I could figure out how to display the image in its modal easy peasy.</p>
+
+                        <p>I tried several (way too many) variations of trying to get something like this to work:</p>
+
+	                    <code class="widecode">
+<pre>modalImages[i].src <span class="code1">=</span> portfolioImg[i].src;
+modalImages[i].src <span class="code1">=</span> portfolioImg[i].<span class="code3">getAttribute</span>(<span class="code2">'src'</span>);
+modalImages[i].<span class="code3">setAttribute</span>(<span class="code2">'src'</span>, portfolioImg[i].<span class="code3">getAttribute</span>(<span class="code2">'src'</span>));
+</pre>
+	                    </code>
+	
+
+                        <p>I also tried separate functions, separate for loops, other methods, etc. I spent more time doing this than if I were to just do the deed manually, but this was for the sake of good coding, and my portfolio's future. After all, I didn't want to have to manually do this every time I changed up my projects.</p>
+
+                        <p>After waaaay too much time had been spent on this conundrum (I hadn't even gotten to the Captions part of it), I finally figured out that to do this, I could use data keys, which I've never actually used before. Bonus: I could knock out two birds with one stone and use data keys for both the image src and the caption. So I created two datatypes - <code class="wordcode"><span class="code3">data-alt</span></code> for the caption and <code class="wordcode"><span class="code3">data-src</span></code> for the image, placing them as attributes of the portfolio image itself to keep things simple for myself when coding new projects into the portfolio. To my relief, it finally worked! My final code is as such:</p>
+
+	                    <code class="widecode">
+<pre><span class="code1">let</span> modal <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'.modal'</span>);
+<span class="code1">let</span> btn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'.modalbtn'</span>);
+<span class="code1">let</span> span <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementsByClassName</span>(<span class="code2">'close'</span>);
+<span class="code1">let</span> captions <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementsByClassName</span>(<span class="code2">'caption'</span>);
+<span class="code1">let</span> portfolioImg <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementsByClassName</span>(<span class="code2">'portfolio-img'</span>);
+<span class="code1">let</span> modalImages <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementsByClassName</span>(<span class="code2">'modalimg'</span>);
+
+<span class="code1">if</span> (<span class="code1">let</span> i <span class="code1">=</span> <span class="code2">0</span>; i <span class="code1">&lt;</span> modal.<span class="code2">length</span>; i<span class="code1">++</span>) {
+    btn[i].<span class="code3">onclick</span> <span class="code1">= function</span>() {
+        modal[i].style.display <span class="code1">=</span> <span class="code2">"block"</span>;
+        captions[i].<span class="code2">textContent</span> <span class="code1">=</span> portfolioImg[i].dataset.alt;
+        modalImages[i].src <span class="code1">=</span> portfolioImg[i].dataset.src;
+    }
+    
+    span[i].<span class="code3">onclick</span> <span class="code1">= function</span>() {
+        modal[i].style.display <span class="code1">=</span> <span class="code2">"none"</span>;
+    }
+}</pre>
+                        </code>
+	
+
+
+                        <p>Why did I just tell you that rather long story, and in the middle of the main point of this blog post at that? Well, as I said, it's relevant. Cut to today, and I have datatypes on the mind. To me, although I'd known about them (albeit vaguely) in the past, remember that I'd never used them before. It's a little bit like a whole new world of possibility has opened up! So, with said datatypes on the mind, I thought maybe I could use them to make this Categories system work.</p>
+
+                        <p>I created a few of the category buttons - specifically HTML, CSS, and JavaScript - and attached a unique ID to each. Then I went into <code class="wordcode">script.js</code> and typed:</p>
+
+	                    <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">categoryHTML</span> <span class="code1">=</span>  <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-HTML'</span>);
+<span class="code1">var</span> <span class="code2">projects</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementsByClassName</span>(<span class="code2">'content'</span>);
+
+<span class="code2">categoryHTML</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code1">function</span>() {
+    <span class="code2">projects</span>.<span class="code3"
+>forEach</span>((<span class="code4">project</span>) <span class="code1">=></span> {
+        <span class="code1">if</span> (<span class="code4">project</span>.dataset.tag.<span class="code3">includes</span>())
+    })
+})</pre>
+                        </code>
+	
+
+                        <p>Then I paused. How the heck did one call upon just one part of a datatype? I was considering the use of something like .includes(), but that's a Ruby thing, and the datatype isn't a string or an array. I erased the <code class="wordcode">.<span class="code3">includes</span>( )</code> bit and pondered. And when pondering didn't get me any further, I headed for Google.</p>
+
+                        <p>I typed in queries like "javascript dataset includes", "javascript check if dataset includes value", "javascript custom attribute", and "javascript html css multiple values in one dataset". Unsurprisingly, I didn't find an answer. </p>
+
+                        <p>The problem with this initial idea of mine is that, as far as I know, you can't simply list a bunch of things under one datatype and then call upon them individually via some method or function. For example, if I had <code class="wordcode"><span class="code3">data-category</span>=<span class="code2">"HTML, CSS, JS, JQ, BS"</span></code>, I couldn't use JavaScript to only call on the ones that include HTML within that datakey. Using multiple datakeys (one for each category) was out of the question because a) it's tedious, b) there will be a lot more categories in the future, and c) it defeats the purpose of trying to script the whole thing.</p>
+
+                        <p>Don't worry, this story does have a happy ending: 4 minutes into this task, my lightbulb finally went off! Hello, Sara, dumbass, you ever hear of a thing called <em>CSS classes</em>?! Classes are able to do exactly what I was trying to force datatypes to do. You can give an element multiple classes and call upon said classes individually via JavaScript. (I'm just relieved that I didn't spend more than 5 - 10 minutes before I realized that datatypes weren't the way to go.)</p>
+
+                        <p>With a better idea in mind, I set off to try it out, and this is what I came up with:</p>
+	
+	                    <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">categoryHTML</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-HTML'</span>);
+<span class="code1">const</span> <span class="code2">categoryCSS</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-CSS'</span>);
+<span class="code1">const</span> <span class="code2">categoryJS</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-JS'</span>);
+<span class="code1">const</span> <span class="code2">categoryJQ</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-JQ'</span>);
+<span class="code1">const</span> <span class="code2">categoryBS</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'category-BS'</span>);
+<span class="code1">const</span> <span class="code2">showAll</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'show-categories'</span>);
+<span class="code1">const</span> <span class="code2">portfolioDivs</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'.content'</span>);
+<span class="code1">const</span> <span class="code2">categoryBtns</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelectorAll</span>(<span class="code2">'.portfolio-category'</span>);
+
+<span class="code2">categoryHTML</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code1">function</span>() {
+    <span class="code2">categoryBtns</span>.<span class="code3">forEach</span>((<span class="code4">categoryBtn</span>) <span class="code1">=&gt;</span> {
+        <span class="code1">if</span>(<span class="code4">categoryBtn</span>.<span class="code2">classList</span>.<span class="code3">contains</span>(<span class="code2">"category-active"</span>)) {
+            <span class="code4">categoryBtn</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'category-active'</span>);
+        }
+    });
+    
+    <span class="code2">portfolioDivs</span>.<span class="code3">forEach</span>((<span class="code4">portfolioDiv</span>) <span class="code1">=&gt;</span> {
+        <span class="code1">if</span>(<span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">contains</span>(<span class="code2">"HTML"</span>)) {
+            <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">"portfoliohide"</span>);
+            <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">"portfolioshow"</span>);
+        } <span class="code1">else</span> {
+            <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">"portfolioshow"</span>);
+            <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">"portfoliohide"</span>);
+        }
+    });
+    
+    <span class="code2">categoryHTML</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">"category-active"</span>);
+});
+
+<span class="code2">showAll</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code1">function</span>() {
+    <span class="code2">categoryBtns</span>.<span class="code3">forEach</span>((<span class="code4">categoryBtn</span>) <span class="code1">=&gt;</span> {
+        <span class="code4">categoryBtn</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">"category-active"</span>);
+    });
+    
+    <span class="code2">portfolioDivs</span>.<span class="code3">forEach</span>((<span class="code4">portfolioDiv</span>) <span class="code1">=&gt;</span> {
+        <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">"portfoliohide"</span>);
+        <span class="code4">portfolioDiv</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">"portfolioshow"</span>);
+    });
+    
+    <span class="code2">showAll</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">"category-active"</span>);
+});</pre>
+                        </code>
+	
+
+                        <p>Although this was a rather long and confusing story, I wanted to express my happiness at having figured out a whole little system so quickly. I'm sure to some of you more <em>seasoned </em> programmers reading this, it probably doesn't seem like a big deal. The main reason I'm excited about it is because I feel like it's a sign that I really have the "frontend" thing down. I mean, I've had HTML and CSS down for months now, but when I first began JavaScript, I really struggled with it for a while because I failed to see how and where it could be applied (that's one of the biggest problems I have with most JavaScript courses, but that's something for another blog post entirely). Now that I know and now that I can implement it (frontend-wise, anyway) pretty easily, I'm probably going to concentrate on something else. Yay!</p>
+
+                    </div>
+                </div>
+                <div class="tagbar">
+                    <div class="maintagbar">
+                        <a href="../Tags/programming_journey.html" class="maintag">Programming Journey</a>
+                        <a href="../Tags/learning.html" class="maintag">Learning</a>
+                        <a href="../Tags/javascript.html" class="maintag">JavaScript</a>
+                    </div>
+                    <div class="socialbar">
+                        <a href="https://www.github.com/Risclover" target="_blank" class="social"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.reddit.com/user/saratheplant" target="_blank" class="social"><i class="fab fa-reddit-alien"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGwV3coXX8xWt4HTd0J6iPw" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="backforward">
+                    <div class="back">
+                        <a href="./introduction.html">
+                            <i class="fas fa-chevron-left fa-xs"></i>
+                            <p>Previous Post</p>
+                            </a>
+                    </div>
+                    <div class="forward">
+                        <a href="project_breakdown_number_game.html">
+                            <p>Next Post</p>
+                            <i class="fas fa-chevron-right fa-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Sidebar -->
+        <div class="blogsidebar">
+            <div class="searchstuff">
+                <input type="text" placeholder="Search.." class="sidebarsearch">
+                <button class="searchbtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="categories">
+                <h3 class="cattitle">Categories</h3>
+                <div class="categoryitems">
+                    <ul>
+                        <li>
+                            <a href="../Categories/code_discussion.html">Code Discussions (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>   
+                            <a href="../Categories/personal.html">Personal (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>
+                            <a href="../Categories/project_breakdown.html">Project Breakdowns (<span class="categorycount">1</span>)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="categories">
+                <h3 class="cattitle">Related/Recent</h3>
+                <div class="categoryitems">
+                <ul>
+                    <li>
+                        <a href="../Posts/project_breakdown_number_game.html" class="relateditem">Project Breakdown: The Number Game</a>
+                    </li>
+                    <li>
+                        <a class="relateditem active">Code Discussion: Portfolio Categories</a>
+                    </li>
+                    <li>
+                        <a href="../Posts/introduction.html" class="relateditem">Introduction (First Blog Post!)</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="categories">
+                <h3 class="cattitle">Archives</h3>
+                <div class="categoryitems">
+                    <ul>
+                        <li>
+                            <a href="../Archives/february.html">February 2022 (<span class="categorycount">2</span>)</a>
+                        </li>
+                        <li>
+                            <a href="../Archives/january.html">January 2022 (<span class="categorycount">1</span>)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="categories">
+                <h3 class="cattitle">Tags</h3>
+                <a href="../Tags/programming_journey.html" class="blogtag">Programming Journey</a>
+                <a href="../Tags/learning.html" class="blogtag">Learning</a>
+                <a href="../Tags/personal.html" class="blogtag">Personal</a>
+                <a href="../Tags/javascript.html" class="blogtag">JavaScript</a>
+                <a href="../Tags/jquery.html" class="blogtag">jQuery</a>
+                <a href="../Tags/code_refactoring.html" class="blogtag">Code Refactoring</a>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+
+
+
+    <!-- JS Scripts -->
+    <script src="../../js files/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

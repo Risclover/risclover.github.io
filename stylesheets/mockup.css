@@ -1,0 +1,298 @@
+/* Main/General */
+body, html {
+    background-color: #f5f5f5;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+}
+
+svg {
+    margin-top: 10px;
+}
+
+/* Containers */
+
+.pagecontent {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+/* Blog post (left side) */
+
+/* Blog header */
+.blogcat {
+    margin-left: 10px;
+}
+
+.blogimg {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom: 5px solid #2a9688;
+}
+
+.tinydetails {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin-top: 0px;
+
+}
+
+.tinydetails a {
+    display: flex;
+    align-items: center;
+}
+
+.tinydetails p {
+    font-size: .9rem;
+}
+
+.blogdate, .blogcategory {
+    margin: 0 5px;
+}
+
+.bloglink {
+    text-decoration: none;
+    color: #353535;
+    display: flex;
+    align-items: center;
+}
+
+.bloglink:hover {
+    color:rgb(8, 201, 159);
+}
+
+
+/* Blog post */
+.blogpost {
+    width: 608px;
+    background: white;
+    border-radius: 0;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blogpost-link {
+    color: rgb(8, 201, 159);
+    transition: 0.5s ease !important;
+}
+
+.blogpost-link:hover {
+    color: black !important;
+}
+
+.blogpost-toc {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+/* Tag bar */
+.tagbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+    background-color: #ebeaea;
+}
+
+.maintag {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fdfdfd;
+    padding: 0 8px;
+    border: 1px solid #fdfdfd;
+    margin: 3px 1px;
+    display: inline-block;
+    font-size: .8rem;
+    transition: .4s ease;
+}
+
+.maintag:hover {
+    background-color: rgb(8, 201, 159);
+    border: 1px solid rgb(8, 201, 159);
+    color: #fdfdfd !important;
+}
+
+/* Beneath blog post */
+.back a, .forward a {
+    display: flex;
+    align-items: center;
+}
+
+.back p {
+    margin-left: 8px;
+    font-size: .9rem;
+}
+
+.back a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.back a:hover {
+    color:rgb(8, 201, 159);
+}
+
+.forward p {
+    margin-right: 8px;
+    font-size: .9rem;
+}
+
+.forward a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.forward a:hover {
+    color:rgb(8, 201, 159);
+}
+
+.backforward {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.socialbar {
+    margin-left: 5px;
+}
+
+.socialbar a {
+    color: #858585;
+    margin: 0 3px;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.socialbar a:hover {
+    color: rgb(8, 201, 159);
+}
+
+
+.blogtext h3 + p {
+    margin-top: 10px;
+}
+
+.blogtext ul, li {
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+.blogtext ul {
+    margin-top: -10px;
+}
+
+.blogtext h3 {
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+}
+
+.wordcode{
+    background-color:rgb(37, 40, 49);
+    color: white;
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-size: .8em;
+}
+
+.widecode {
+    color: white;
+    line-height: 1.5;
+    background-color:rgb(37, 40, 49);
+    padding: 12px 15px;
+    font-size: .8em;
+    border-radius: 0px;
+    width: auto;
+    display: block;
+    border-left: 5px solid #3c467a;
+    margin-bottom: 20px;
+}
+
+.redcode {
+    background-color:rgb(236, 211, 211);
+    padding: 20px 15px;
+    font-size: 1em;
+    width: auto;
+    display: block;
+    border-left: 5px solid #be0000;
+    margin: 20px 0px;
+}
+
+.code1 {
+    color: #fa7676;
+}
+
+.code2 {
+    color: #82c1ff;
+}
+
+.code3 {
+    color: #c69aff;
+}
+
+.code4 {
+    color: #ffa149;
+}
+
+.comment {
+    color: gray;
+}
+
+.disabled {
+    color: #b9b9b9;
+    cursor:default;
+}
+
+.disabled:hover {
+    color: #b9b9b9;
+    cursor: default;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid rgb(8, 201, 159);
+    padding-left: 15px;
+    font-size: .9rem;
+}
+
+.blogimg-number {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Small mobile view */
+@media (max-width: 480px) {
+
+}
+
+/* Large mobile view */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Tablet view? */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Desktop view */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* Television/large desktop view */
+@media (min-width: 1201px) {
+
+}

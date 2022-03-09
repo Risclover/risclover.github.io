@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marck+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Norican&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="../stylesheets/portfolio.css" rel="stylesheet"> <!-- Individual -->
+    <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+    <div id="navbar" class="navbar" aria-current="Portfolio" role="navigation">
+            <h2 id="logo">Sara Dunlop</h2>
+            <div id="navbar-right">
+                <a class="navlink" href="../index.html">Home</a>
+                <a class="navlink" href="../index.html#About">About</a>
+                <a class="navlink active" href="#">Portfolio</a>
+                <a class="navlink" href="../main pages/blog.html">Blog</a>
+                <a class="navlink" href="#">Contact</a>
+            </div>
+    </div>
+    </nav>
+
+    <!-- Page header -->
+    <header>
+        <h1>Portfolio</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active">Portfolio</li>
+        </ol>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <div class="container mb-4">
+            <p contenteditable="true">This is my portfolio, where I showcase all of the projects I'm proud of. If you hover over an image and click on the "View" icon (with an eye icon), you'll find additional information including the languages, frameworks, and tools used to create the project, and links to the project's blog post (where I discuss the code), the Github repo containing the project's source code, and a live demo of the project itself. If you have any questions or comments about a project, feel free to message me via the <a href="contact.html">Contact</a> page!</p>
+        </div>
+        <div class="container">
+
+            <!-- Portfolio categories -->
+            <div class="categories">
+                <button class="portfolio-category category-active" id="show-categories">Show All</button>
+                <button class="portfolio-category" id="category-HTML">HTML</button>
+                <button class="portfolio-category" id="category-CSS">CSS</button>
+                <button class="portfolio-category" id="category-JS">JavaScript</button>
+                <button class="portfolio-category" id="category-JQ">jQuery</button>
+                <button class="portfolio-category" id="category-BS">Bootstrap</button>
+                <button class="portfolio-category" id="category-SQL">SQL</button>
+                <button class="portfolio-category" id="category-PHP">PHP</button>
+            </div>
+
+
+            <!-- Portfolio projects -->
+            <div class="portfolio-projects">
+
+                <!-- Project: Counter -->
+                <div class="content HTML CSS JavaScript jQuery" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#counter-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/Counter.png" data-alt="Test">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>Counter</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A simple counter with a couple of sophisticated features. What more can I say? It's a <em>counter</em>. It counts numbers.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Project: Calculator -->
+                <div class="content HTML CSS JavaScript" tabindex="0" data-toggle="modal" data-target="#calculator-modal" id="content1">
+                    <a href="#" data-toggle="modal" data-target="#calculator-modal">
+                    <div class="content-overlay" id="overlaya"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/calculator.png" data-alt="Calculator">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>Calculator</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A browser-based calculator app, including a decimal key, clear, delete, an exponent key, and the capability to change between positive and negative.</p>
+                    </div>
+                    </a>
+                </div>
+                
+                <!-- Project: Etch-a-Sketch -->
+                <div class="content HTML CSS JavaScript" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#etchasketch-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/etch-a-sketch.png" data-alt="Etch-a-Sketch">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>Etch-a-Sketch</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A drawing app in a similar style as an etch-a-sketch. Allows you to select your color(s) and change the grid size, and includes various modes including Party Mode, Eraser Mode, and Shading.</p>
+
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Project: Product Landing Page -->
+                <div class="content HTML CSS JavaScript" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#productpage-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/product-landing-page.png" data-alt="Product Landing Page">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>Product Landing Page</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A fully-responsive product landing page. Includes several sections, each with beautifully-styled elements that fit the theme.</p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Project: The Number Game -->
+                <div class="content HTML CSS JavaScript jQuery" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#numbergame-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/The-Number-Game.png" data-alt="Number Guessing Game">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>The Number Game</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A number guessing game in which the player has to guess the number. After a guess, the computer lets you know whether you were too high or too low. Try to guess the number with as few guesses as you can.</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Project: A Tribute to Muse -->
+                <div class="content HTML CSS JavaScript" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#muse-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/Muse.png" data-alt="A Tribute to Muse">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>A Tribute to Muse</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A tribute page to the band Muse. Completed as part of the freeCodeCamp course, this is the first webpage I created where I ended up very proud of my result.</p>
+                    </div>
+                </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+
+
+    <!-- Project Information Modals -->
+
+    <!-- Modal: Counter -->
+    <div class="modal fade project-modal" id="counter-modal" tabindex="-1" role="dialog" aria-labelledby="counterModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Counter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/Counter.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/Counter" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/Counter" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                        <i class="devicon-jquery-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="jQuery" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: Calculator -->
+    <div class="modal fade project-modal" id="calculator-modal" tabindex="-1" role="dialog" aria-labelledby="calculatorModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Calculator</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/calculator.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/Calculator" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/Calculator" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: Etch-a-Sketch -->
+    <div class="modal fade project-modal" id="etchasketch-modal" tabindex="-1" role="dialog" aria-labelledby="etchasketchModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Etch-a-Sketch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/etch-a-sketch.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/etch-a-sketch" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/etch-a-sketch" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: Product Landing Page -->
+    <div class="modal fade project-modal" id="productpage-modal" tabindex="-1" role="dialog" aria-labelledby="productMpageModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Product Landing Page Template</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/product-landing-page.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/risclover/Product-Landing-Page" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/Product-Landing-Page" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: The Number Game -->
+    <div class="modal fade project-modal" id="numbergame-modal" tabindex="-1" role="dialog" aria-labelledby="numbergameModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Number Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/The-Number-Game.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="../blog/Posts/project_breakdown_number_game.html">About Project</a> | 
+                        <a href="https://www.github.com/risclover/Numbers-Game" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/The-Number-Game" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                        <i class="devicon-jquery-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="jQuery" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: A Tribute to Muse -->
+    <div class="modal fade project-modal" id="muse-modal" tabindex="-1" role="dialog" aria-labelledby="museModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">A Tribute to Muse</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/Muse.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/Muse" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/Muse" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: Extra -->
+    <div class="modal fade project-modal" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Example Modal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="Headers/binary1.jpg" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="#">Github Repo</a> | 
+                        <a href="#">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="Tooltip on top" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="Tooltip on top" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="Tooltip on top" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <script src="../js files/portfolio.js"></script>
+    <script src="../js files/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
