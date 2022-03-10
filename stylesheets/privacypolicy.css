@@ -1,0 +1,97 @@
+
+.main-content {
+    padding: 20px;
+}
+
+#logo {
+    margin-top: 0 !important; 
+}
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #08c99f;
+}
+
+nav a:hover {
+    color: #08c99f !important;
+}
+
+a:hover {
+    color: #333333 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main-content h2 {
+    font-size: 33px;
+    margin-top: 30px;
+    padding: 3px 10px 3px 3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 29px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+h4 {
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p ~ ul {
+    margin-top: 0;
+}
+
+p + ul {
+    margin-top: -10px;
+}
+
+.main-content ol {
+    list-style: none;
+    counter-reset: cupcake;
+    padding-left: 32px;
+  }
+  .main-content ol li {
+    counter-increment: cupcake;
+  }
+  .main-content ol li:before {
+    content: counters(cupcake, ".") ". ";
+  }
+
+  .licenter {
+      display: inline-flex;
+      align-items: center;
+  }
+
+  #expand-list1, #expand-list2, #expand-sublist1, #expand-sublist2 { 
+      display: none;
+  }

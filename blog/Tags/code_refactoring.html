@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Blog | Tag: Code Refactoring </title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +22,15 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="navbar">
+<!-- Navbar -->
+<nav>
+    <div id="navbar">
+        <!-- Website logo/title -->
         <h2 id="logo">Sara Dunlop</h2>
+
+        <!-- Navigation links -->
         <div id="navbar-right">
             <a class="navlink" href="../../index.html">Home</a>
             <a class="navlink" href="../../index.html#About">About</a>
@@ -31,64 +38,73 @@
             <a class="navlink" href="../../main pages/blog.html">Blog</a>
             <a class="navlink" href="#">Contact</a>
         </div>
-</div>
+    </div>
+</nav>
+
+<!-- Header -->
 <header>
+    <!-- Page title -->
     <h1>Code Refactoring</h1>
+
+    <!-- Breadcrumbs -->
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
         <li class="breadcrumb-item"><a href="../../main pages/blog.html">Blog (Main)</a></li>
         <li class="breadcrumb-item active">Tag Page</li>
     </ol>
 </header>
+
+<!-- Page content -->
 <main>
     <div class="pagecontent">
 
         <!-- Blog posts -->
         <div class="blogpost-container">
+
             <!-- Blog post -->
-            <div class="blogpost">
-                <div class="blogpost-image">
-                    <div class="blogpost-overlay"></div>
-                        <a href="../Posts/project_breakdown_number_game.html"><img src="../../images/portfolio_images/The-Number-Game.png" class="blogpost-image"></a>
-                </div>
-                <div class="blogpost-header">
-                    <h2 class="blogtitle"><a href="../Posts/project_breakdown_number_game.html">Project Breakdown: The Number Game</a></h2>
-                    <div class="tinydetails">
-                        <a href="#" class="bloglink">
-                            <i class="far fa-clock fa-sm"></i>
-                            <p class="blogdate">26 February, 2022</p>
-                        </a>
-                        <a href="../Categories/project_breakdown.html" class="bloglink">
-                            <i class="fas fa-folder fa-sm blogcat"></i>
-                            <p class="blogcategory">Project Breakdown</p>
+            <section>
+                <div class="blogpost">
+                    <!-- Blog image -->
+                    <a href="../Posts/project_breakdown_number_game.html">
+                        <div class="blogpost-image">
+                            <img src="../../images/portfolio_images/Number-Game.png" class="blogpost-image">
+                        </div>
+                    </a>
+
+                    <!-- Blog header (title, date, category) -->
+                    <div class="blogpost-header">
+                        <!-- Title -->
+                        <h2 class="blogtitle"><a href="../Posts/project_breakdown_number_game.html">Project Breakdown: The Number Game</a></h2>
+
+                        <!-- Date/category bar -->
+                        <div class="tinydetails">
+                            <!-- Date -->
+                            <a href="#" class="bloglink">
+                                <i class="far fa-clock fa-sm"></i>
+                                <p class="blogdate">26 February, 2022</p>
+                            </a>
+
+                            <!-- Category -->
+                            <a href="../Categories/project_breakdown.html" class="bloglink">
+                                <i class="fas fa-folder fa-sm blogcat"></i>
+                                <p class="blogcategory">Project Breakdown</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog preview description -->
+                    <div class="blogpost-description">
+                        <p>The first of many "Project Breakdowns" to come. In the first, I discuss my project The Number Game, and refactor the vanilla JavaScript code into one that is jQuery-heavy.</p>
+                    </div>
+
+                    <!-- Read more link -->
+                    <div class="blogpost-readmore">
+                        <a href="../Posts/project_breakdown_number_game.html">Read More &nbsp<i class="fas fa-arrow-right fa-xs icon-chev"></i>
                         </a>
                     </div>
                 </div>
-                <div class="blogpost-description">
-                    <p>The first of many "Project Breakdowns" to come. In the first, I discuss my project The Number Game, and refactor the vanilla JavaScript code into one that is jQuery-heavy.</p>
-                </div>
-                <div class="blogpost-readmore">
-                    <a href="../Posts/project_breakdown_number_game.html">Read More &nbsp<i class="fas fa-arrow-right fa-xs icon-chev"></i>
-                    </a>
-                </div>
-            </div>
+            </section>
 
-            <!-- Pagination (for when I need it) -->
-            <!--
-            <nav aria-label="Page navigation example" class="pag">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            -->
         </div>
 
         <!-- Sidebar -->

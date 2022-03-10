@@ -16,6 +16,37 @@ body, html {
     scroll-padding-top: 70px;
 }
 
+/* To Top button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(21, 21, 21, 0.842); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease;
+    border-radius: 150px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
+}
+  
+#myBtn:hover {
+    color: white !important;
+    transition: 0.5s ease;
+    background-color:#08c99f; /* Add a dark-grey background on hover */
+}
+
+.fa-hand-point-up {
+    font-size: 20px;
+}
+
 body {
     height: 100%;
 }
@@ -57,7 +88,6 @@ a:hover {
 .breadcrumb-item + .active {
     cursor: default;
 }
-
 
 header {
     height: 65vh;

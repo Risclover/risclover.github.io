@@ -45,6 +45,10 @@ a:hover {
     color: #08c99f !important;
 }
 
+.main-content {
+    padding-left: 40px;
+}
+
 header {
     height: 65vh;
     width: 100%;
@@ -141,6 +145,7 @@ main {
     transition: .4s;
     font-family: 'Norican', sans-serif;
     color: white;
+    margin-top: 0;
     font-weight: 500;
     font-size: 2rem;
 }
