@@ -50,29 +50,56 @@
 
     <!-- Main page content -->
     <main>
+        <!-- Description -->
         <div class="container mb-4">
             <p contenteditable="true">This is my portfolio, where I showcase all of the projects I'm proud of. If you hover over an image and click on the "View" icon (with an eye icon), you'll find additional information including the languages, frameworks, and tools used to create the project, and links to the project's blog post (where I discuss the code), the Github repo containing the project's source code, and a live demo of the project itself. If you have any questions or comments about a project, feel free to message me via the <a href="contact.html">Contact</a> page!</p>
         </div>
+
         <div class="container">
 
-            <!-- Portfolio categories -->
-            <div class="categories">
-                <button class="portfolio-category category-active" id="show-categories">Show All</button>
-                <button class="portfolio-category" id="category-HTML">HTML</button>
-                <button class="portfolio-category" id="category-CSS">CSS</button>
-                <button class="portfolio-category" id="category-JS">JavaScript</button>
-                <button class="portfolio-category" id="category-JQ">jQuery</button>
-                <button class="portfolio-category" id="category-BS">Bootstrap</button>
-                <button class="portfolio-category" id="category-SQL">SQL</button>
-                <button class="portfolio-category" id="category-PHP">PHP</button>
-            </div>
+<!-- Portfolio categories -->
+<div id="filters">
+    <!-- Types -->
+    <div class="categories">
+        <input type="radio" class="btn-check" name="type" id="type1" autocomplete="off" tabindex="0" value="all" checked>
+        <label class="btn" for="type1">Show All</label>
+        
+        <input type="radio" tabindex="0" class="btn-check"  name="type" id="type2" value="Games" autocomplete="off">
+        <label class="btn" for="type2">Games</label>
+        
+        <input type="radio" tabindex="0" class="btn-check"  name="type" id="type3" value="Tools" autocomplete="off">
+        <label class="btn" for="type3">Tools</label>
+        
+        <input type="radio" class="btn-check" name="type" id="type4" value="Webpages" autocomplete="off">
+        <label class="btn" for="type4">Webpages</label>
+    </div>
 
+    <!-- Languages -->
+    <div class="categories">
+        <input type="radio" class="btn-check" name="languages" id="language1" autocomplete="off" tabindex="0" value="all" checked>
+        <label class="btn" for="language1">Show All</label>
+        
+        <input type="radio" tabindex="0" class="btn-check" name="languages" id="language2" value="HTML" autocomplete="off">
+        <label class="btn" for="language2">HTML</label>
+        
+        <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language3" value="CSS" autocomplete="off">
+        <label class="btn" for="language3">CSS</label>
+        
+        <input type="radio" class="btn-check" name="languages" id="language4" value="JavaScript" autocomplete="off">
+        <label class="btn" for="language4">JavaScript</label>
 
+        <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language5" value="Bootstrap" autocomplete="off">
+        <label class="btn" for="language5">Bootstrap</label>
+        
+        <input type="radio" class="btn-check" name="languages" id="language6" value="jQuery" autocomplete="off">
+        <label class="btn" for="language6">jQuery</label>
+    </div>
+</div>
             <!-- Portfolio projects -->
             <div class="portfolio-projects">
 
                 <!-- Project: Counter -->
-                <div class="content HTML CSS JavaScript jQuery" tabindex="0">
+                <div class="content HTML CSS JavaScript jQuery Tools" tabindex="0">
                     <a href="#" data-toggle="modal" data-target="#counter-modal">
                     <div class="content-overlay"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/Counter.png" data-alt="Test">
@@ -86,7 +113,7 @@
                 </div>
 
                 <!-- Project: Calculator -->
-                <div class="content HTML CSS JavaScript" tabindex="0" data-toggle="modal" data-target="#calculator-modal" id="content1">
+                <div class="content HTML CSS JavaScript Tools" tabindex="0" data-toggle="modal" data-target="#calculator-modal" id="content1">
                     <a href="#" data-toggle="modal" data-target="#calculator-modal">
                     <div class="content-overlay" id="overlaya"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/calculator.png" data-alt="Calculator">
@@ -100,7 +127,7 @@
                 </div>
                 
                 <!-- Project: Etch-a-Sketch -->
-                <div class="content HTML CSS JavaScript" tabindex="0">
+                <div class="content HTML CSS JavaScript Games" tabindex="0">
                     <a href="#" data-toggle="modal" data-target="#etchasketch-modal">
                     <div class="content-overlay"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/etch-a-sketch.png" data-alt="Etch-a-Sketch">
@@ -115,7 +142,7 @@
                 </div>
 
                 <!-- Project: Product Landing Page -->
-                <div class="content HTML CSS JavaScript" tabindex="0">
+                <div class="content HTML CSS JavaScript Webpages" tabindex="0">
                     <a href="#" data-toggle="modal" data-target="#productpage-modal">
                     <div class="content-overlay"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/product-landing-page.png" data-alt="Product Landing Page">
@@ -129,7 +156,7 @@
                 </div>
 
                 <!-- Project: The Number Game -->
-                <div class="content HTML CSS JavaScript jQuery" tabindex="0">
+                <div class="content HTML CSS JavaScript jQuery Games" tabindex="0">
                     <a href="#" data-toggle="modal" data-target="#numbergame-modal">
                     <div class="content-overlay"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/The-Number-Game.png" data-alt="Number Guessing Game">
@@ -143,7 +170,7 @@
                 </div>
 
                 <!-- Project: A Tribute to Muse -->
-                <div class="content HTML CSS JavaScript" tabindex="0">
+                <div class="content HTML CSS JavaScript Webpages" tabindex="0">
                     <a href="#" data-toggle="modal" data-target="#muse-modal">
                     <div class="content-overlay"></div>
                     <img class="content-image portfolio-img" src="../images/portfolio_images/Muse.png" data-alt="A Tribute to Muse">

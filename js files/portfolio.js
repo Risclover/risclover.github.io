@@ -1,12 +1,12 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+/* var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
 // Modal system begins //
 
-/* Link to all modals, all modal buttons, all close buttons, all 
-captions, all portfolio images, and all modal images. */
+// Link to all modals, all modal buttons, all close buttons, all 
+captions, all portfolio images, and all modal images.
 let modal = document.querySelectorAll('.img-modal');
 let btn = document.querySelectorAll('.modalbtn-icon');
 let span = document.getElementsByClassName('close');
@@ -18,10 +18,10 @@ let modalImages = document.getElementsByClassName('modalimg');
 // Modal system ends
 
 
-// Category filtering system begins //
+// Single Category filtering system begins //
 
-/* Link to each category button individually as well as all as a 
-whole, plus the portfolio divs. */
+// Link to each category button individually as well as all as a 
+whole, plus the portfolio divs. 
 const categoryHTML = document.getElementById('category-HTML');
 const categoryCSS = document.getElementById('category-CSS');
 const categoryJS = document.getElementById('category-JS');
@@ -30,21 +30,25 @@ const categoryBS = document.getElementById('category-BS');
 const showAll = document.getElementById('show-categories');
 const portfolioDivs = document.querySelectorAll('.content');
 const categoryBtns = document.querySelectorAll('.portfolio-category');
-
+const categoryBtns2 = document.querySelectorAll('.portfolio-category2');
+const showAll2 = document.getElementById('show-categories2')
+const categoryGames = document.getElementById('category-games');
+const categoryTools = document.getElementById('category-tools');
+const categoryWeb = document.getElementById('category-web'); 
 
 // When the HTML button is clicked...
 categoryHTML.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it. 
     categoryBtns.forEach((categoryBtn) => {
         if(categoryBtn.classList.contains("category-active")) {
             categoryBtn.classList.remove('category-active');
         }
     })
 
-    /* For each portfolio div, for each div that contains the 
-    HTML class, show it. Otherwise, hide it. */
+    // For each portfolio div, for each div that contains the 
+    HTML class, show it. Otherwise, hide it. 
     portfolioDivs.forEach((portfolioDiv) => {
       if(portfolioDiv.classList.contains("HTML")) {
           portfolioDiv.classList.remove("portfoliohide");
@@ -62,17 +66,17 @@ categoryHTML.addEventListener('click', function() {
 
 // When the CSS button is clicked...
 categoryCSS.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling 
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it. 
     categoryBtns.forEach((categoryBtn) => {
         if(categoryBtn.classList.contains("category-active")) {
             categoryBtn.classList.remove('category-active');
         }
     })
 
-    /* For each portfolio div, for each div that contains the CSS 
-    class, show it. Otherwise, hide it. */
+    // For each portfolio div, for each div that contains the CSS 
+    class, show it. Otherwise, hide it.  
     portfolioDivs.forEach((portfolioDiv) => {
       if(portfolioDiv.classList.contains("CSS")) {
           portfolioDiv.classList.remove("portfoliohide");
@@ -89,17 +93,17 @@ categoryCSS.addEventListener('click', function() {
 
 // When the JavaScript button is clicked...
 categoryJS.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling 
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it.  
     categoryBtns.forEach((categoryBtn) => {
         if(categoryBtn.classList.contains("category-active")) {
             categoryBtn.classList.remove('category-active');
         }
     })
 
-    /* For each portfolio div, for each div that contains the 
-    JavaScript class, show it. Otherwise, hide it. */
+    // For each portfolio div, for each div that contains the 
+    JavaScript class, show it. Otherwise, hide it.  
     portfolioDivs.forEach((portfolioDiv) => {
       if(portfolioDiv.classList.contains("JavaScript")) {
           portfolioDiv.classList.remove("portfoliohide");
@@ -117,17 +121,17 @@ categoryJS.addEventListener('click', function() {
 
 // When the jQuery button is clicked...
 categoryJQ.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling 
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it.  
     categoryBtns.forEach((categoryBtn) => {
         if(categoryBtn.classList.contains("category-active")) {
             categoryBtn.classList.remove('category-active');
         }
     })
 
-    /* For each portfolio div, for each div that contains the JQ 
-    class, show it. Otherwise, hide it. */
+    // For each portfolio div, for each div that contains the JQ 
+    class, show it. Otherwise, hide it.  
     portfolioDivs.forEach((portfolioDiv) => {
       if(portfolioDiv.classList.contains("jQuery")) {
           portfolioDiv.classList.remove("portfoliohide");
@@ -145,17 +149,17 @@ categoryJQ.addEventListener('click', function() {
 
 // When the Bootstrap button is clicked...
 categoryBS.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling 
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it.  
     categoryBtns.forEach((categoryBtn) => {
         if(categoryBtn.classList.contains("category-active")) {
             categoryBtn.classList.remove('category-active');
         }
     })
 
-    /* For each portfolio div, for each div that contains the BS 
-    class, show it. Otherwise, hide it. */
+    // For each portfolio div, for each div that contains the BS 
+    class, show it. Otherwise, hide it.  
     portfolioDivs.forEach((portfolioDiv) => {
       if(portfolioDiv.classList.contains("Bootstrap")) {
           portfolioDiv.classList.remove("portfoliohide");
@@ -173,15 +177,15 @@ categoryBS.addEventListener('click', function() {
 
 // When the 'Show All' button is clicked...
 showAll.addEventListener('click', function() {
-    /* For each category button, if they have the 
+    // For each category button, if they have the 
     "category-active" class (which gives them different styling 
-    to indicate that it's the active category), remove it. */
+    to indicate that it's the active category), remove it.  
     categoryBtns.forEach((categoryBtn) => {
         categoryBtn.classList.remove("category-active");
     })
 
-    /* For each portfolio div, remove the "hide" class and add 
-    the "show" class, regardless of which div it is. */
+    // For each portfolio div, remove the "hide" class and add 
+    the "show" class, regardless of which div it is.  
     portfolioDivs.forEach((portfolioDiv) => {
         portfolioDiv.classList.remove("portfoliohide");
         portfolioDiv.classList.add("portfolioshow");
@@ -191,8 +195,68 @@ showAll.addEventListener('click', function() {
     showAll.classList.add("category-active");
 })
 
-// Category filtering system ends //
+categoryGames.addEventListener('click', function() {
+    categoryBtns2.forEach((categoryBtn) => {
+        if(categoryBtn.classList.contains('category-active')) {
+            categoryBtn.classList.remove('category-active');
+        }
+    })
+    portfolioDivs.forEach((portfolioDiv) => {
+        if(portfolioDiv.classList.contains("game")) {
+            portfolioDiv.classList.remove('portfoliohide');
+            portfolioDiv.classList.add('portfolioshow');
+        } else {
+            portfolioDiv.classList.remove('portfolioshow');
+            portfolioDiv.classList.add('portfoliohide');
+        }
+    })
+    categoryGames.classList.add('category-active');
+})
 
+showAll2.addEventListener('click', function() {
+    categoryBtns2.forEach((categoryBtn) => {
+        categoryBtn.classList.remove('category-active');
+    });
+
+    portfolioDivs.forEach((portfolioDiv) => {
+        portfolioDiv.classList.remove('portfoliohide');
+        portfolioDiv.classList.add('portfolioshow');
+    })
+
+    showAll2.classList.add('category-active');
+})
+
+// Single Category filtering system ends //
+
+
+
+// Dual Category filtering system begins //
+
+// Category 1
+const categoryHTML = document.getElementById('category-HTML');
+const categoryCSS = document.getElementById('category-CSS');
+const categoryJS = document.getElementById('category-JS');
+const categoryJQ = document.getElementById('category-JQ');
+const categoryBS = document.getElementById('category-BS');
+const showAll = document.getElementById('show-categories');
+const categoryBtns = document.querySelectorAll('.portfolio-category');
+
+// Category 2
+const categoryBtns2 = document.querySelectorAll('.portfolio-category2');
+const showAll2 = document.getElementById('show-categories2')
+const categoryGames = document.getElementById('category-games');
+const categoryTools = document.getElementById('category-tools');
+const categoryWeb = document.getElementById('category-web');
+
+// General
+const portfolioDivs = document.querySelectorAll('.content');
+
+
+categoryBtns.forEach((categoryBtn) => {
+    categoryBtns2.forEach((categoryBtn2) => {
+        
+    })
+})
 
 // Modals for portfolio projects //
 const focusA = document.getElementById('focusa');
@@ -210,3 +274,16 @@ if(document.activeElement === "overlayA") {
       }  
     })
 }
+
+ 
+*/
+
+function filterSelection() {
+	const filteredClasses = $("#filters :checked").get().map(el => '.' + el.value).filter(cls => cls !== '.all').join('');
+	$(".content").hide();
+	$(".content" + filteredClasses).show();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	$("#filters").change(filterSelection);
+});
