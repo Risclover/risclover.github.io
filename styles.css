@@ -29,6 +29,27 @@ a:hover {
     text-decoration: none;
 }
 
+}
+
+.tinydetails p {
+    font-size: .9rem;
+}
+
+.blogdate, .blogcategory {
+    margin: 0 5px;
+}
+
+.bloglink {
+    text-decoration: none;
+    color: #353535;
+    display: flex;
+    align-items: center;
+}
+
+.bloglink:hover {
+    color:rgb(8, 201, 159);
+}
+
 
 .breadcrumb-item {
     font-size: .8rem;

@@ -1,5 +1,9 @@
 const navLinks = document.querySelectorAll(".navlink");
 
+navLinks.forEach(navlink => {
+  navlink.classList.add('me-4');
+})
+
 function scrollFunction() {
   let mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -10,7 +14,8 @@ function scrollFunction() {
     document.getElementById("navbar").style.backgroundColor = "hsl(0, 0%, 99%)";
     document.getElementById("navbar").style.borderBottom = "1px solid #cccccc";
     navLinks.forEach((navlink) => {
-        navlink.style.color = "black";
+        navlink.classList.remove('text-white');
+        navlink.classList.add('text-dark');
         navlink.style.fontSize = ".8rem";
     })
   } else {
@@ -21,10 +26,10 @@ function scrollFunction() {
     document.getElementById("logo").style.color = "white";
     document.getElementById("navbar").style.borderBottom = "none";
     navLinks.forEach((navlink) => {
-        navlink.style.color = "white";
+        navlink.classList.remove('text-dark');
+        navlink.classList.add('text-white');
         navlink.style.fontSize = ".8rem";
         navlink.style.marginRight = "30px";
-        navlink.style.marginTop = "4px";
     })
   }
 }

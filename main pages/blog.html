@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blog | Home</title>
 
     <!-- Google Fonts -->
@@ -14,65 +15,86 @@
     <!-- CSS Stylesheets -->
     <link href="../stylesheets/Bootstrap/bootstrap.css" rel="stylesheet"> <!-- Bootstrap -->
     <link href="../stylesheets/Bootstrap/bootstrap-theme.css" rel="stylesheet"> <!-- Bootstrap -->
-    <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
     <link href="../stylesheets/blog.css" rel="stylesheet"> <!-- Individual -->
     <link href="../stylesheets/blog-sidebar.css" rel="stylesheet"> <!-- Sidebar -->
+    <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
+
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <div id="navbar">
-                <h2 id="logo">Sara Dunlop</h2>
-                <div id="navbar-right">
-                    <a class="navlink" href="../index.html">Home</a>
-                    <a class="navlink" href="../index.html#About">About</a>
-                    <a class="navlink" href="../main pages/portfolio.html">Portfolio</a>
-                    <a class="navlink active" href="#">Blog</a>
-                    <a class="navlink" href="#">Contact</a>
-                </div>
+            <!-- Website logo/title -->
+            <h2 id="logo">Sara Dunlop</h2>
+
+            <!-- Navigation links -->
+            <div id="navbar-right">
+                <a class="navlink" href="../index.html">Home</a>
+                <a class="navlink" href="../index.html#About">About</a>
+                <a class="navlink" href="../main pages/portfolio.html">Portfolio</a>
+                <a class="navlink active" href="#">Blog</a>
+                <a class="navlink" href="#">Contact</a>
+            </div>
         </div>
     </nav>
 
+    <!-- Header -->
     <header>
+        <!-- Page title -->
         <h1>Blog Home</h1>
+
+        <!-- Breadcrumbs -->
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
             <li class="breadcrumb-item active">Blog</li>
         </ol>
     </header>
     
+    <!-- Page content -->
     <main>
         <div class="pagecontent">
-
             <!-- Blog posts -->
             <div class="blogpost-container">
 
                 <!-- Blog post -->
                 <section>
                 <div class="blogpost">
+                    <!-- Blog image -->
                     <a href="../blog/Posts/project_breakdown_number_game.html">
                         <div class="blogpost-image">
                             <img src="../images/portfolio_images/The-Number-Game.png" class="blogpost-image">
                         </div>
                     </a>
+
+                    <!-- Blog header (title, date, category) -->
                     <div class="blogpost-header">
+                        <!-- Blog title -->
                         <h2 class="blogtitle"><a href="../blog/Posts/project_breakdown_number_game.html">Project Breakdown: The Number Game</a></h2>
+
+                        <!-- Date/category bar -->
                         <div class="tinydetails">
+                            <!-- Date -->
                             <a href="#" class="bloglink">
                                 <i class="far fa-clock fa-sm"></i>
                                 <p class="blogdate">26 February, 2022</p>
                             </a>
-                            <a href="#" class="bloglink">
+                            <!-- Category -->
+                            <a href="../blog/Categories/project_breakdown.html" class="bloglink">
                                 <i class="fas fa-folder fa-sm blogcat"></i>
                                 <p class="blogcategory">Project Breakdown</p>
                             </a>
                         </div>
                     </div>
+
+                    <!-- Blog preview description -->
                     <div class="blogpost-description">
                         <p>The first of many "Project Breakdowns" to come. In the first, I discuss my project The Number Game, and refactor the vanilla JavaScript code into one that is jQuery-heavy.</p>
                     </div>
+
+                    <!-- Read more link -->
                     <div class="blogpost-readmore">
                         <a href="../blog/Posts/project_breakdown_number_game.html">Read More &nbsp<i class="fas fa-arrow-right fa-xs icon-chev"></i>
                         </a>
@@ -83,24 +105,35 @@
                 <!-- Blog post -->
                 <section>
                 <div class="blogpost">
+                    <!-- Blog image -->
                     <a href="../blog/Posts/code_discussion_portfolio_categories.html">
                         <div class="blogpost-image">
                             <img src="../blog/Images/Headers/Code Discussion.png" class="blogpost-image">
                         </div>
                     </a>
+
+
+                    <!-- Blog header (title, date, category) -->
                     <div class="blogpost-header">
+                        <!-- Blog title -->
                         <h2 class="blogtitle"><a href="../blog/Posts/code_discussion_portfolio_categories.html">Code Discussion: Portfolio Categories</h2>
+
+                        <!-- Date/category bar -->
                         <div class="tinydetails">
+                            <!-- Date -->
                             <a href="#" class="bloglink">
                                 <i class="far fa-clock fa-sm"></i>
                                 <p class="blogdate">10 February, 2022</p>
                             </a>
+                            <!-- Category -->
                             <a href="../blog/Categories/code_discussion.html" class="bloglink">
                                 <i class="fas fa-folder fa-sm blogcat"></i>
                                 <p class="blogcategory">Code Discussions</p>
                             </a>
                         </div>
                     </div>
+
+                    <!-- Blog post preview description -->
                     <div class="blogpost-description">
                         <p>Hello! Thanks for visiting my personal website. My name is Sara Dunlop, and I am an aspring computer programmer.
                         </p>
@@ -108,6 +141,8 @@
                             My late father was a computer programmer. . .
                         </p>
                     </div>
+
+                    <!-- Read more link -->
                     <div class="blogpost-readmore">
                         <a href="../blog/Posts/code_discussion_portfolio_categories.html">Read More &nbsp<i class="fas fa-arrow-right fa-xs icon-chev"></i>
                         </a>
@@ -163,90 +198,95 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Pagniation for when we're ready to use it -->
-                <!--
-                <nav aria-label="Page navigation example" class="pag">
-                    <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                    </ul>
-                </nav>
-                -->
             </div>
 
             <!-- Sidebar -->
             <aside>
-            <div class="blogsidebar">
-                <div class="searchstuff">
-                    <input type="text" placeholder="Search.." class="sidebarsearch">
-                    <button class="searchbtn"><i class="fas fa-search"></i></button>
-                </div>
-                <div class="categories">
-                    <h3 class="cattitle">Categories</h3>
-                    <div class="categoryitems">
+                <div class="blogsidebar">
+                    <!-- Search bar -->
+                    <div class="searchstuff">
+                        <input type="text" placeholder="Search.." class="sidebarsearch">
+                        <button class="searchbtn"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="categories">
+                        <h3 class="cattitle">Categories</h3>
+                        <div class="categoryitems">
+                            <ul>
+                                <li>
+                                    <a href="../blog/Categories/code_discussion.html">Code Discussions (<span class="categorycount">1</span>)</a>
+                                </li>
+                                <li>   
+                                    <a href="../blog/Categories/personal.html">Personal (<span class="categorycount">1</span>)</a>
+                                </li>
+                                <li>
+                                    <a href="../blog/Categories/project_breakdown.html">Project Breakdowns (<span class="categorycount">1</span>)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Related/Recent -->
+                    <div class="categories">
+                        <h3 class="cattitle">Related/Recent</h3>
+                        <div class="categoryitems">
                         <ul>
                             <li>
-                                <a href="../blog/Categories/code_discussion.html">Code Discussions (<span class="categorycount">1</span>)</a>
-                            </li>
-                            <li>   
-                                <a href="../blog/Categories/personal.html">Personal (<span class="categorycount">1</span>)</a>
+                                <a href="../blog/Posts/project_breakdown_number_game.html" class="relateditem">Project Breakdown: The Number Game</a>
                             </li>
                             <li>
-                                <a href="../blog/Categories/project_breakdown.html">Project Breakdowns (<span class="categorycount">1</span>)</a>
+                                <a href="../blog/Posts/code_discussion_portfolio_categories.html" class="relateditem">Code Discussion: Portfolio Categories</a>
+                            </li>
+                            <li>
+                                <a href="../blog/Posts/introduction.html" class="relateditem">Introduction (First Blog Post!)</a>
                             </li>
                         </ul>
+                        </div>
+                    </div>
+
+                    <!-- Archives -->
+                    <div class="categories">
+                        <h3 class="cattitle">Archives</h3>
+                        <div class="categoryitems">
+                            <ul>
+                                <li>
+                                    <a href="../blog/Archives/february.html">February 2022 (<span class="categorycount">2</span>)</a>
+                                </li>
+                                <li>
+                                    <a href="../blog/Archives/january.html">January 2022 (<span class="categorycount">1</span>)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tag cloud -->
+                    <div class="categories">
+                        <h3 class="cattitle">Tags</h3>
+                        <a href="../blog/Tags/programming_journey.html" class="blogtag">Programming Journey</a>
+                        <a href="../blog/Tags/learning.html" class="blogtag">Learning</a>
+                        <a href="../blog/Tags/personal.html" class="blogtag">Personal</a>
+                        <a href="../blog/Tags/javascript.html" class="blogtag">JavaScript</a>
+                        <a href="../blog/Tags/jquery.html" class="blogtag">jQuery</a>
+                        <a href="../blog/Tags/code_refactoring.html" class="blogtag">Code Refactoring</a>
                     </div>
                 </div>
-                <div class="categories">
-                    <h3 class="cattitle">Related/Recent</h3>
-                    <div class="categoryitems">
-                    <ul>
-                        <li>
-                            <a href="../blog/Posts/project_breakdown_number_game.html" class="relateditem">Project Breakdown: The Number Game</a>
-                        </li>
-                        <li>
-                            <a href="../blog/Posts/code_discussion_portfolio_categories.html" class="relateditem">Code Discussion: Portfolio Categories</a>
-                        </li>
-                        <li>
-                            <a href="../blog/Posts/introduction.html" class="relateditem">Introduction (First Blog Post!)</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="categories">
-                    <h3 class="cattitle">Archives</h3>
-                    <div class="categoryitems">
-                        <ul>
-                            <li>
-                                <a href="../blog/Archives/february.html">February 2022 (<span class="categorycount">2</span>)</a>
-                            </li>
-                            <li>
-                                <a href="../blog/Archives/january.html">January 2022 (<span class="categorycount">1</span>)</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="categories">
-                    <h3 class="cattitle">Tags</h3>
-                    <a href="../blog/Tags/programming_journey.html" class="blogtag">Programming Journey</a>
-                    <a href="../blog/Tags/learning.html" class="blogtag">Learning</a>
-                    <a href="../blog/Tags/personal.html" class="blogtag">Personal</a>
-                    <a href="../blog/Tags/javascript.html" class="blogtag">JavaScript</a>
-                    <a href="../blog/Tags/jquery.html" class="blogtag">jQuery</a>
-                    <a href="../blog/Tags/code_refactoring.html" class="blogtag">Code Refactoring</a>
-                </div>
-            </div>
             </aside>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <small>Copyright © 2022 Sara Dunlop. All Rights Reserved. <br>Visit me on Github! <a href="#">Risclover</a></small>
+        <small>
+            <a href="legal pages/privacypolicy.html"> Privacy Policy </a> | 
+            <a href="legal pages/termsandconditions.html"> Terms and Conditions </a> | 
+            <a href="legal pages/dmcapolicy.html">DMCA Policy</a> | 
+            <a href="legal pages/cookiepolicy.html"> Cookie Policy </a> | 
+            <a href="legal pages/disclaimer.html">Disclaimer</a>
+        </small>
+        <a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i></a>
+    </footer>
 
     <!-- JS Scripts -->
     <script src="../js files/script.js"></script>

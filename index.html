@@ -21,7 +21,6 @@
     <link href="./stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
     <link href="./stylesheets/home.css" rel="stylesheet"> <!-- Individual -->
 
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
 
@@ -38,28 +37,39 @@
 
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
-    <div id="navbar">
-        <h2 id="logo">Sara Dunlop</h2>
-        <div id="navbar-right">
-            <a class="active navlink" href="#">Home</a>
-            <a class="navlink" href="#About">About</a>
-            <a class="navlink" href="main pages/portfolio.html">Portfolio</a>
-            <a class="navlink" href="main pages/blog.html">Blog</a>
-            <a class="navlink" href="#">Contact</a>
+        <div id="navbar">
+            <!-- Website logo/title -->
+            <h2 id="logo">Sara Dunlop</h2>
+
+            <!-- Navigation links -->
+            <div id="navbar-right">
+                <a class="active navlink" href="#">Home</a>
+                <a class="navlink" href="#About">About</a>
+                <a class="navlink" href="main pages/portfolio.html">Portfolio</a>
+                <a class="navlink" href="main pages/blog.html">Blog</a>
+                <a class="navlink" href="#">Contact</a>
+            </div>
         </div>
-    </div>
     </nav>
+
+    <!-- Header -->
     <header>
+        <!-- Page greeting -->
         <h2>Hi, I'm Sara. Nice to meet you!</h2>
+        <!-- About me -->
         <div class="aboutmebox">
             <p class="aboutme">
                 Based in California, I'm 29-year-old with passions for gaming, writing, learning, and coding. After spending my entire life at the keyboard, I realized that programming is what I want to do for the rest of my life, and began treating it professionally about 6 months ago. This website serves as a hub for recent projects, and you can find personal pieces about my projects and my learning processes in my blog. I'm intelligent and friendly, and you won't regret making me the next addition to your team!
             </p>
+            <a href="main pages/portfolio.html" id="portfoliobtn">Go to Portfolio <i class="fas fa-caret-right fa-lg"></i></a>
         </div>
-        <a href="main pages/portfolio.html" id="portfoliobtn">Go to Portfolio <i class="fas fa-caret-right fa-lg"></i></a>
     </header>
+
+    <!-- Page content -->
     <main>
+        <!-- Sara's Skills -->
         <section class="about-section">
             <h2>Sara's Skills</h2>
             <hr class="sep-3">
@@ -76,6 +86,7 @@
             </div>
         </section>
 
+        <!-- Recent Posts -->
         <section class="blog-section">
             <h2>Recent Posts</h2>
             <hr class="sep-3">
@@ -88,16 +99,20 @@
                             <div>
                                 <div class="blogpost-box-head">
                                     <a href="blog/Posts/project_breakdown_number_game.html"><h3 class="blogpost-box-title">Project Breakdown: The Number Game</h3></a>
+                                    <!-- Date/category bar -->
                                     <div class="blogpost-box-tinydetails">
+                                        <!-- Date -->
                                         <a href="#" class="bloglink">
-                                            <i class="far fa-clock fa-sm bloglink-icon"></i>
+                                            <i class="far fa-clock fa-sm"></i>
                                             <p class="blogdate">26 February, 2022</p>
                                         </a>
-                                        <a href="#" class="bloglink">
-                                            <i class="fas fa-folder fa-sm blogcat bloglink-icon"></i>
+                                        <!-- Category -->
+                                        <a href="../blog/Categories/project_breakdown.html" class="bloglink">
+                                            <i class="fas fa-folder fa-sm blogcat"></i>
                                             <p class="blogcategory">Project Breakdown</p>
                                         </a>
                                     </div>
+
                                 </div>
                                 <div class="blogpost-box-description">
                                     <p>The first of many "Project Breakdowns" to come. In the first, I discuss my project The Number Game, and refactor the vanilla JavaScript code into one that is jQuery-heavy.</p>
@@ -171,8 +186,18 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>Created by <a href="#">Risclover</a></p>
+        <small>Copyright © 2022 Sara Dunlop. All Rights Reserved. <br>Visit me on Github! <a href="#">Risclover</a></small>
+        <small class="ms-3">
+            <a href="#">Sitemap</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms and Conditions</a> |
+            <a href="#">More Legal Documents</a>
+
+        </small>
+        <a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i></a>
     </footer>
 
     <!-- JS Scripts -->

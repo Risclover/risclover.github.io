@@ -8,7 +8,12 @@ body, html {
     font-family: 'Noto Sans', sans-serif;
     line-height: 161.8%;
     min-height: 100vh;
-    background-color: #fcfcfc;
+    background: rgb(7, 29, 58);  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(120deg, #2a9688c2 0%, rgba(1, 15, 48, 0.815) 90%);
+    background: linear-gradient(120deg, #2a9688 0%, rgba(1, 15, 48, 0.809) 90%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     scroll-behavior: smooth;
     color: black;
     font-size: 1rem;
@@ -16,12 +21,37 @@ body, html {
     scroll-padding-top: 70px;
 }
 
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+.tinydetails p {
+    font-size: .9rem;
+}
+
+.blogdate, .blogcategory {
+    margin: 0 5px;
+}
+
+.bloglink {
+    text-decoration: none;
+    color: #353535;
+    display: flex;
+    align-items: center;
+}
+
+.bloglink:hover {
+    color:rgb(8, 201, 159);
+}
+
+
 /* To Top button */
 
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 15px; /* Place the button at the bottom of the page */
+    bottom: 45px; /* Place the button at the bottom of the page */
     right: 40px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -71,7 +101,7 @@ a:hover {
  }
 
 .breadcrumb-item {
-    font-size: .8rem;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: white;
@@ -79,6 +109,10 @@ a:hover {
 
 .breadcrumb-item a {
     color: white;
+}
+
+.breadcrumb-item a:hover {
+    color:#08c99f !important;
 }
 
 .breadcrumb-item:hover {
@@ -92,7 +126,6 @@ a:hover {
 header {
     height: 65vh;
     width: 100%;
-    background-color:rgb(44, 50, 68);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,11 +133,6 @@ header {
     color: rgb(243, 243, 243);
     overflow: hidden;
     position: relative;
-    background: rgb(7, 29, 58);  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(120deg, #2a9688 0%, rgb(1, 15, 48) 90%);
-    background: linear-gradient(120deg, #2a9688 0%, rgb(1, 15, 48) 90%); /* The least supported option. */
-    background-size: cover;
-    word-wrap: wrap;
 }
 
 header img {
@@ -148,7 +176,17 @@ h3 {
     font-weight: 700;
 }
 
+.navbar-toggler {
+    color: black;
+}
 
+.navbar {
+    transition: .5s ease;
+}
+
+.navlink {
+    font-size: .9rem !important;
+}
 #navbar {
     background: none;
     width: 100%;
@@ -159,7 +197,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: .4s;
+    transition: .5s;
     margin: 0;
     color: white;
 }
@@ -206,13 +244,92 @@ main {
 footer {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     background-color: rgba(14, 32, 36, 0.281);
     position: sticky;
     z-index: 100;   
     color: white;
-    font-size: .9rem;
-    padding: 5px;
+    font-size: .8rem;
+    padding: 10px 20px 20px 20px;
+    padding-bottom: 5px;
+}
+
+
+footer a {
+    color: #08c99f !important;
+    transition: 0.5s ease;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+footer p {
+    margin-left: 15px;
+}
+
+
+
+/* Small mobile view */
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: hsla(189, 60%, 17%, 0.61);
+        padding-left: 10px;
+    }
+    button:active {
+        outline: none;
+    }
+    button:focus {
+        outline: none;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    small {
+        margin-bottom: 10px;
+    }
+
+    header {
+        height: 35vh;
+    }
+
+    header h1 {
+        margin-top: 50px;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+/* Large mobile view */
+@media (min-width: 481px) and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Tablet view? */
+@media (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        align-items: center;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    footer {
+        align-items: center;
+    }
+}
+
+/* Television/large desktop view */
+@media (min-width: 1201px) {
+    footer {
+        align-items: center;
+    }
 }

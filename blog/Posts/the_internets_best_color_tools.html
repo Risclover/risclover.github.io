@@ -14,27 +14,37 @@
     <!-- CSS Stylesheets -->
     <link href="../../stylesheets/Bootstrap/bootstrap.css" rel="stylesheet"> <!-- Bootstrap -->
     <link href="../../stylesheets/Bootstrap/bootstrap-theme.css" rel="stylesheet"> <!-- Bootstrap -->
-    <link href="../../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
     <link href="../../stylesheets/blog.css" rel="stylesheet"> <!-- Individual -->
     <link href="../../stylesheets/blog-sidebar.css" rel="stylesheet"> <!-- Sidebar -->
+    <link href="../../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    <div id="navbar">
-        <h2 id="logo">Sara Dunlop</h2>
-        <div id="navbar-right">
-            <a class="navlink" href="../../index.html">Home</a>
-            <a class="navlink" href="../../index.html#About">About</a>
-            <a class="navlink" href="../../main pages/portfolio.html">Portfolio</a>
-            <a class="navlink active" href="../../main pages/blog.html">Blog</a>
-            <a class="navlink" href="#">Contact</a>
+    <!-- Navbar -->
+    <nav>
+        <div id="navbar">
+            <!-- Website logo/title -->
+            <h2 id="logo">Sara Dunlop</h2>
+            <!-- Navigation links -->
+            <div id="navbar-right">
+                <a class="navlink" href="../../index.html">Home</a>
+                <a class="navlink" href="../../index.html#About">About</a>
+                <a class="navlink" href="../../main pages/portfolio.html">Portfolio</a>
+                <a class="navlink active" href="../../main pages/blog.html">Blog</a>
+                <a class="navlink" href="#">Contact</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Header -->
     <header>
+        <!-- Page title -->
         <h1>The Internet's Best Color Tools</h1>
+        <!-- Breadcrumbs -->
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="../../main pages/blog.html">Blog</a></li>
@@ -42,26 +52,35 @@
         </ol>
     </header>
     
+    <!-- Page content -->
     <main>
         <div class="pagecontent">
+            <!-- Blog post -->
             <div class="blogpost">
+                <!-- Blog image -->
                 <div class="bloghead">
                     <img src="../Images/Headers/best_color_tools_head.png" class="blogimg" data-category="HTML, CSS,">
                 </div>
+                <!-- Blog -->
                 <div class="blogmain">
+                    <!-- Blog title -->
                     <h2 class="blogtitle">The Internet's Best Color Tools</h2>
+                    <!-- Date/Category bar -->
                     <div class="tinydetails">
+                        <!-- Date -->
                         <a href="#" class="bloglink">
                             <i class="far fa-clock fa-sm"></i>
                             <p class="blogdate">10 February, 2022</p>
                         </a>
+                        <!-- Category -->
                         <a href="../Categories/code_discussion.html" class="bloglink">
                             <i class="fas fa-folder fa-sm blogcat"></i>
                             <p class="blogcategory">Web Design</p>
                         </a>
                     </div>
+                    <!-- Main blog post content -->
                     <div class="blogtext">
-                        <p>I've discovered a fabulous website today, and that website is <a href="https://hexcolor.co/" target="_blank" class="blogpost-link">hexicolor.co</a>. Hexicolor.co assists you with finding colors in almost every way imaginable. It has a color palette generator, a color gradient generator, a page of gradient colors that look great, color inspiration/ideas, color extractors, and more!</p>
+                        <p>I've discovered a fabulous website today, and that website is <a href="https://hexcolor.co/" target="_blank" class="blogpost-link">hexcolor.co</a>. Hexcolor.co assists you with finding colors in almost every way imaginable. It has a color palette generator, a color gradient generator, a page of gradient colors that look great, color inspiration/ideas, color extractors, and more!</p>
 
                         <p><strong><em>That's cool, Sara, but why the hell do you care so much, you weirdo?</em></strong></p>
                          
@@ -87,6 +106,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- Blog post tag bar -->
                 <div class="tagbar">
                     <div class="maintagbar">
                         <a href="../Tags/programming_journey.html" class="maintag">Web Design</a>
@@ -100,6 +120,7 @@
                         <a href="https://www.youtube.com/channel/UCGwV3coXX8xWt4HTd0J6iPw" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <!-- Previous Post/Next Post buttons -->
                 <div class="backforward">
                     <div class="back">
                         <a href="./introduction.html">
@@ -118,10 +139,12 @@
 
         <!-- Sidebar -->
         <div class="blogsidebar">
+            <!-- Search bar -->
             <div class="searchstuff">
                 <input type="text" placeholder="Search.." class="sidebarsearch">
                 <button class="searchbtn"><i class="fas fa-search"></i></button>
             </div>
+            <!-- Categories -->
             <div class="categories">
                 <h3 class="cattitle">Categories</h3>
                 <div class="categoryitems">
@@ -138,6 +161,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Related/Recent -->
             <div class="categories">
                 <h3 class="cattitle">Related/Recent</h3>
                 <div class="categoryitems">
@@ -154,6 +178,7 @@
                 </ul>
                 </div>
             </div>
+            <!-- Archives -->
             <div class="categories">
                 <h3 class="cattitle">Archives</h3>
                 <div class="categoryitems">
@@ -167,6 +192,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Tag cloud -->
             <div class="categories">
                 <h3 class="cattitle">Tags</h3>
                 <a href="../Tags/programming_journey.html" class="blogtag">Programming Journey</a>
@@ -180,11 +206,19 @@
 
         </div>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p></p>
+        <small>Copyright © 2022 Sara Dunlop. All Rights Reserved. <br>Visit me on Github! <a href="#">Risclover</a></small>
+        <small>
+            <a href="../../legal pages/privacypolicy.html"> Privacy Policy </a> | 
+            <a href="../../legal pages/termsandconditions.html"> Terms and Conditions </a> | 
+            <a href="../../legal pages/dmcapolicy.html">DMCA Policy</a> | 
+            <a href="../../legal pages/cookiepolicy.html"> Cookie Policy </a> | 
+            <a href="../../legal pages/disclaimer.html">Disclaimer</a>
+        </small>
+        <a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i></a>
     </footer>
-
-
 
     <!-- JS Scripts -->
     <script src="../../js files/script.js"></script>
