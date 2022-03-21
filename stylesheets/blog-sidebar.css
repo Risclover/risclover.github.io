@@ -24,7 +24,7 @@
 
     border-right: none;
     font-size: .9rem;
-    caret-color:rgb(8, 201, 159);
+    caret-color:#08c99f;
 }
 
 .sidebarsearch::placeholder {
