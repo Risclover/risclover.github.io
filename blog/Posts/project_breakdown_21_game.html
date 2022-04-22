@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Project Breakdown: 21 Game</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marck+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Norican&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../../stylesheets/blog.css" rel="stylesheet"> <!-- Individual -->
+    <link href="../../stylesheets/blog-sidebar.css" rel="stylesheet"> <!-- Sidebar -->
+    <link href="../../stylesheets/styles.css" rel="stylesheet"> <!-- Main -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2b4114baf6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+    <div id="navbar">
+        <h2 id="logo">Sara Dunlop</h2>
+        <div id="navbar-right">
+            <a class="navlink" href="../../index.html">Home</a>
+            <a class="navlink" href="../../index.html#About">About</a>
+            <a class="navlink" href="../../main pages/portfolio.html">Portfolio</a>
+            <a class="navlink active" href="../../main pages/blog.html">Blog</a>
+            <a class="navlink" href="#">Contact</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Project Breakdown: 21 Game</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../main pages/blog.html">Blog</a></li>
+            <li class="breadcrumb-item active">Blog Post</li>
+        </ol>
+    </header>
+
+    <!-- Page content -->
+    <main>
+        <div class="pagecontent">
+
+            <!-- Blog posts -->
+            <div class="blogpost">
+
+                <!-- Blog image -->
+                <div class="bloghead">
+                    <img src="../../images/portfolio_images/21-game-screenshot.png" class="blogimg" data-category="HTML, CSS,">
+                </div>
+
+                <!-- Main blog stuff -->
+                <div class="blogmain">
+
+                    <!-- Blog title -->
+                    <h2 class="blogtitle" id="top">Project Breakdown: 21 Game</h2>
+
+                    <!-- Date and category -->
+                    <div class="tinydetails">
+                        <a href="#" class="bloglink">
+                            <i class="far fa-clock fa-sm"></i>
+                            <p class="blogdate">22 March, 2022</p>
+                        </a>
+                        <!-- Category -->
+                        <a href="../Categories/project_breakdown.html" class="bloglink">
+                            <i class="fas fa-folder fa-sm blogcat"></i>
+                            <p class="blogcategory">Project Breakdown</p>
+                        </a>
+                    </div>
+
+                    <!-- Blog post content -->
+                    <div class="blogtext">
+                        <h3>Table of Contents</h3>
+                        <ol class="blogpost-toc">
+                            <li>
+                                <a href="#introduction" class="blogpost-link">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#mistakes" class="blogpost-link">Making Mistakes</a>
+                            </li>
+                            <li>
+                                <a href="#working" class="blogpost-link">Working Code</a>
+                            </li>
+                            <li>
+                                <a href="#r-and-r" class="blogpost-link">Refactor & Revamp</a>
+                            </li>
+                            <li>
+                                <a href="#final" class="blogpost-link">Final Product (+ Ending Notes)</a>
+                            </li>
+
+                        </ol>
+
+                        <!-- 1. Introduction -->
+                        <section>
+                            <h3 id="introduction">Introduction <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg></a></h3>
+
+                            <p>
+                                When it comes to programming, I've found myself studying hard as of late, and doing nothing but. In fact, I think it's been at least a couple of weeks (probably longer) <!-- Most likely longer -->since I last worked on an actual project, which is the part of programming that I'm passionate about. Being able to create something from virtually nothing is incredibly satisfying and fulfilling for me (not to mention fun as hell).
+                            </p>
+                            <p>
+                                I ended up wanting to take a little bit of a break, during which I wanted to build something new. Because this time spent away from studying was meant to be a <em>break</em>, I decided to go for a project that was fun and not too difficult. After all, practice makes perfect, no matter how "easy" something might be.
+                            </p>
+                            <p>
+                                I found this partiular project idea on <a href="https://rosettacode.org" target="_blank" class="blogpost-link">Rosetta Code</a>. It's called "21 Game", and it's an extremely simple game. Two players (in this case, the player vs. the computer) take turns playing a number. They can choose to play either 1, 2, or 3. As they alternate turns, their numbers are added to the game's running total. The game ends when this running total reaches 21, with the player who made it 21 is declared the winner.
+                            </p>
+                            <p>
+                                The original instructions for this project, which, again, is from Rosetta Code, are as follows:
+                            </p>
+
+                            <h4>21 Game Instructions</h4>
+                            <ol>
+                                <li>21 is a two player game, the game is played by choosing a number (1, 2, or 3) to be added to the <em>running total</em>.</li>
+                                <li>The game is won by the player whose chosen number causes the <em>running total</em> to reach <em>exactly</em> 21.</li>
+                                <li>The <em>running total</em> starts at zero. One player will be the computer.</li>
+                                <li>Players alternate supplying a number to be added to the <em>running total</em>.</li>
+                            </ol>
+
+                            <h5>Task</h5>
+                            <p>Write a computer program that will:</p>
+                            <ul>
+                                <li>
+                                    do the prompting (or provide a button menu)
+                                </li>
+                                <li>
+                                    check for errors and display appropriate error messages
+                                </li>
+                                <li>
+                                    do the additions (add a chosen number to the <em>running total</em>)
+                                </li>
+                                <li>
+                                    display the <em>running total</em>
+                                </li>
+                                <li>
+                                    provide a mechanism for the player to quit/exit/halt/stop/close the program
+                                </li>
+                                <li>
+                                    issue a notification when there is a winner
+                                </li>
+                                <li>
+                                    determine who goes first (maybe a random or user choice, or can be specified when the game begins).
+                                </li>
+                            </ul>
+
+                        </section>
+                        
+                        <!-- 2. Making Mistakes -->
+                        <section>
+                            <h3 id="mistakes">Making Mistakes <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg></a></h3>
+                            <p>
+                                Because this project is pretty simple, I didn't feel the need to do a lot of planning. I <em>did</em> quickly map out the logic I thought I would use to code the mechanics of the game, which ended up being incorrect. When I ran the code, the player's and computer's first turns worked properly, but after that things went all wonky. I do understand why it happened now, which I'll discuss in the next section.
+                            </p>
+                            <p>
+                                My original program went something like this (although note that this is in a very broad and general sense):
+                            </p>
+                            <ul>
+                                <li>
+                                    Player clicks 'Start Game' button to get things going.
+                                </li>
+                                <li>
+                                    Clicking the button triggers a modal to pop up with 3 buttons, which are for the player to use to deicde who goes first (or to make the program decide at random). Clicking any of these buttons closes the modal window, and the game is free to commence.
+                                </li>
+                            </ul>
+                            <p>My first error in logic was trying to implement three functions that looked like this:</p>
+                            <code class="widecode">
+                                
+<pre><span class="code1">function</span> <span class="code3">playerStartFunc</span>() {
+    playerFirst <span class="code1">=</span> <span class="code2">true</span>;
+    computerFirst <span class="code1">=</span> <span class="code3">false</span>;
+    randomFirst <span class="code1">=</span> <span class="code2">false</span>;
+}
+
+<span class="code1">function</span> <span class="code3">computerStartFunc</span>() {
+    playerFirst <span class="code1">=</span> <span class="code2">true</span>;
+    computerFirst <span class="code1">=</span> <span class="code3">false</span>;
+    randomFirst <span class="code1">=</span> <span class="code2">false</span>;
+}
+
+<span class="code1">function</span> <span class="code3">randomStartFunc</span>() {
+    playerFirst <span class="code1">=</span> <span class="code2">true</span>;
+    computerFirst <span class="code1">=</span> <span class="code3">false</span>;
+    randomFirst <span class="code1">=</span> <span class="code2">false</span>;
+}</pre>
+                            </code>
+                            <p>
+                                In case you couldn't tell, my initial (and very flawed) thinking was that the 3 buttons would each trigger a different function, which was how I would get the program to have different "start conditions". The code inside of each of these functions are just 3 variables getting set to <code class="wordcode"><span class="code2">true</span></code> or <code class="wordcode"><span class="code2">false</span></code>, depending on who is supposed to start the game. I mean, it's too much for something so simple. <em>I was tired! I normally do a little better, I swear.</em>
+                            </p>
+                            <p>
+                                These functions were then followed by an additional function called <code class="wordcode"><span class="code3">choosingWhoGoesFirst</span>()</code>:
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">choosingWhoGoesFirst</span>() {
+    <span class="code1">if</span> (randomFirst) {
+        <span class="code1">let</span> firstChoice <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">2</span>);
+        <span class="code1">if</span>(firstChoice)<span class="code1">===</span> <span class="code2">1</span>) {
+            playerFirst <span class="code1">=</span> <span class="code2">true</span>;
+        } <span class="code1">else</span> {
+            computerChoice <span class="code1">=</span> <span class="code2">true</span>;
+        }
+    } <span class="code1">else if</span> (playerFirst) {
+        <span class="code3">$</span>(<span class="code2")>"#playerinput"</span>).<span class="code3">show</span>();
+        <span class="code3">$</span>(<span class="code2">"#submitbtn"</span>)).<span class="code3">show</span>();
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span>);
+        runningTotal <span class="code1">+=</span> computerNumber;
+    }
+}
+</pre>                                
+                            </code>
+                            <p>
+                                Don't even ask me what the hell I was thinking with this function, because <strong>I don't know</strong>. It's a complete mess to try and make sense of. Let's just...move on.
+                            </p>
+                            <p>
+                                As much of a mess as it is, this isn't even the main problem with my original code. <em>That</em> came from three <em>additional</em> functions called <code class="wordcode"><span class="code3">playerTurn</span>()</code>, <code class="wordcode"><span class="code3">computerTurn</span>()</code>, and <code class="wordcode"><span class="code3">continueGame</span>()</code>. I also had variables that I called <code class="wordcode">computerWent</code> and <code class="wordcode">playerWent</code> (which, despite how their names sound, are not functions about using the bathroom). I'll set the code for these functions here, but don't worry if you can't tell what it all means; it's followed by a list that describes what it all is.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">playerTurn</span>() {
+    <span class="code1">const</span> <span class="code2">submitBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.submitbtn'</span>);
+    <span class="code2">submitBtn</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code1">function</span>() {
+        <span class="code1">const</span> <span class="code2">playerInput</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.playerinput'</span>);
+        <span class="code2">playerInput</span>.<span class="code3">focus</span>();
+        <span class="code1">let</span> playerNumber <span class="code1">=</span> <span class="code2">parseInt</span>(<span class="code2">playerInput</span>.value);
+        <span class="code1">let</span> newAnnouncement <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'p'</span>);
+        <span class="code1">const</span> <span class="code2">resultsBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.resultsbox'</span>);
+        <span class="code1">const</span> <span class="code2">runningTotalBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotal'</span>);
+        newAnnouncement.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">`Player picks the number ${</span>playerNumber<span class="code2">}.`</span>
+        <span class="code2">resultsBox</span>.<span class="code3">appendChild</span>(newAnnouncement);
+        
+        runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+        <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">parseInt</span>(runningTotal);
+    })
+}
+    
+<span class="code1">function</span> <span class="code3">computerTurn</span>() {
+    <span class="code1">let</span> computerNumber;
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">18</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">3</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">19</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">2</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">20</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">1</span>;
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span>) <span class="code1">+</span> <span class="code2">1</span>;
+    }
+    <span class="code1">let</span> newAnnouncement <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'p'</span>);
+    <span class="code1">const</span> <span class="code2">resultsBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.resultsbox'</span>);
+    <span class="code1">const</span> <span class="code2">runningTotalBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotal'</span>);
+    newAnnouncement.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">`Player picks the number ${</span>playerNumber<span class="code2">}.`</span>
+    <span class="code2">resultsBox</span>.<span class="code3">appendChild</span>(newAnnouncement);
+    
+    runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+    <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">parseInt</span>(runningTotal);
+    <span class="code3">playerTurn</span>();
+}
+
+<span class="code1">function</span> <span class="code3">continueGame</span>() {
+    <span class="code1">if</span>(runningTotal <span class="code1">!=</span> <span class="code2">21</span>) {
+        <span class="code1">if</span>(computerWent <span class="code1">===</span> <span class="code2">true</span>) {
+            <span class="code3">playerTurn</span>();
+        } <span class="code1">else</span> {
+            <span class="code3">computerTurn</span>();
+        }
+    } <span class="code1">else</span> {
+        <span class="code1">if</span>(playerWent <span class="code1">===</span> <span class="code2">true</span>) {
+            <span class="code2">console</span>.<span class="code3">log</span>(<span class="code2">'Player wins!'</span>)
+        } <span class="code1">else</span> {
+            <span class="code2">console</span>.<span class="code3">log</span>(<span class="code2">'Computer wins!'</span>)
+        }
+    }
+}</pre>
+                            </code>
+                            <ol>
+                                <li>
+                                    The player would click the <strong>Submit</strong> button, which, when clicked, would trigger <code class="wordcode"><span class="code3">playerTurn</span>()</code>, which:
+                                    <ol type="a">
+                                        <li>
+                                            Linked the input value to a variable called <code class="wordcode">playerNumber</code>.
+                                        </li>
+                                        <li>
+                                            Added <code class="wordcode">playerNumber</code> to the running total.
+                                        </li>
+                                        <li>
+                                            Created the player's turn announcement and appended it to the correct element on the page.
+                                        </li>
+                                        <li>
+                                            Updated the running total to reflect the player's play.
+                                        </li>
+                                    </ol>
+                                    At the end of this function, another function, <code class="wordcode"><span class="code3">continueGame</span>()</code>, was called.
+                                </li>
+                                <li>
+                                    <code class="wordcode"><span class="code3">continueGame</span>()</code> checked to see if the running total was 21.
+                                    <ul>
+                                        <li>
+                                            <strong>If not:</strong> If <code class="wordcode">computerWent</code> was set to <code class="wordcode"><span class="code2">true</span></code>, <code class="wordcode"><span class="code3">playerTurn</span>()</code> was called, and vice versa; if <code class="wordcode">playerWent</code> was set to true, then <code class="wordcode"><span class="code3">computerTurn</span>()</code> was called instead. (<small><em>I don't know why, but I thought this was needed in order to continue the game along how I wanted it to.</em></small>)
+                                        </li>
+                                        <li>
+                                            <strong>If so:</strong> If <code class="wordcode">playerWent</code> was set to <code class="wordcode"><span class="code2">true</span></code>, this meant the player had turned the number into 21, and was thus the winner. The same went for <code class="wordcode">computerWent</code>, of course: if <em>it</em> was set to <code class="wordcode"><span class="code2">true</span></code>, then the computer was the winner. The function would then put the "winner announcement" on the screen.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <code class="wordcode"><span class="code3">computerTurn</span>()</code> was nearly identical to <code class="wordcode"><span class="code3">playerTurn</span>()</code>, except its number was, of course, randomly chosen instead of taken from the input value.
+                                </li>
+                            </ol>
+                            <p>
+                                Do you see the problem with this yet? It's okay if not. Maybe you will after I tell you how my program chose to act with this version of the code.
+                            </p>
+                            <p>
+                               So the first turn would work as intended. The player and computer both had a turn, and  their numbers were added to the running total.
+                            </p>
+                            <p>
+                                However, the next time the player tried to submit a number, the game would break.
+                            </p>
+                            <ul>
+                                <li>
+                                    The first additional time: The player's number and the computer's number would both be submitted as normal. But then an extra turn would be taken automatically, with the computer submitting another number, and the player "submitting" <strong>NaN</strong>. This would make the running total <strong>NaN</strong> from thereon after.
+                                </li>
+                                <li>
+                                    Upon further testing (aka trying to go through a 3rd round), the program would break even further. Once again ,the computer and the player would submit their intedned numbers. However, the program would then force an additional <strong><em>three</em></strong> turns to go through, all with the player's number being <strong>NaN</strong>. The more I tried to play a turn, the more these additional turns would increase. It was out of control.
+                                </li>
+                            </ul>
+                            <p>
+                                When I reflected back on the program today (which, mind you, was after I'd written the official <em>working</em> code), I realized something. I remembered that the player's turn was supposed to be triggered by pressing the <strong>Submit</strong> button. However, since <code class="wordcode"><span class="code3">continueGame</span>()</code> <em>also</em> called <code class="wordcode"><span class="code3">playerTurn</span>()</code>, these extra turns would be taken. I don't quite understand why the amount of additional turns increased in number each time, though. 
+                            </p>
+                            <p>
+                                I also realized why the player's number would be submitted as <strong>NaN</strong> after the first submission. It was because there was no new input value to refer to! After all, the player's number was taken from the input box's value. So when the <strong>Submit</strong> button was clicked, the player would have already typed a number into the input box, and it would apply. After that, my program clears the input box's value to nothing (essentially "resetting" it), and that's why it would then be <strong>NaN</strong>.
+                            </p>
+                            <p>Anyway, I took a short break after this miniature "fiasco" (before realizing why it was broken, leaving me annoyed and confused) and drafted a couple of new ideas on paper. When I came back, I managed to rewrite the program in a way that, to my relief, worked as intended!</p>
+                        </section>
+
+                        <!-- 3. Working Code -->
+                        <section>
+                            <h3 id="working">Working Code<a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg></a></h3>
+                            <p>
+                                The actual working script was somewhat similar to the original, but the <code class="wordcode"><span class="code3">playerTurn</span>()</code> and <code class="wordcode"><span class="code3">computerTurn</span>()</code> functions were rewritten properly, and the <code class="wordcode"><span class="code3">continueGame</span>()</code> function was removed entirely.
+                            </p>
+                            <p>
+                                Once I got the program to work as intended, I set to work coding additional things such as keyboard shortcuts, a <code class="wordcode"><span class="code3">restartGame</span>()</code> function, and more. When I was finished, my code was as follows (once again, I will go through the entire thing in a moment here, so no worries if it isn't clear what it does; I haven't commented anything yet, and, for this blog post anyway, won't):
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">submitBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.submitbtn'</span>);
+<span class="code1">const</span> <span class="code2">playerInput</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'playerinput'</span>);
+<span class="code1">const</span> <span class="code2">startBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'startgame'</span>);
+<span class="code1">const</span> <span class="code2">resultsBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.resultsbox'</span>);
+<span class="code1">const</span> <span class="code2">runningTotalBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotal'</span>);
+<span class="code1">const</span> <span class="code2">restartBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.restart'</span>);
+<span class="code1">const</span> <span class="code2">runningTotalBoxBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotalbox'</span>);
+<span class="code1">const</span> <span class="code2">turnsCol</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.turns'</span>);
+<span class="code1">const</span> <span class="code2">playerTurns</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.player-turns'</span>);
+<span class="code1">const</span> <span class="code2">computerTurns</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.computer-turns'</span>);
+
+<span class="code1">let</span> runningTotal <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> turns <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> winner <span class="code1">=</span> <span class="code2">''</span>;
+
+<span class="code2">submitBtn</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code3">playRound</span>);
+<span class="code2">restartBtn</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code3">restartGame</span>);
+
+<span class="comment">// jQuery UI function for modal/dialog box</span>
+<span class="code3">$</span>(<span class="code1">function</span>() {
+    <span class="code3">$</span>(<span class="code2">"#dialog"</span>).<span class="code3">dialog</span>({
+        show: <span class="code2">true</span>,
+        buttons: [
+            {
+                text: <span class="code2">"Player"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"player"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Computer"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"computer"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Choose at random"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"random"</span>);
+                }
+            }
+        ],
+        modal: <span class="code2">true</span>,
+        autoOpen: <span class="code2">false</span>,
+        <span class="code3">open</span>: <span class="code1">function</span>() {
+            <span class="code3">$</span>(<span class="code2">".ui-dialog-titlebar-close"</span>).<span class="code3">hide</span>();
+        },
+        dialoglass: <span class="code2">"no-close"</span>,
+        resizable: <span class="code2">false</span>,
+        title: <span class="code2">"Select Who Starts"</span>,
+    });
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>(<span class="code1">function</span> () {
+        <span class="code3">$</span>(<span class="code2">'#dialog'</span>).<span class="code3">dialog</span>(<span class="code2">'open'</span>);
+    });
+});
+
+<span class="comment">// Starts the game depending on who the player picks to start the game</span>
+<span class="code1">function</span> <span class="code3">startGame</span>(<span class="comment">starter</span>) {
+    <span class="code1">if</span>(<span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+        <span class="code2">playerInput</span>.<span class="code3">focus</span>();
+    }
+
+    <span class="code1">if</span>(<span class="code2">submitBtn</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">submitBtn</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">submitBtn</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+    
+    <span class="code1">if</span>(<span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">===</span> <span class="code2">'none'</span>) {
+        <span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'none'</span>;
+    }
+    
+    <span class="code1">if</span>(<span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+
+    <span class="code1">if</span>(<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">'random'</span>) {
+        <span class="code1">let</span> randomChoice <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">2</span> <span class="code1">+</span> <span class="code2">1</span>);
+        <span class="code1">if</span>(randomChoice <span class="code1">===</span> <span class="code2">1</span>) {
+            <span class="code3">computerTurn</span>();
+        }
+    } <span class="code1">else if</span> (<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">'computer'</span>) {
+        <span class="code3">computerTurn</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">return</span>;
+    }
+}
+
+<span class="comment">// A round of the game (the player's turn)</span>
+<span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">if</span>(<span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">&lt;</span> <span class="code2">1</span> <span class="code1">||</span> <span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">&gt;</span> <span class="code2">3</span> <span class="code1">||</span> <span class="code2">playerInput</span>.<span class="code2">value</span>.<span class="code3">match</span>(<span class="code2">/\D/</span><span class="code1">ig</span>)) {
+        <span class="code2">alert</span>(<span class="code2">'ERROR: Please enter a valid number.'</span>);
+    } <span class="code1">else</span> {
+        <span class="code1">let</span> playerNumber <span class="code1">=</span> <span class="code2">parseInt</span>(<span class="code2">playerInput</span>.<span class="code2">value</span>);
+        turns <span class="code1">+=</span> <span class="code2">1</span>;
+        <span class="code1">let</span> newPTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        <span class="code1">let</span> newTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newTurn.<span class="code2">textContent</span> <span class="code1">=</span> turns;
+        newPTurn.<span class="code2">textContent</span> <span class="code1">=</span> playerNumber;
+        <span class="code2">playerNumber</span>.<span class="code3">appendChild</span>(newPTurn);
+        <span class="code2">turnsCol</span>.<span class="code3">appendChild</span>(newTurn);
+        runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+        <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> runningTotal;
+        <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+            winner <span class="code1">=</span> <span class="code2">'Player'</span>;
+            <span class="code3">endGame</span>();
+        } <span class="code1">else</span> {
+            <span class="code3">computerTurn</span>();
+        }
+    }
+    <span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">=</span> <span class="code2">''</span>;
+    <span class="code2">playerInput</span>.<span class="code3">focus</span>();
+}
+
+<span class="comment">// The computer's turn</span>
+<span class="code1">function</span> <span class="code3">computerTurn</span>() {
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">18</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">3</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">19</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">2</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">20</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">1</span>;
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span> <span class="code1">+</span> <span class="code2">1</span>);
+    }
+
+    <span class="code1">let</span> newCTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    newCTurn.<span class="code2">textContent</span> <span class="code1">=</span> computerNumber;
+    <span class="code2">computerTurns</span>.<span class="code3">appendChild</span>(newCTurn);
+    runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(computerNumber);
+    <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> runningTotal;
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+        winner <span class="code1">=</span> <span class="code2">'Computer'</span>;
+        <span class="code3">endGame</span>();
+    }
+}
+
+<span class="comment">// The end of the game</span>
+<span class="code1">function</span> <span class="code3">endGame</span>() {
+    <span class="code2">resultsBox</span>.innerHTML <span class="code1">=</span> <span class="code2">`&lt;center&gt;&lt;p&gt;Wait - stop! The number is 21. ${</span>winner<span class="code2">} wins!&lt;/p&gt;&lt;/center&gt;`</span>;
+    <span class="code2">playerInput</span>.<span class="code2">disabled</span> <span class="code1">=</span> <span class="code2">true</span>;
+
+    <span class="code1">if</span>(<span class="code2">restartBtn</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">restartBtn</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">restartBtn</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+}
+
+<span class="comment">// Restart game</span>
+<span class="code1">function</span> <span class="code3">restartGame</span>() {
+    <span class="code2">window</span>.<span class="code2">location</span>.<span class="code3">reload</span>();
+}
+
+<span class="code2">playerInput</span>.<span class="code3">addEventListener</span>(<span class="code2">'keydown'</span>, <span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'Enter'</span>) {
+        <span class="code2">submitBtn</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">'keydown'</span>, <span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code3">restartGame</span>();
+    }
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'S'</span>) {
+        <span class="code2">startBtn</span>.<span class="code3">click</span>();
+    }
+}</pre>
+                            </code>
+                            <p>
+                                If you're interested in how this works, continue reading for a breakdown of this code. If not, you can click the following link to skip to the next section of this blog post, wherein I talk about refactoring my code into jQuery and how I decided to design the visual aspect of the game: <a href="#r-and-r" class="blogpost-link">Refactor & Revamp</a>.
+                            </p>
+
+                            <!-- Code Breakdown -->
+                            <article>
+                                <h4>Code Breakdown</h4>
+                                <h5>Part 1: Setting Things Up</h5>
+                                <code class="widecode">
+<pre><span class="code1">const</span> <span class="code2">submitBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.submitbtn'</span>);
+<span class="code1">const</span> <span class="code2">playerInput</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'playerinput'</span>);
+<span class="code1">const</span> <span class="code2">startBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">getElementById</span>(<span class="code2">'startgame'</span>);
+<span class="code1">const</span> <span class="code2">resultsBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.resultsbox'</span>);
+<span class="code1">const</span> <span class="code2">runningTotalBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotal'</span>);
+<span class="code1">const</span> <span class="code2">restartBtn</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.restart'</span>);
+<span class="code1">const</span> <span class="code2">runningTotalBoxBox</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.runningtotalbox'</span>);
+<span class="code1">const</span> <span class="code2">turnsCol</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.turns'</span>);
+<span class="code1">const</span> <span class="code2">playerTurns</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.player-turns'</span>);
+<span class="code1">const</span> <span class="code2">computerTurns</span> <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">querySelector</span>(<span class="code2">'.computer-turns'</span>);</pre>
+                                </code>
+                                <p>
+                                    As with all of my projects, the first lines of code consist of references to various DOM elements that are needed in order to mainpulate them via JavaScript code.
+                                </p>
+
+                                <code class="widecode">
+<pre><span class="code1">let</span> runningTotal <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> turns <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> winner <span class="code1">=</span> <span class="code2">''</span>;</pre>
+                                </code>
+                                <p>
+                                    Here we have initializations of any variable that I plan to use in more than one function (hence them being of global scope).
+                                </p>
+                                <ul>
+                                    <li>
+                                        <code class="wordcode">runningTotal</code>: Represents the running total number of the game.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">turns</code>: Represents the current turn (i.e., turn 1).
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">winner</code>: A blank variable which is later set to <strong>"player"</strong> or <strong>"computer"</strong> (whoever is the winner) so it can be added to the winner's announcement.
+                                    </li>
+                                </ul>
+
+                                <code class="widecode">
+<pre><span class="code2">submitBtn</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code3">playRound</span>);
+<span class="code2">restartBtn</span>.<span class="code3">addEventListener</span>(<span class="code2">'click'</span>, <span class="code3">restartGame</span>);</pre>
+                                </code>
+                                <p>
+                                    These last lines of code before we get into the functions are event listeners, which are <strong>'click'</strong> events for the two buttons that exist during gameplay. Clicking the <strong>Submit</strong> button calls the <code class="wordcode"><span class="code3">playRound</span>()</code> function, and clicking the <strong>Reset</strong> button calls the <code class="wordcode"><span class="code3">restartGame</span>()</code> function.
+                                </p>
+                                <h5>Part 2: Functions</h5>
+                                <code class="widecode">
+<pre><span class="comment">// jQuery UI function for modal/dialog box</span>
+<span class="code3">$</span>(<span class="code1">function</span>() {
+    <span class="code3">$</span>(<span class="code2">"#dialog"</span>).<span class="code3">dialog</span>({
+        show: <span class="code2">true</span>,
+        buttons: [
+            {
+                text: <span class="code2">"Player"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"player"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Computer"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"computer"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Choose at random"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"random"</span>);
+                }
+            }
+        ],
+        modal: <span class="code2">true</span>,
+        autoOpen: <span class="code2">false</span>,
+        <span class="code3">open</span>: <span class="code1">function</span>() {
+            <span class="code3">$</span>(<span class="code2">".ui-dialog-titlebar-close"</span>).<span class="code3">hide</span>();
+        },
+        dialoglass: <span class="code2">"no-close"</span>,
+        resizable: <span class="code2">false</span>,
+        title: <span class="code2">"Select Who Starts"</span>,
+    });
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>(<span class="code1">function</span> () {
+        <span class="code3">$</span>(<span class="code2">'#dialog'</span>).<span class="code3">dialog</span>(<span class="code2">'open'</span>);
+    });
+});</pre>
+                                </code>
+                                <p>
+                                    This brings us to our first function. This is the only function written purely in jQuery in this script, and it doesn't have a name. That's because I heavily referenced the <a class="blogpost-link" href="https://api.jqueryui.com/dialog/" target="_blank" title="Dialog widget API Documentation page on the jQuery UI website">jQuery UI API Documentation</a>, essentially stitching together various code pieces to pull together this function.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <code class="wordcode">show: <span class="code2">true</span></code> - included to ensure that a "fade in" animation is what happens when the modal is called.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">buttons</code> - Each object in this array represents one of the three buttons shown on the modal - one to pick the player to go first, one to pick the computer to go first, and one to let the program choose at random.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">modal: <span class="code2">true</span></code></code> - indicates that this should be a modal (and not just a dialog window)
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">autoOpen: <span class="code2">false</span></code> - set so that the modal won't open immediately upon initialization, but instead waits until the <code class="wordcode">open</code> method is called.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">open</code> - Opens the dialog.
+                                        <ul>
+                                            <li>Includes a line that hides the original close button, which is usually located in the titlebar of the modal window. This was done because it forces the player to click one of the buttons, which will then close the modal.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">dialogClass: <span class="code2">"no-close"</span></code> - included because it, too, is necessary to hide the close button.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">resizable: <span class="code2">false</span></code></code> - this means that the modal window is unable to be resized by the user. If this is set to <code class="wordcode"><span class="code2">true</span></code>, the user can grab the edges of the modal window and drag them to resize the window.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">title: <span class="code2">"Select Who Starts"</span></code> - Sets this as the title of the modal, shown in the titlebar.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode"><span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span></code> - This function specifies that the modal window opens when the Start Game button is clicked.
+                                    </li>
+                                </ul>
+                                <code class="widecode">
+<pre><span class="comment">// Starts the game depending on who the player picks to start the game</span>
+<span class="code1">function</span> <span class="code3">startGame</span>(<span class="comment">starter</span>) {
+    <span class="code1">if</span>(<span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">playerInput</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+        <span class="code2">playerInput</span>.<span class="code3">focus</span>();
+    }
+
+    <span class="code1">if</span>(<span class="code2">submitBtn</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">submitBtn</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">submitBtn</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+    
+    <span class="code1">if</span>(<span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">===</span> <span class="code2">'none'</span>) {
+        <span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">startBtn</span>.<span class="code2">style</span>.<span class="code2">display</span> <span class="code1">=</span> <span class="code2">'none'</span>;
+    }
+    
+    <span class="code1">if</span>(<span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">runningTotalBoxBox</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+
+    <span class="code1">if</span>(<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">'random'</span>) {
+        <span class="code1">let</span> randomChoice <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">2</span> <span class="code1">+</span> <span class="code2">1</span>);
+        <span class="code1">if</span>(randomChoice <span class="code1">===</span> <span class="code2">1</span>) {
+            <span class="code3">computerTurn</span>();
+        }
+    } <span class="code1">else if</span> (<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">'computer'</span>) {
+        <span class="code3">computerTurn</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">return</span>;
+    }
+}
+</pre>
+                                </code>
+                                <p>
+                                    Here we have the <code class="wordcode"><span class="code3">startGame</span>()</code> function. It includes the <code class="wordcode"><span class="comment">starter</span></code> parameter, which stands for whomever is chosen to start the game. This function is called by the buttons located in the modal window.
+                                </p>
+                                <p>
+                                    This function consists of several <code class="wordcode"><span class="code1">if</span>/<span class="code1">else</span></code> conditions. The first four are for changing the display value of various elements (the input box, the <strong>Submit</strong> button, the <strong>Start Game</strong> button, and the running total box). In other words: when the player opens the webpage, they see just the Start Game button underneath the instructions. Clicking on the button makes the button disappear, and makes all of the other elements appear.
+                                </p>
+                                <p>
+                                    The final <code class="wordcode"><span class="code1">if</span>/<span class="code1">else</span></code> condition is for specifying what happens as a result of who is starting the game. If <code class="wordcode"><span class="code2">"random"</span></code> was chosen, the function chooses a number randomly between 1 and 2. If the number turns out to be 1, then the computer starts the game, and if the number is 2, then the player starts the game. If the computer is chosen to start the game, then the <code class="wordcode"><span class="code3">computerTurn</span>()</code> funciton is run. If the player is chosen, well, <em>nothing</em> happens; the game elements are no the page, waiting to be interacted with, and it's the clicking of the <strong>Submit</strong> button that makes everything happen.
+                                </p>
+                                <code class="widecode">
+<pre><span class="comment">// A round of the game (the player's turn)</span>
+<span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">if</span>(<span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">&lt;</span> <span class="code2">1</span> <span class="code1">||</span> <span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">&gt;</span> <span class="code2">3</span> <span class="code1">||</span> <span class="code2">playerInput</span>.<span class="code2">value</span>.<span class="code3">match</span>(<span class="code2">/\D/</span><span class="code1">ig</span>)) {
+        <span class="code2">alert</span>(<span class="code2">'ERROR: Please enter a valid number.'</span>);
+    } <span class="code1">else</span> {
+        <span class="code1">let</span> playerNumber <span class="code1">=</span> <span class="code2">parseInt</span>(<span class="code2">playerInput</span>.<span class="code2">value</span>);
+        turns <span class="code1">+=</span> <span class="code2">1</span>;
+        <span class="code1">let</span> newPTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        <span class="code1">let</span> newTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+        newTurn.<span class="code2">textContent</span> <span class="code1">=</span> turns;
+        newPTurn.<span class="code2">textContent</span> <span class="code1">=</span> playerNumber;
+        <span class="code2">playerNumber</span>.<span class="code3">appendChild</span>(newPTurn);
+        <span class="code2">turnsCol</span>.<span class="code3">appendChild</span>(newTurn);
+        runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+        <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> runningTotal;
+        <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+            winner <span class="code1">=</span> <span class="code2">'Player'</span>;
+            <span class="code3">endGame</span>();
+        } <span class="code1">else</span> {
+            <span class="code3">computerTurn</span>();
+        }
+    }
+    <span class="code2">playerInput</span>.<span class="code2">value</span> <span class="code1">=</span> <span class="code2">''</span>;
+    <span class="code2">playerInput</span>.<span class="code3">focus</span>();
+}</pre>
+                                </code>
+                                <p>
+                                    Next we have the <code class="wordcode"><span class="code3">playRound</span>()</code> function, which, if you'll recall, is called when the <strong>Submit</strong> button is clicked.
+                                </p>
+                                <p>
+                                    Starting things off is an <code class="wordcode"><span class="code3">if</span></code> statement. This statement says that if the player's input value is a) less than 1, b) more than 3, or c) anything other than a digit (including letters and special characters), then the program should run an "alert" containing the specified error message.
+                                </p>
+                                <p>
+                                    However, if the player has successfully submitted a valid play, then the following happens:
+                                </p>
+                                <ul>
+                                    <li>
+                                        The <code class="wordcode">playerNumber</code> variable is set via the input box's submtited value, which includes <code class="wordcode"><span class="code2">parseInt</span></code> to ensure that it is taken as an integer instead of a string.
+                                    </li>
+                                    <li>
+                                        <code class="wordcode">turns <span class="code1">+=</span> <span class="code2">1</span></code> - The <code class="wordcode">turns</code> variable increases by 1.
+                                    </li>
+                                    <li>
+                                        Two span elements are created - one for the <strong>Turns</strong> column, the other for the <strong>Player Turns</strong> column. These span eleemnts contain the current turn and the player's number, respectively, and are appended to their appropriate columns.
+                                    </li>
+                                    <li>
+                                        The player's number is added to the running total, which is then updated.
+                                    </li>
+                                    <li>
+                                        If the running total is now 21, then the winner is the Player, and the <code class="wordcode"><span class="code3">endGame</span>()</code> function runs. If not, then <code class="wordcode"><span class="code3">computerTurn</span>()</code> runs instead.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Regardless of which part of the <code class="wordcode"><span class="code1">if</span></code> statement runs, the final part of this function ensures that the input box's value is reset (so that it's empty), and then puts focus on that input box so that the player doesn't have to click on it again every turn.
+                                </p>
+                                <code class="widecode">
+<pre><span class="comment">// The computer's turn</span>
+<span class="code1">function</span> <span class="code3">computerTurn</span>() {
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">18</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">3</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">19</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">2</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">20</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">1</span>;
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span> <span class="code1">+</span> <span class="code2">1</span>);
+    }
+
+    <span class="code1">let</span> newCTurn <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);
+    newCTurn.<span class="code2">textContent</span> <span class="code1">=</span> computerNumber;
+    <span class="code2">computerTurns</span>.<span class="code3">appendChild</span>(newCTurn);
+    runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(computerNumber);
+    <span class="code2">runningTotalBox</span>.<span class="code2">textContent</span> <span class="code1">=</span> runningTotal;
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+        winner <span class="code1">=</span> <span class="code2">'Computer'</span>;
+        <span class="code3">endGame</span>();
+    }
+}</pre>
+                                </code>
+                                <p>
+                                    The <code class="wordcode"><span class="code3">computerTurn</span>()</code> function is shorter than the previous.
+                                </p>
+                                <p>
+                                    First, we have an <code class="wordcode"><span class="code1">if</span>/<span class="code1">else</span></code> condition. In a nutshell, this conditional says "If the running total is 18, 19, or 20, then the computer will play the number that will win it the game". And if not, then the computer's number is chosen randomly from 1 - 3.
+                                </p>
+                                <p>
+                                    The middle of this function creates a new span element to be appended to the <strong>Computer Turns</strong> column in the turns box. The span's text is simply the number that the computer has "chosen". This number is also added to the running total, which is then updated.
+                                </p>
+                                <p>
+                                    And finally, we have one last <code class="wordcode"><span class="code1">if</span></code> statement. This one states that if the running total is 21 (<em>after</em> the computer's number is added to it), then the <code class="wordcode">winner</code> is set to "Computer", and the <code class="wordcode"><span class="code3">endGame</span>()</code> function runs.
+                                </p>
+                                <code class="widecode">
+<pre><span class="comment">// The end of the game</span>
+<span class="code1">function</span> <span class="code3">endGame</span>() {
+    <span class="code2">resultsBox</span>.innerHTML <span class="code1">=</span> <span class="code2">`&lt;center&gt;&lt;p&gt;Wait - stop! The number is 21. ${</span>winner<span class="code2">} wins!&lt;/p&gt;&lt;/center&gt;`</span>;
+    <span class="code2">playerInput</span>.<span class="code2">disabled</span> <span class="code1">=</span> <span class="code2">true</span>;
+
+    <span class="code1">if</span>(<span class="code2">restartBtn</span>.style.display <span class="code1">===</span> <span class="code2">'inline-block'</span>) {
+        <span class="code2">restartBtn</span>.style.display <span class="code1">=</span> <span class="code2">'none'</span>;
+    } <span class="code1">else</span> {
+        <span class="code2">restartBtn</span>.style.display <span class="code1">=</span> <span class="code2">'inline-block'</span>;
+    }
+}</pre>
+                                </code>
+                                <p>
+                                    This is the aforementioned <code class="wordcode"><span class="code3">endGame</span>()</code> function, which sets the winner's announcement. It also sets the input box to "disabled" to ensure that it can no longer be used to submit numbers. And finally, we ensure that the <strong>Reset</strong> button appears, so that the player may click it to reset the game if they so wish.
+                                </p>
+                                <code class="widecode">
+<pre><span class="comment">// Restart game</span>
+<span class="code1">function</span> <span class="code3">restartGame</span>() {
+    <span class="code2">window</span>.<span class="code2">location</span>.<span class="code3">reload</span>();
+}</pre>
+                                </code>
+                                <p>
+                                    Nearing the end of our program, we have the shortest function yet. As you can see, all this function does is reload the browser window. This function is called when the <strong>Reset</strong> button is clicked.
+                                </p>
+                                <code class="widecode">
+<pre><span class="code2">playerInput</span>.<span class="code3">addEventListener</span>(<span class="code2">'keydown'</span>, <span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'Enter'</span>) {
+        <span class="code2">submitBtn</span>.<span class="code3">click</span>();
+    }
+});
+
+<span class="code2">document</span>.<span class="code3">addEventListener</span>(<span class="code2">'keydown'</span>, <span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'R'</span>) {
+        <span class="code3">restartGame</span>();
+    }
+    <span class="code1">if</span>(<span class="comment">e</span>.<span class="code2">shiftKey</span> <span class="code1">&&</span> <span class="comment">e</span>.<span class="code2">key</span> <span class="code1">===</span> <span class="code2">'S'</span>) {
+        <span class="code2">startBtn</span>.<span class="code3">click</span>();
+    }
+}</pre>
+                                </code>
+                                <p>
+                                    And last (but not least), we have event listeners that give the user options to use keyboard shortcuts instead of using their mouse.
+                                </p>
+                                <ul>
+                                    <li>
+                                        The <code class="wordcode"><span class="code2">playerInput</span></code> event listener says that if the player presses the Enter key while in the niput box, it is the same as pressing the <strong>Submit</strong> button.
+                                    </li>
+                                    <li>
+                                        The other event listener, whose selector is the <code class="wordcode"><span class="code2">document</span></code> itself, says that the following key combinations produce these results:
+                                        <ul>
+                                            <li>
+                                                <strong>Shift + R</strong>: The key shortcut for the <strong>Reset</strong> button, which runs the <code class="wordcode"><span class="code3">restartGame</span>()</code> function.
+                                            </li>
+                                            <li>
+                                                <strong>Shift + S</strong>: The key shortcut for the <strong>Start Game</strong> button (shown at the beginning, <em>before</em> the game begins).
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- Refactor & Revamp -->
+                        <section>
+                            <h3 id="r-and-r">Revamp & Refactor<a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg></a></h3>
+                            <h4>Revamp</h4>
+                            <p>
+                                After I finished writing the JavaScript version (which was talked about in the previous section), I decided to take a break. The game wasn't finished just yet, because I had only built the bare-bones HTML and CSS required to test the program. The page looked something like this:
+                            </p>
+                            <img src="../Images/pb_21_game_images/old_game.png" alt="Version 1 of 21 Game" class="blogpost-image ">
+                            <p>
+                                <small><em>Note that in the original version of this program, I had included an Instructions button that you could click to expand the instructions of the game. I've since deleted that feature, hence it not appearing in the JavaScript program above.</em></small>
+                            </p>
+                            <p>
+                                Very basic. Very boring. And very <em>not</em> what I would ever intend as a final product of something I create.
+                            </p>
+                            <p>
+                                So I began thinking about how I could design the page. I don't have any sort of natural designer abiltiies (I'm not an artist in <em>that</em> regard, <a href="./the_internets_best_color_tools.html" target="_blank" class="blogpost-link" title="The Internet's Best Color Tools">something I've talked about before</a>), and for me, designing webpages usually takes quite a bit of inspiration, reference to other pages, and the same shades of blue and green that I've used in almost all of my projects.
+                            </p>
+                            <p>
+                                This time, however, at some point during the creation of this game, I had a thought that it was pretty similar to another game I'd recently built called <a href="./project_breakdown_number_game.html" target="_blank" title="Project Breakdown: The Number Game" class="blogpost-link">The Number Game</a>. This gave me the idea that maybe I should create a series of games, each fairly simple and similar in nature to one another. They would all be designed similarly to create a sense of unity amongst them.
+                            </p>
+                            <p>
+                                And so I made the decision to give this game the same design as the one I used for The Number Game.
+                            </p>
+                            <p>
+                                For reference, this is what The Number Game looks like:
+                            </p>
+                            <img src="../Images/pb_21_game_images/the-number-game_record_Trim_Trim.jpg" class="blogpost-image" alt="The Number Game">
+                            <p>
+                                And so it was decided!
+                            </p>
+                            <p>
+                                I went on over to my files for The Number Game so that I could use its CSS code for 21 Game, and that led to me taking a look at the JavaScript file, which I had recently refactored into jQuery. That's when I thought to myself, "Why not do the same with 21 Game?" I mean, I need the practice anyway, as I've only used jQuery a small handful of times. So, before I moved on from the project, I decided I would rewrite the code using jQuery.
+                            </p>
+                            <p>
+                                When you play The Number Game, you submit guesses to try to guess a number between 1 and 100. The game tells you when your guess is too low or too high until you guess the correct number. I implemented various color themes to help cue to the player various game conditions. For example, a low guess resulted in a light blue theme, and a high guess generated a dark blue theme. The color theme also changed when the player won the game, as well as if the player submitted something that resulted in an error.
+                            </p>
+                            <p>
+                                <strong>
+                                    Win condition theme:
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/green_game.png" class="blogpost-image" alt="The Number Game: Win">
+                            <p>
+                                <strong>
+                                    Error condition theme:
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_number_game_images/Numbers_Game_Error.png" class="blogpost-image" alt="The Number Game: Error">
+                            <p>
+                                The entire reason I'm mentioning this is because I decided to do the same for 21 Game. When the game was over, the game took on the same green theme. If the player did something to generate an error, the game took on the red theme. This was all stuff that I had to include in my jQuery rewrite.
+                            </p>
+                            <p>
+                                In the end, this was how I designed 21 Game:
+                            </p>
+                            <p>
+                                <strong>
+                                    Total View
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/21-game-screenshot.png" class="blogpost-image" alt="21 Game Revamp">
+                            <p>
+                                <strong>
+                                    Start Game
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/start_game.png" class="blogpost-image" alt="21 Game: Start game">
+                            <p>
+                                <strong>
+                                    Modal window
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/modal_window.png" class="blogpost-image" alt="21 Game: Modal window">
+                            <p>
+                                <strong>
+                                    Gameplay
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/21_game_normal.png" class="blogpost-image" alt="21 Game: Gameplay">
+                            <p>
+                                <strong>
+                                    Win condition theme
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/21_win.png" class="blogpost-image" alt="21 Game: Win condition theme (green)">
+                            <p>
+                                <strong>
+                                    Error condition theme
+                                </strong>
+                            </p>
+                            <img src="../Images/pb_21_game_images/21_error.png" class="blogpost-image" alt="21 Game: Error condition theme (red)">
+                            <p>
+                                Now that that's clarified, let's take a look at my refactored code.
+                            </p>
+                            <h4>jQuery Refactor</h4>
+                            <code class="widecode">
+<pre><span class="code1">let</span> runningTotal <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> turns <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> gameOver <span class="code1">=</span> <span class="code2">false</span>;
+
+<span class="code3">$</span>(<span class="code2">".disappear"</span>).<span class="code3">hide</span>();
+
+<span class="comment">// jQuery UI function for modal/dialog box</span>
+<span class="code3">$</span>(<span class="code1">function</span>() {
+    <span class="code3">$</span>(<span class="code2">"#dialog"</span>).<span class="code3">dialog</span>({
+        show: <span class="code2">true</span>,
+        buttons: [
+            {
+                text: <span class="code2">"Player"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"player"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Computer"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"computer"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Choose at random"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"random"</span>);
+                }
+            }
+        ],
+        modal: <span class="code2">true</span>,
+        autoOpen: <span class="code2">false</span>,
+        <span class="code3">open</span>: <span class="code1">function</span>() {
+            <span class="code3">$</span>(<span class="code2">".ui-dialog-titlebar-close"</span>).<span class="code3">hide</span>();
+        },
+        dialoglass: <span class="code2">"no-close"</span>,
+        resizable: <span class="code2">false</span>,
+        title: <span class="code2">"Select Who Starts"</span>,
+    });
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>(<span class="code1">function</span> () {
+        <span class="code3">$</span>(<span class="code2">'#dialog'</span>).<span class="code3">dialog</span>(<span class="code2">'open'</span>);
+    });
+});
+
+<span class="code1">function</span> <span class="code3">startGame</span>(<span class="comment">starter</span>) {
+    <span class="code3">$</span>(<span class="code2">".disappear"</span>).<span class="code3">show</span>();
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>.<span class="code3">hide</span>();
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">focus</span>();
+    <span class="code1">if</span>(<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">"random"</span>) {
+        <span class="code1">let</span> randomChoice <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">2</span> <span class="code1">+</span> <span class="code2">1</span>);
+        <span class="code1">if</span>(randomChoice <span class="code1">===</span> <span class="code2">1</span>) {
+	        <span class="code3">computerTurn</span>();
+        }
+    } <span class="code1">else if</span> (<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">"computer"</span>) {
+        <span class="code3">computerTurn</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">return</span>;
+    }
+}
+
+<span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> playerNumber <span class="code1">=</span> <span class="code2">parseInt</span>(<span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">val</span>());
+    turns <span class="code1">+=</span> <span class="code2">1</span>;
+    <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">'regback'</span>).<span class="code3">removeClass</span>(<span class="code2">'winback errorback'</span>);
+    <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">removeClass</span>(<span class="code2">"error green"</span>);
+    <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror btnbackgreen"</span>);
+    <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror btnbackgreen"</span>);
+
+    <span class="code1">if</span>((runningTotal <span class="code1">+</span> playerNumber) <span class="code1">&gt;</span> <span class="code2">21</span>) {
+        <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+        <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+        <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+        <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+        <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+        <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"&lt;strong&gt;ERROR:&lt;/strong&gt; The aim is to make the number 21. 
+        If you play that number, you'll go over 21. Try again - you're about to win!"</span>);
+        <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+    } <span class="code1">else</span> {
+        <span class="code1">if</span>(gameOver <span class="code1">===</span> <span class="code2">true</span>) {
+            <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"<strong>ERROR:</strong> The game is over. You must press the Restart button to play again."</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+        } <span class="code1">else if</span>(<span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>() <span class="code1">&lt;</span> <span class="code2">1</span> <span class="code1">||</span> <span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>() <span class="code1">&gt;</span> <span class="code2">3</span> <span class="code1">||</span> <span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>().<span class="code3">match</span>(<span class="code2">/\D/</span><span class="code1">gi</span>)) {
+            <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"<strong>ERROR:</strong> Invalid entry. Please enter a valid number (1, 2, or 3)."</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+        } <span class="code1">else</span> {
+            <span class="code3">$</span>(<span class="code2">".runningtotalbox"</span>).<span class="code3">show</span>();
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">show</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">removeClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> playerNumber <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".player-turns"</span>) );
+            <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> turns <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".turns"</span>) );
+            runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+            <span class="code3">$</span>(<span class="code2">".runningtotal"</span>).<span class="code3">text</span>(runningTotal);
+            
+            <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+                winner <span class="code1">=</span> <span class="code2">'Player'</span>;
+                <span class="code3">endGame</span>();
+            } <span class="code1">else</span> {
+                <span class="code3">computerTurn</span>();
+            }
+        }
+    }
+
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">val</span>(<span class="code2">' '</span>);
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">focus</span>(<span class="code2">' '</span>);
+}
+
+<span class="code1">function</span> <span class="code3">computerTurn</span>() {
+    <span class="code1">let</span> computerNumber <span class="code1">=</span> <span class="code2">0</span>;
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">18</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">3</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">19</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">2</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">20</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">1</span>;
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span> <span class="code1">+</span> <span class="code2">1</span>);
+    }
+
+    <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> computerNumber <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".computer-turns"</span>) );
+    runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(computerNumber);
+    <span class="code3">$</span>(<span class="code2">".runningtotal"</span>).<span class="code3">text</span>(runningTotal);
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+        winner <span class="code1">=</span> <span class="code2">"Computer"</span>;
+        <span class="code3">endGame</span>();
+    }
+}
+
+<span class="code1">function</span> <span class="code3">endGame</span>() {
+    <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"winback"</span>).<span class="code3">removeClass</span>(<span class="code2">"regback"</span>);
+    <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"green"</span>);
+    <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackwin"</span>);
+    <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackwin"</span>);
+    <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+    <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"&lt;center&gt;&lt;p&gt;Wait - stop! The number is 21. "</span> <span class="code1">+</span> winner <span class="code1">+</span> <span class="code2">" wins!&lt;/p&gt;&lt;/center&gt;"</span>);
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">prop</span>(<span class="code2">"disabled"</span>, <span class="code2">true</span>);
+    gameOver <span class="code1">=</span> <span class="code2">true</span>;
+}
+
+<span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">keydown</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.which <span class="code1">===</span> <span class="code2">13</span>) {
+        <span class="comment">e</span>.<span class="code3">preventDefault</span>();
+        <span class="code3">playRound</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">document</span>).<span class="code3">keyup</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.shiftKey <span class="code1">&&</span> <span class="comment">e</span>.key <span class="code1">===</span> <span class="code2">"R"</span>) {
+        <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">click</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">document</span>).<span class="code3">keyup</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.shiftKey <span class="code1">&&</span> <span class="comment">e</span>.key <span class="code1">===</span> <span class="code2">"S"</span>) {
+        <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">click</span>(<span class="code1">function</span>() {
+    <span class="code1">if</span>( <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">is</span>(<span class="code2">":disabled"</span>)) {
+        <span class="code2">location</span>.<span class="code3">reload</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"You're in the middle of a game! Are you sure that you want to start over?"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        }
+    }
+});</pre>
+                            </code>
+                            <p>
+                                I would typically expext jQuery to result in fewer lines of code than JavaScript. However, because I had to add a lot of code for various changes (design-related and otherwise), there ended up being not much of a difference; my JavaScript code is 195 lines, and my jQuery code is 187 lines.
+                            </p>
+                            <p>
+                                Just like we did with the JavaScript version, let's go through the jQuery code. Note that some of the lines are still in pure JavaScript, as some things have no way of turning into jQuery. Anything I could turn into jQuery, I did.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">let</span> runningTotal <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> turns <span class="code1">=</span> <span class="code2">0</span>;
+<span class="code1">let</span> gameOver <span class="code1">=</span> <span class="code2">false</span>;</pre>
+                            </code>
+                            <p>
+                                The first thing to note is that all of those lines of code that contained references to various DOM elements are gone, as is the nature of jQuery since selectors are included directly in the code instead of needing to be initialized into variables.
+                            </p>
+                            <p>
+                                As a result, my code now begins with the initialization of these variables.
+                            </p>
+                            <p>
+                                Just like before, we have the <code class="wordcode">runningTotal</code> variable (which represents the running total number) and the <code class="wordcode">turns</code> variable (which represents the current turn).
+                            </p>
+                            <p>
+                                We also have an additional variable, <code class="wordcode">gameOver</code>, which is set to <code class="wordcode"><span class="code2">false</span></code>, and missing is the <code class="wordcode">winner</code> variable, which contained who the winner of the game was in the previous JavaScript version.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code3">$</span>(<span class="code2">".disappear"</span>).<span class="code3">hide</span>();</pre>
+                            </code>
+                            <p>
+                                Next is this single line, which takes the <code class="wordcode">&lt;div&gt;</code> element with the <strong>.disappear</strong> class and hides it. I added this <code class="wordcode">&lt;div&gt;</code> element to contain all of the game elements so that hiding them would be a lot simpler. In the previous code, the input box, the Submit button, the Reset button, and the running total were all individually dealt with, so now everything can be hidden via one element instead. This is specifically for the beginning of the program, before the game has even begun; when the player opens the page, they see a "Start Game" button, and clicking on this makes the aforementioned elements appear.
+                            </p>
+                            <code class="widecode">
+<pre><span class="comment">// jQuery UI function for modal/dialog box</span>
+<span class="code3">$</span>(<span class="code1">function</span>() {
+    <span class="code3">$</span>(<span class="code2">"#dialog"</span>).<span class="code3">dialog</span>({
+        show: <span class="code2">true</span>,
+        buttons: [
+            {
+                text: <span class="code2">"Player"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"player"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Computer"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"computer"</span>);
+                }
+            },
+            {
+                text: <span class="code2">"Choose at random"</span>,
+                <span class="code3">click</span>: <span class="code1">function</span>() {
+                    <span class="code3">$</span>( <span class="code2">this</span> ).<span class="code3">dialog</span>( <span class="code2">"close"</span> );
+                    <span class="code3">startGame</span>(<span class="code2">"random"</span>);
+                }
+            }
+        ],
+        modal: <span class="code2">true</span>,
+        autoOpen: <span class="code2">false</span>,
+        <span class="code3">open</span>: <span class="code1">function</span>() {
+            <span class="code3">$</span>(<span class="code2">".ui-dialog-titlebar-close"</span>).<span class="code3">hide</span>();
+        },
+        dialoglass: <span class="code2">"no-close"</span>,
+        resizable: <span class="code2">false</span>,
+        title: <span class="code2">"Select Who Starts"</span>,
+    });
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>(<span class="code1">function</span> () {
+        <span class="code3">$</span>(<span class="code2">'#dialog'</span>).<span class="code3">dialog</span>(<span class="code2">'open'</span>);
+    });
+});</pre>
+                            </code>
+                            <p>
+                                This function should look familiar. It's the exact same function used in the JavaScript code, which is our jQuery UI Dialog Widget function. This contains the code for our "Who should go first?" buttons modal. This is already in jQuery, so nothing needed to change.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">startGame</span>(<span class="comment">starter</span>) {
+    <span class="code3">$</span>(<span class="code2">".disappear"</span>).<span class="code3">show</span>();
+    <span class="code3">$</span>(<span class="code2">"#startgame"</span>.<span class="code3">hide</span>();
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">focus</span>();
+    <span class="code1">if</span>(<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">"random"</span>) {
+        <span class="code1">let</span> randomChoice <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">2</span> <span class="code1">+</span> <span class="code2">1</span>);
+        <span class="code1">if</span>(randomChoice <span class="code1">===</span> <span class="code2">1</span>) {
+	        <span class="code3">computerTurn</span>();
+        }
+    } <span class="code1">else if</span> (<span class="comment">starter</span> <span class="code1">===</span> <span class="code2">"computer"</span>) {
+        <span class="code3">computerTurn</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">return</span>;
+    }
+}
+</pre>
+                            </code>
+
+                            <p>
+                                The <code class="wordcode"><span class="code3">startGame</span>()</code> function still includes the <code class="wordcode"><span class="comment">starter</span></code> parameter from before. It starts off by "showing" that <code class="wordcode">&lt;div&gt;</code> element (the one with the <strong>.disappear</strong> class), which reveals the game controls, and "hides" the "Start Game" button. Focus is then put on the input box so the player can immediately start typing guesses rather than having to click on it.
+                            </p>
+                            <p>
+                                The <code class="wordcode"><span class="code1">if</span></code> statement is identical to the previous code's, but I'll go ahead and go over it again:
+                            </p>
+                            <ul>
+                                <li>
+                                    <code class="wordcode"><span class="comment">starter</span></code> refers to the choice that the player made for who should begin the game. If they picked "Choose at random" (<code class="wordcode"><span class="comment">starter</span> <span class="code1">===</span> <span class="code2">"random"</span></code>), then the variable <code class="wordcode">randomChoice</code> is set to a randomly-chosen number (either 1 or 2). If that number is 1, the computer goes first via the function <code class="wordcode"><span class="code3">computerTurn</span>()</code> function.
+                                </li>
+                                <li>
+                                    If the player picks the computter to start, then <code class="wordcode"><span class="code3">computerTurn</span>()</code> runs.
+                                </li>
+                                <li>
+                                    If the player picks neither (aka if they pick themselves to start), nothing happens. This is because nothing needs to happen; the code for the player's turn doesn't run  until the player  submits their number.
+                                </li>
+                            </ul>
+
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">playRound</span>() {
+    <span class="code1">let</span> playerNumber <span class="code1">=</span> <span class="code2">parseInt</span>(<span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">val</span>());
+    turns <span class="code1">+=</span> <span class="code2">1</span>;
+    <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">'regback'</span>).<span class="code3">removeClass</span>(<span class="code2">'winback errorback'</span>);
+    <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">removeClass</span>(<span class="code2">"error green"</span>);
+    <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror btnbackgreen"</span>);
+    <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror btnbackgreen"</span>);
+
+    <span class="code1">if</span>((runningTotal <span class="code1">+</span> playerNumber) <span class="code1">&gt;</span> <span class="code2">21</span>) {
+        <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+        <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+        <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+        <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+        <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+        <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"&lt;strong&gt;ERROR:&lt;/strong&gt; The aim is to make the number 21. 
+        If you play that number, you'll go over 21. Try again - you're about to win!"</span>);
+        <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+    } <span class="code1">else</span> {
+        <span class="code1">if</span>(gameOver <span class="code1">===</span> <span class="code2">true</span>) {
+            <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"<strong>ERROR:</strong> The game is over. You must press the Restart button to play again."</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+        } <span class="code1">else if</span>(<span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>() <span class="code1">&lt;</span> <span class="code2">1</span> <span class="code1">||</span> <span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>() <span class="code1">&gt;</span> <span class="code2">3</span> <span class="code1">||</span> <span class="code3">$</span>(<span class="code2">"input"</span>).<span class="code3">val</span>().<span class="code3">match</span>(<span class="code2">/\D/</span><span class="code1">gi</span>)) {
+            <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"errorback"</span>).<span class="code3">removeClass</span>(<span class="code2">'regback'</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"<strong>ERROR:</strong> Invalid entry. Please enter a valid number (1, 2, or 3)."</span>);
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">css</span>(<span class="code2">"text-align"</span>, <span class="code2">"center"</span>);
+        } <span class="code1">else</span> {
+            <span class="code3">$</span>(<span class="code2">".runningtotalbox"</span>).<span class="code3">show</span>();
+            <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">show</span>();
+            <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">hide</span>();
+            <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">removeClass</span>(<span class="code2">"error"</span>);
+            <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">removeClass</span>(<span class="code2">"btnbackerror"</span>);
+            <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> playerNumber <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".player-turns"</span>) );
+            <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> turns <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".turns"</span>) );
+            runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(playerNumber);
+            <span class="code3">$</span>(<span class="code2">".runningtotal"</span>).<span class="code3">text</span>(runningTotal);
+            
+            <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+                winner <span class="code1">=</span> <span class="code2">'Player'</span>;
+                <span class="code3">endGame</span>();
+            } <span class="code1">else</span> {
+                <span class="code3">computerTurn</span>();
+            }
+        }
+    }
+
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">val</span>(<span class="code2">' '</span>);
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">focus</span>(<span class="code2">' '</span>);
+}</pre>
+                            </code>
+                            <p>
+                                This brings us to this behemoth of a function, but there truly isn't as much to this function as it seems. A lot of these lines of code are simply there to add and remove various classes from elements so that the different color themes are applied (i.e., if there is an error, or if the game ends).
+                            </p>
+                            <ul>
+                                <li>
+                                    The <code class="wordcode">playerNumber</code> variable is initialized with the player's number, which is taken from the input box's vaule. <code class="wordcode"><span class="code2">parseInt</span></code> is run on this value so that it is taken in as an integer instead of as a string.
+                                </li>
+                                <li>
+                                    All possible prior error and win condition classes are removed from their respective elements.
+                                </li>
+                                <li>
+                                    We come to an <code class="wordcode"><span class="code1">if</span></code> statement that says if the running number is over 21, it results in the red "Error" theme being applied, plus an error message that reminds the player that they're aiming to make the number 21 and that they can win if they pick the correct number. If the number doesn't exceed 21, we are free to continue.
+                                </li>
+                                <li>
+                                    We are met with another <code class="wordcode"><span class="code1">if</span></code> staement, this one containing various conditions.
+                                    <ul>
+                                        <li>
+                                            The first condition is for whether <code class="wordcode">gameOver <span class="code1">===</span> <span class="code2">true</span></code>. gameOver is a variable that is initially initialized as false; however, when the <code class="wordcode"><span class="code3">endGame</span>()</code> function runs, the variable is set to <code class="wordcode"><span class="code2">true</span></code> to signal that the game is over. If it <em>is</em> true, this generates the error theme with an error that tells the player that the game is over, and that they must press Reset to restart the game. This was implemented after I realized that the user could press the Submit button even after the game was supposed to be over, generating unwanted results.
+                                        </li>
+                                        <li>
+                                            Next, we ask if the player's input value is invalid. It's invalid if their number is below 1, above 3, or is something that isn't a number at all. This, too, results in an error with the same error theme, with this error telling the player that they've tried to submit an invalid play, and that they should play a number from 1 - 3 (inclusive).
+                                        </li>
+                                        <li>
+                                            Finally, if none of these errors occur, we make sure that all "error" classes are removed from the appropriate elements. We then create <code class="wordcode">&lt;span&gt;</code> elements, which are appended to both the Turns column and the Player Turns column. The one in the Turns column contains the current turn number, and the one in the Player Turns column contains the player's number that they played during this turn.
+                                        </li>
+                                        <li>
+                                            The player's number is added to the running  total, which is updated accordingly.
+                                        </li>
+                                        <li>
+                                            Via another <code class="wordcode"><span class="code1">if</span></code> statement, if the running total is 21, the player is deemed the winner, and the <code class="wordcode"><span class="code3">endGame</span>()</code> function runs. If not, the <code class="wordcode"><span class="code3">comptuerTurn</span>()</code> function runs instead.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    The function ends with the input value getting reset (so that it's empty) and the input box being focusd on so that the player doesn't have to click on it again.
+                                </li>
+                            </ul>
+                            <p>
+                                In summary, the <code class="wordcode"><span class="code3">playRound</span>()</code> function not only codes the player's turn, but also any potential errors and the classes for the error theme.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">computerTurn</span>() {
+    <span class="code1">let</span> computerNumber <span class="code1">=</span> <span class="code2">0</span>;
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">18</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">3</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">19</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">2</span>;
+    } <span class="code1">else if</span> (runningTotal <span class="code1">===</span> <span class="code2">20</span>) {
+        computerNumber <span class="code1">=</span> <span class="code2">1</span>;
+    } <span class="code1">else</span> {
+        computerNumber <span class="code1">=</span> <span class="code2">Math</span>.<span class="code3">floor</span>(<span class="code2">Math</span>.<span class="code3">random</span>() <span class="code1">*</span> <span class="code2">3</span> <span class="code1">+</span> <span class="code2">1</span>);
+    }
+
+    <span class="code3">$</span>(<span class="code2">"&lt;span&gt;"</span> <span class="code1">+</span> computerNumber <span class="code1">+</span> <span class="code2">"&lt;/span&gt;"</span>).<span class="code3">appendTo</span>( <span class="code3">$</span>(<span class="code2">".computer-turns"</span>) );
+    runningTotal <span class="code1">+=</span> <span class="code2">parseInt</span>(computerNumber);
+    <span class="code3">$</span>(<span class="code2">".runningtotal"</span>).<span class="code3">text</span>(runningTotal);
+
+    <span class="code1">if</span>(runningTotal <span class="code1">===</span> <span class="code2">21</span>) {
+        winner <span class="code1">=</span> <span class="code2">"Computer"</span>;
+        <span class="code3">endGame</span>();
+    }
+}</pre>
+                            </code>
+                            <p>
+                                The <code class="wordcode"><span class="code3">computerTurn</span>()</code> function is almost identical to the JavaScript version's function of the same name.
+                            </p>
+                            <ul>
+                                <li>
+                                    If the running total is 18, 19, or 20, the computer submits the number that wins it the game. If not, its number is randomly generated from 1 - 3.
+                                </li>
+                                <li>
+                                    A <code class="wordcode">&lt;span&gt;</code> element is created and appended to the computer Turns column. It contains the computer's number.
+                                </li>
+                                <li>
+                                    The computer's number is added to the running total, which is updated accordingly.
+                                </li>
+                                <li>
+                                    If the running total is now 21, the winner is the computer, and the <code class="wordcode"><span class="code3">endGame</span>()</code> function runs.
+                                </li>
+                            </ul>
+                            <code class="widecode">
+<pre><span class="code1">function</span> <span class="code3">endGame</span>() {
+    <span class="code3">$</span>(<span class="code2">".main"</span>).<span class="code3">addClass</span>(<span class="code2">"winback"</span>).<span class="code3">removeClass</span>(<span class="code2">"regback"</span>);
+    <span class="code3">$</span>(<span class="code2">".resultsbox"</span>).<span class="code3">addClass</span>(<span class="code2">"green"</span>);
+    <span class="code3">$</span>(<span class="code2">".submitbtn"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackwin"</span>);
+    <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">addClass</span>(<span class="code2">"btnbackwin"</span>);
+    <span class="code3">$</span>(<span class="code2">".turnsbox"</span>).<span class="code3">hide</span>();
+    <span class="code3">$</span>(<span class="code2">".errormsg"</span>).<span class="code3">show</span>().<span class="code3">html</span>(<span class="code2">"&lt;center&gt;&lt;p&gt;Wait - stop! The number is 21. "</span> <span class="code1">+</span> winner <span class="code1">+</span> <span class="code2">" wins!&lt;/p&gt;&lt;/center&gt;"</span>);
+    <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">prop</span>(<span class="code2">"disabled"</span>, <span class="code2">true</span>);
+    gameOver <span class="code1">=</span> <span class="code2">true</span>;
+}</pre>
+                            </code>
+                            <p>
+                                Our final named function is <code class="wordcode"><span class="code3">endGame</span>()</code>. This function adds the "win" class to the appropriate elements, giving the game a green theme, and hides the "Turns box", leaving just the winner's message and the running number in the results box. The winner is announced, and the input box is disabled so that the player cannot submit any more numbers. The <code class="wordcode">gameOver</code> variable is set to <code class="wordcode"><span class="code2">true</span></code> to signal that the game is over.
+                            </p>
+                            <code class="widecode">
+<pre><span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">keydown</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.which <span class="code1">===</span> <span class="code2">13</span>) {
+        <span class="comment">e</span>.<span class="code3">preventDefault</span>();
+        <span class="code3">playRound</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">document</span>).<span class="code3">keyup</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.shiftKey <span class="code1">&&</span> <span class="comment">e</span>.key <span class="code1">===</span> <span class="code2">"R"</span>) {
+        <span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">click</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">document</span>).<span class="code3">keyup</span>(<span class="code1">function</span>(<span class="comment">e</span>) {
+    <span class="code1">if</span>(<span class="comment">e</span>.shiftKey <span class="code1">&&</span> <span class="comment">e</span>.key <span class="code1">===</span> <span class="code2">"S"</span>) {
+        <span class="code3">$</span>(<span class="code2">"#startgame"</span>).<span class="code3">click</span>();
+    }
+});
+
+<span class="code3">$</span>(<span class="code2">".restart"</span>).<span class="code3">click</span>(<span class="code1">function</span>() {
+    <span class="code1">if</span>( <span class="code3">$</span>(<span class="code2">"#playerinput"</span>).<span class="code3">is</span>(<span class="code2">":disabled"</span>)) {
+        <span class="code2">location</span>.<span class="code3">reload</span>();
+    } <span class="code1">else</span> {
+        <span class="code1">if</span> (<span class="code2">confirm</span>(<span class="code2">"You're in the middle of a game! Are you sure that you want to start over?"</span>)) {
+            <span class="code2">location</span>.<span class="code3">reload</span>();
+        }
+    }
+});</pre>
+                            </code>
+                            <p>
+                                Finally, our jQuery ends with these miscellaneous functions, which program the game's keyboard shortcuts and click events for the buttons.
+                            </p>
+                            <ul>
+                                <li>
+                                    If the <kbd>Enter</kbd> key is pressed while the input box is focused, the <code class="wordcode"><span class="code3">playRound</span>()</code> function runs. This is the same as pressing the Submit button.
+                                </li>
+                                <li>
+                                    If the <kbd>Shift</kbd> + <kbd>R</kbd> key combination is pressed, it's the same as the Reset button being clicked.
+                                </li>
+                                <li>
+                                    <kbd>Shift</kbd> + <kbd>S</kbd> starts the game (and is the same as pressing the Start Game button).
+                                </li>
+                                <li>
+                                    When the Reset button is clicked:
+                                    <ul>
+                                        <li>
+                                            If the input box is disabled (which only happens when the game is over), the page reloads without a fuss.
+                                        </li>
+                                        <li>
+                                            If the input box is not disabled, the program sends a confirmation message to the player, asking them to confirm that they're sure they want to restart a game, which they're in the middle of. If they confirm, then the page reloads, restarting the game.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    And finally, when the Submit button is clicked, the <code class="wordcode"><span class="code3">playRound</span>()</code> function runs.
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Tagbar -->
+                <div class="tagbar">
+                    <div class="maintagbar">
+                        <a href="../Tags/programming_journey.html" class="maintag">Programming Journey</a>
+                        <a href="../Tags/code_refactoring.html" class="maintag">Code Refactoring</a>
+                        <a href="../Tags/jquery.html" class="maintag">jQuery</a>
+                    </div>
+                    <div class="socialbar">
+                        <a href="https://www.github.com/Risclover" target="_blank" class="social"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.reddit.com/user/saratheplant" target="_blank" class="social"><i class="fab fa-reddit-alien"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGwV3coXX8xWt4HTd0J6iPw" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Previous post/next post buttons -->
+                <div class="backforward">
+                    <div class="back">
+                        <a href="./the_internets_best_color_tools.html" class="d-flex align-items-center">
+                            <i class="fas fa-chevron-left fa-xs me-2"></i>
+                            Previous Post
+                            </a>
+                    </div>
+                    <div class="disabled">
+                        <a class="disabled d-flex align-items-center">
+                            Next Post
+                            <i class="fas fa-chevron-right fa-xs ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="blogsidebar">
+
+                <!-- Search bar -->
+                <div class="searchstuff">
+                    <input type="text" placeholder="Search..." class="sidebarsearch">
+                    <button class="searchbtn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Blog Categories -->
+                <div class="categories">
+                    <h3 class="cattitle">Categories</h3>
+                    <div class="categoryitems">
+                        <ul>
+                        <li>
+                            <a href="../Categories/code_discussion.html">Code Discussion (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>   
+                            <a href="../Categories/personal.html">Personal (<span class="categorycount">1</span>)</a>
+                        </li>
+                        <li>
+                            <a href="../Categories/project_breakdown.html">Project Breakdown (<span class="categorycount">1</span>)</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Related/Recent -->
+                <div class="categories">
+                    <h3 class="cattitle">Related/Recent</h3>
+                    <div class="categoryitems">
+                        <ul>
+                            <li>
+                                <a class="categorycount active">Project Breakdown: The Number Game</a>
+                            </li>
+                            <li>
+                                <a href="./code_discussion_portfolio_categories.html" class="categorycount">Code Discussion: Portfolio Categories</a>
+                            </li>
+                            <li>
+                                <a href="./introduction.html" class="categorycount">Introduction (First Blog Post!)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Archives -->
+                <div class="categories">
+                    <h3 class="cattitle">Archives</h3>
+                    <div class="categoryitems">
+                        <ul>
+                            <li>
+                                <a href="../Archives/february.html">February 2022 (<span class="categorycount">2</span>)</a>
+                            </li>
+                            <li>
+                                <a href="../Archives/january.html">January 2022 (<span class="categorycount">1</span>)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Tags (All) -->
+                <div class="categories">
+                    <h3 class="cattitle">Tags</h3>
+                    <a href="../Tags/programming_journey.html" class="blogtag">Programming Journey</a>
+                    <a href="../Tags/learning.html" class="blogtag">Learning</a>
+                    <a href="../Tags/personal.html" class="blogtag">Personal</a>
+                    <a href="../Tags/javascript.html" class="blogtag">JavaScript</a>
+                    <a href="../Tags/jquery.html" class="blogtag">jQuery</a>
+                    <a href="../Tags/code_refactoring.html" class="blogtag">Code Refactoring</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <small>Copyright © 2022 Sara Dunlop. All Rights Reserved. <br>Visit me on Github! <a href="#">Risclover</a></small>
+        <small>
+            <a href="../../legal pages/privacypolicy.html"> Privacy Policy </a> | 
+            <a href="../../legal pages/termsandconditions.html"> Terms and Conditions </a> | 
+            <a href="../../legal pages/dmcapolicy.html">DMCA Policy</a> | 
+            <a href="../../legal pages/cookiepolicy.html"> Cookie Policy </a> | 
+            <a href="../../legal pages/disclaimer.html">Disclaimer</a>
+        </small>
+        <a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i></a>
+    </footer>
+
+
+
+    <!-- JS Scripts -->
+    <script src="../../js files/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

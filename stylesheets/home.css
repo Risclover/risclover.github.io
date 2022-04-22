@@ -73,7 +73,7 @@ header {
 }
 
 #portfoliobtn {
-    margin-top: 45px;
+    margin-top: 15px;
     width: 130px;
     background-color: #08c99f;
     color: white;
@@ -94,6 +94,37 @@ header {
     background-color: white;
     color: #08c99f;
     border-color: white;
+}
+
+#githubbtn {
+    margin-top: 15px;
+    width: 160px;
+    background-color: #08c99f;
+    color: white;
+    border: 1px solid #08c99f;
+    outline: none;
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s ease;
+}
+
+#githubbtn:hover {
+    background-color: white;
+    color: #08c99f;
+    border-color: white;
+}
+
+.btnbox {
+    display: flex;
+    width: 310px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 

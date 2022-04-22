@@ -159,6 +159,12 @@ h2, h3, h4, h5 {
     line-height: 161.8%;
 }
 
+.bg-class {
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.82rem;
@@ -200,6 +206,13 @@ h3 {
     transition: .5s;
     margin: 0;
     color: white;
+}
+
+.bg-class {
+    color: white;
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #363795, #005C97) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #navbar-right {

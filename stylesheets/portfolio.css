@@ -84,14 +84,16 @@ input[type="radio"]:focus+label {
   .portfolio-projects {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    min-height: 300px;
+    width: 100%;
   }
 
   .content {
     position: relative;
-    max-width: 425px;
-    margin: 10px 15px;
+    width: 455px;
+    margin: 10px 5px;
     overflow: hidden;
     height: 275px;
     transition: .5s ease;

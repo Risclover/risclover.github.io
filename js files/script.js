@@ -8,26 +8,21 @@ function scrollFunction() {
   let mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
+    document.getElementById('navbar').classList.add('bg-class');
     document.getElementById("navbar").style.padding = "10px 25px";
     document.getElementById("logo").style.fontSize = "1.68rem";
-    document.getElementById("logo").style.color = "#333333";
-    document.getElementById("navbar").style.backgroundColor = "hsl(0, 0%, 99%)";
     document.getElementById("navbar").style.borderBottom = "1px solid #cccccc";
     navLinks.forEach((navlink) => {
-        navlink.classList.remove('text-white');
-        navlink.classList.add('text-dark');
         navlink.style.fontSize = ".8rem";
     })
   } else {
     mybutton.style.display = "none";
-    document.getElementById("navbar").style.background = "none";
+    document.getElementById('navbar').style.background = "none";
+    document.getElementById('navbar').classList.remove('bg-class');
     document.getElementById("navbar").style.padding = "10px 30px";
     document.getElementById("logo").style.fontSize = "2rem";
-    document.getElementById("logo").style.color = "white";
     document.getElementById("navbar").style.borderBottom = "none";
     navLinks.forEach((navlink) => {
-        navlink.classList.remove('text-dark');
-        navlink.classList.add('text-white');
         navlink.style.fontSize = ".8rem";
         navlink.style.marginRight = "30px";
     })

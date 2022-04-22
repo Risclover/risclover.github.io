@@ -57,46 +57,74 @@
 
         <div class="container">
 
-<!-- Portfolio categories -->
-<div id="filters">
-    <!-- Types -->
-    <div class="categories">
-        <input type="radio" class="btn-check" name="type" id="type1" autocomplete="off" tabindex="0" value="all" checked>
-        <label class="btn" for="type1">Show All</label>
-        
-        <input type="radio" tabindex="0" class="btn-check"  name="type" id="type2" value="Games" autocomplete="off">
-        <label class="btn" for="type2">Games</label>
-        
-        <input type="radio" tabindex="0" class="btn-check"  name="type" id="type3" value="Tools" autocomplete="off">
-        <label class="btn" for="type3">Tools</label>
-        
-        <input type="radio" class="btn-check" name="type" id="type4" value="Webpages" autocomplete="off">
-        <label class="btn" for="type4">Webpages</label>
-    </div>
+            <!-- Portfolio categories -->
+            <div id="filters">
+                <!-- Types -->
+                <div class="categories">
+                    <input type="radio" class="btn-check" name="type" id="type1" autocomplete="off" tabindex="0" value="all" checked>
+                    <label class="btn" for="type1">Show All</label>
+                    
+                    <input type="radio" tabindex="0" class="btn-check"  name="type" id="type2" value="Games" autocomplete="off">
+                    <label class="btn" for="type2">Games</label>
+                    
+                    <input type="radio" tabindex="0" class="btn-check"  name="type" id="type3" value="Tools" autocomplete="off">
+                    <label class="btn" for="type3">Tools</label>
+                    
+                    <input type="radio" class="btn-check" name="type" id="type4" value="Webpages" autocomplete="off">
+                    <label class="btn" for="type4">Webpages</label>
+                </div>
 
-    <!-- Languages -->
-    <div class="categories">
-        <input type="radio" class="btn-check" name="languages" id="language1" autocomplete="off" tabindex="0" value="all" checked>
-        <label class="btn" for="language1">Show All</label>
-        
-        <input type="radio" tabindex="0" class="btn-check" name="languages" id="language2" value="HTML" autocomplete="off">
-        <label class="btn" for="language2">HTML</label>
-        
-        <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language3" value="CSS" autocomplete="off">
-        <label class="btn" for="language3">CSS</label>
-        
-        <input type="radio" class="btn-check" name="languages" id="language4" value="JavaScript" autocomplete="off">
-        <label class="btn" for="language4">JavaScript</label>
+                <!-- Languages -->
+                <div class="categories">
+                    <input type="radio" class="btn-check" name="languages" id="language1" autocomplete="off" tabindex="0" value="all" checked>
+                    <label class="btn" for="language1">Show All</label>
+                    
+                    <input type="radio" tabindex="0" class="btn-check" name="languages" id="language2" value="HTML" autocomplete="off">
+                    <label class="btn" for="language2">HTML</label>
+                    
+                    <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language3" value="CSS" autocomplete="off">
+                    <label class="btn" for="language3">CSS</label>
+                    
+                    <input type="radio" class="btn-check" name="languages" id="language4" value="JavaScript" autocomplete="off">
+                    <label class="btn" for="language4">JavaScript</label>
 
-        <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language5" value="Bootstrap" autocomplete="off">
-        <label class="btn" for="language5">Bootstrap</label>
-        
-        <input type="radio" class="btn-check" name="languages" id="language6" value="jQuery" autocomplete="off">
-        <label class="btn" for="language6">jQuery</label>
-    </div>
-</div>
+                    <input type="radio" tabindex="0" class="btn-check"  name="languages" id="language5" value="Bootstrap" autocomplete="off">
+                    <label class="btn" for="language5">Bootstrap</label>
+                    
+                    <input type="radio" class="btn-check" name="languages" id="language6" value="jQuery" autocomplete="off">
+                    <label class="btn" for="language6">jQuery</label>
+                </div>
+            </div>
             <!-- Portfolio projects -->
             <div class="portfolio-projects">
+
+                <!-- Project: 21 Game -->
+                <div class="content HTML CSS JavaScript jQuery Games" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#21-game-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/21-game-screenshot.png" data-alt="Test">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>21 Game</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A number game in which two players (in this case, the player and the computer) take turns playing a number (1, 2, or 3) until someone makes the running total 21. </p>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Project: RPS -->
+                <div class="content HTML CSS JavaScript jQuery Games" tabindex="0">
+                    <a href="#" data-toggle="modal" data-target="#rps-modal">
+                    <div class="content-overlay"></div>
+                    <img class="content-image portfolio-img" src="../images/portfolio_images/RPS-screenshot.png" data-alt="Test">
+                    <div class="content-details fadeIn-top"> 
+                        <h3>Rogue, Paladin, Sorceress</h3>
+                    </div>
+                    <div class="content-details2 fadeIn-bottom">
+                        <p>A version of rock, paper, scissors, but with an RPG-style twist.</p>
+                    </div>
+                    </a>
+                </div>
 
                 <!-- Project: Counter -->
                 <div class="content HTML CSS JavaScript jQuery Tools" tabindex="0">
@@ -201,6 +229,81 @@
     </footer>
 
     <!-- Project Information Modals -->
+
+    <!-- Modal: 21 Game -->
+    <div class="modal fade project-modal" id="21-game-modal" tabindex="-1" role="dialog" aria-labelledby="counterModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">21 Game</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/21-game-screenshot.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/21-Game" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/21-Game" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                        <i class="devicon-jquery-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="jQuery" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal: RPS -->
+    <div class="modal fade project-modal" id="rps-modal" tabindex="-1" role="dialog" aria-labelledby="counterModal" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Rogue, Paladin, Sorceress</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-img">
+                    <img src="../images/portfolio_images/RPS-screenshot.png" class="project-modal-img">
+                </div>
+                <div class="d-flex flex-row justify-content-between me-2">
+                    <div>
+                        <a href="#">About Project</a> | 
+                        <a href="https://www.github.com/Risclover/RPS" target="_blank">Github Repo</a> | 
+                        <a href="https://risclover.github.io/RPS" target="_blank">Live Demo</a>
+                    </div>
+                    <div>
+                        <i class="devicon-html5-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="HTML" role="tooltip"></i>
+                        <i class="devicon-css3-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="CSS" role="tooltip"></i>
+                        <i class="devicon-javascript-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="JavaScript" role="tooltip"></i>
+                        <i class="devicon-jquery-plain colored" data-bs-trigger="hover focus" data-bs-toggle="tooltip" tabindex="0" data-bs-placement="top" title="jQuery" role="tooltip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
 
     <!-- Modal: Counter -->
     <div class="modal fade project-modal" id="counter-modal" tabindex="-1" role="dialog" aria-labelledby="counterModal" aria-hidden="true">
