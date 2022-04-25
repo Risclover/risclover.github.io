@@ -1,7 +1,5 @@
 body {
-    background: rgb(7, 29, 58);  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(120deg, #2a9688c2 0%, rgba(1, 15, 48, 0.815) 90%), url("../Headers/fabio-oyXis2kALVg-unsplash.jpg");
-    background: linear-gradient(120deg, #2a9688 0%, rgba(1, 15, 48, 0.809) 90%), url("../images/pixelated.jpg"); /* The least supported option. */
+    background: linear-gradient(90deg, #00a6ff, #1990e6, #237ace, #2665b5, #26509c, #243d84, #1f2a6b, #191854 90%), url("../images/pixelated.jpg"); /* The least supported option. */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,10 +13,29 @@ main {
     justify-content: center;
 }
 
+.skill-box {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.skill-box img {
+    width: 25px;
+}
+
+
 #about-skills {
     margin: 0 auto;
     width: 100%;
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .abouticons {
@@ -31,6 +48,34 @@ section {
     width: 95%;
     margin: 0 auto;
     border-radius: 15px;
+}
+
+.menu-icon {
+    width: 25px;
+    outline: 0;
+    border: 0;
+    height: 25px;
+}
+
+.collapse-back {
+    background-color: #00000063;
+    padding: 0 20px;
+    margin-top: 5px;
+}
+
+.menu-icon:hover, .navbar-toggler:hover {
+    outline: 0;
+    border: 0;
+}
+
+.navbar-toggler:active {
+    outline: 0;
+    border: 0;
+}
+
+.menu-icon:focus, .navbar-toggler:focus {
+    outline: 0;
+    border: 0;
 }
 
 

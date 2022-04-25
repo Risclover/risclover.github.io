@@ -8,9 +8,7 @@ body, html {
     font-family: 'Noto Sans', sans-serif;
     line-height: 161.8%;
     min-height: 100vh;
-    background: rgb(7, 29, 58);  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(120deg, #2a9688c2 0%, rgba(1, 15, 48, 0.815) 90%);
-    background: linear-gradient(120deg, #2a9688 0%, rgba(1, 15, 48, 0.809) 90%);
+    background: linear-gradient(90deg, #00a6ff, #1990e6, #237ace, #2665b5, #26509c, #243d84, #1f2a6b, #191854);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,7 +80,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: #000000;
+    color: #333333;
     transition: .3s ease;
 }
 
@@ -159,12 +157,6 @@ h2, h3, h4, h5 {
     line-height: 161.8%;
 }
 
-.bg-class {
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.82rem;
@@ -188,46 +180,46 @@ h3 {
 
 .navbar {
     transition: .5s ease;
+    background: none;
+    width: 100%;   
+    z-index: 3;
 }
 
 .navlink {
     font-size: .9rem !important;
 }
-#navbar {
-    background: none;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: .5s;
-    margin: 0;
-    color: white;
-}
+
+
 
 .bg-class {
     color: white;
     background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #363795, #005C97) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(90deg, #00a6ff, #1990e6, #237ace, #2665b5, #26509c, #243d84, #1f2a6b, #191854);
+
 }
 
-#navbar-right {
+i {
+    color: white;
+}
+.navbar-right {
     color: white;
     display: flex;
 }
 
-#navbar-right a {
+.navbar-right-main a {
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: white !important;
     margin-right: 30px;
     margin-top: 4px;
     font-size: .8rem;
-
 }
+
+.navbar-right-main a:hover {
+    color: #08c99f !important;
+    text-decoration: none;
+}
+
+
 main {
     display: flex;
     margin: 40px auto;
@@ -241,7 +233,7 @@ main {
     font-size: 2rem;
 }
 
-.active {
+.navbar-right-main .active {
     color: #08c99f !important;
 }
 
@@ -258,7 +250,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(14, 32, 36, 0.281);
+    background-color: #00000071;
     position: sticky;
     z-index: 100;   
     color: white;
@@ -276,6 +268,7 @@ footer a {
 footer a:hover {
     color: white !important;
 }
+
 
 footer p {
     margin-left: 15px;

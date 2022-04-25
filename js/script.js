@@ -8,6 +8,7 @@ function scrollFunction() {
   let mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
+    document.getElementById('navbar').style.background = "#243d84";
     document.getElementById('navbar').classList.add('bg-class');
     document.getElementById("navbar").style.padding = "10px 25px";
     document.getElementById("logo").style.fontSize = "1.68rem";
@@ -40,3 +41,16 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 window.onscroll = function() {scrollFunction()};
+
+const navbarCollapse = document.getElementById('navbarNavDropdown')
+const navbarToggler = document.getElementById('hamburger')
+
+navbarToggler.addEventListener('click', collapseNav);
+
+function collapseNav() {
+  if(navbarCollapse.classList.contains('show') || document.body.scrollTop < 30) {
+      navbarCollapse.classList.remove('collapse-back')
+  } else {
+    navbarCollapse.classList.add('collapse-back')
+  }
+}
