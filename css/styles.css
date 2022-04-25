@@ -20,7 +20,7 @@ body, html {
 }
 
 main {
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
 }
 
@@ -119,6 +119,7 @@ a:hover {
 
 .breadcrumb-item + .active {
     cursor: default;
+    color:#08c99f;
 }
 
 header {
