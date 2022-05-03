@@ -13,7 +13,7 @@ label.btn {
   font-size: 0.8rem;
   margin-right: 10px;
   transition: .5s ease;
-
+  margin-top: 5px;
 }
 
 input[type="radio"]:hover+label {
@@ -30,6 +30,10 @@ input[type="radio"]:checked+label {
 
 input[type="radio"]:focus+label {
   box-shadow: 0 0 0 0.25rem rgb(255, 255, 255) !important;
+}
+
+.portfolio-links {
+  margin-right: 15px;
 }
 
 
@@ -126,7 +130,7 @@ input[type="radio"]:focus+label {
   
   .content-image{
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   
   .content-details {
@@ -332,7 +336,14 @@ button:focus {
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 990px){
+    p {
+      font-size: 14px;
+    }
+    .content {
+      height: auto;
+    }
+
     .modal-content {
       width: 100%;
     }
@@ -347,8 +358,6 @@ button:focus {
     font-size: .9rem;
   }
 
-
-
-i {
-  font-size: 2rem;
-}
+  i {
+    font-size: 2rem;
+  }

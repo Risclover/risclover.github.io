@@ -24,6 +24,10 @@ main {
     padding: 20px;
 }
 
+.menu-icon {
+    width: 25px;
+    height: 25px;
+}
 .tinydetails p {
     font-size: .9rem;
 }
@@ -116,7 +120,6 @@ a:hover {
 .breadcrumb-item:hover {
     color: #08c99f !important;
 }
-
 .breadcrumb-item + .active {
     cursor: default;
     color:#08c99f;
@@ -202,6 +205,7 @@ h3 {
 i {
     color: white;
 }
+
 .navbar-right {
     color: white;
     display: flex;
@@ -253,7 +257,6 @@ footer {
     justify-content: space-between;
     background-color: #00000071;
     position: sticky;
-    z-index: 100;   
     color: white;
     font-size: .8rem;
     padding: 10px 20px 20px 20px;
@@ -280,8 +283,9 @@ footer p {
 /* Small mobile view */
 @media (max-width: 480px) {
     .navbar-collapse {
-        background-color: hsla(189, 60%, 17%, 0.61);
-        padding-left: 10px;
+        background-color: #243e84e7;
+        padding-left: 20px;
+        margin-top: 10px;
     }
     button:active {
         outline: none;
@@ -313,7 +317,12 @@ footer p {
 }
 
 /* Large mobile view */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 990px) {
+    .navbar-collapse {
+        background-color: #243e84e7;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
     footer {
         flex-direction: column;
         text-align: center;

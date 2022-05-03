@@ -319,7 +319,7 @@ times consecutively. */</span>
         }
     }
 }</pre>
-                                                    </code>
+                        </code>
                         <p>
                             Sadly, looking at this makes me cringe because of the aforementioned <code class="wordcode"><span class="code2">classList</span></code> methods that are all on individual lines. Argh. I hate it.
                         </p>
@@ -429,7 +429,7 @@ times consecutively. */</span>
     } <span class="code1">else if</span> (userGuess <span class="code1">&gt;</span> <span class="code2">number</span> <span class="code1">&&</span> userGuess <span class="code1">&gt;=</span> <span class="code2">0</span> <span class="code1">&&</span> userGuess <span class="code1">&lt;</span> <span class="code2">101</span>) {
         guesses.<span class="code3">push</span>(userGuess);
         <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'low'</span>);
-        <span class="code2">result</span>.<span class-"code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
+        <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">remove</span>(<span class="code2">'error'</span>);
         <span class="code2">result</span>.<span class="code2">textContent</span> <span class="code1">=</span> <span class="code2">"Your guess was too high! Try again."</span>;
         <span class="code2">result</span>.<span class="code2">classList</span>.<span class="code3">add</span>(<span class="code2">'high'</span>);
         newNum <span class="code1">=</span> <span class="code2">document</span>.<span class="code3">createElement</span>(<span class="code2">'span'</span>);

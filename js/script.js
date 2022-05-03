@@ -8,7 +8,7 @@ function scrollFunction() {
   let mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
-    document.getElementById('navbar').style.background = "#243d84";
+    document.getElementById('navbar').style.backgroundColor = "#243d84";
     document.getElementById('navbar').classList.add('bg-class');
     document.getElementById("navbar").style.padding = "10px 25px";
     document.getElementById("logo").style.fontSize = "1.68rem";
@@ -20,7 +20,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
     document.getElementById('navbar').style.background = "none";
     document.getElementById('navbar').classList.remove('bg-class');
-    document.getElementById("navbar").style.padding = "10px 30px";
+    document.getElementById("navbar").style.padding = "10px";
     document.getElementById("logo").style.fontSize = "2rem";
     document.getElementById("navbar").style.borderBottom = "none";
     navLinks.forEach((navlink) => {
