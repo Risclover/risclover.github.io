@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Isotope from "isotope-layout";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import "./Portfolio.css";
+
 const Portfolio = ({ classicHeader, darkTheme }) => {
   // init one ref to store the future isotope object
   const isotope = useRef();
@@ -100,10 +102,13 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/Airbnbeezy/single.png",
+      thumbImage: "images/airbnbeezy-images/airbnbeezy-splash.png",
       sliderImages: [
-        "images/Airbnbeezy/home.png",
-        "images/Airbnbeezy/profile.png",
+        "images/airbnbeezy-images/airbnbeezy-login.png",
+        "images/airbnbeezy-images/airbnbeezy-profile.png",
+        "images/airbnbeezy-images/airbnbeezy-single-top.png",
+        "images/airbnbeezy-images/airbnbeezy-single-bottom.png",
+        "images/airbnbeezy-images/airbnbeezy-edit-listing.png",
       ],
       categories: [filters.PHOTOS],
     },
@@ -191,6 +196,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
               </li>
             ))}
           </ul> */}
+          <div className="click-more-details">
+            Please click a project to view more details.
+          </div>
           {/* Filter Menu end */}
           <div className="portfolio popup-ajax-gallery">
             <div className="row portfolio-filter filter-container g-4">

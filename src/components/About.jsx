@@ -20,7 +20,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            Know Me More
+            Get To Know Me
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
           </p>
         </div>
@@ -50,7 +50,8 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             </p>
           </div>
           {/* About me content end */}
-          {/* about me personal detials start */}
+
+          {/* About me personal detials start */}
           <div className="col-lg-5 col-xl-4">
             <div className="ps-lg-4">
               <ul
@@ -78,7 +79,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 download
                 className="btn btn-primary rounded-pill"
               >
-                Download CV
+                Download Resume
               </a>
             </div>
           </div>
