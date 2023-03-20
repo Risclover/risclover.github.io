@@ -58,8 +58,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies: "React.js, Redux.js, Python, Flask, SQLAlchemy",
       industry: "Art & Design",
       repo: {
-        name: "https://github.com/g-wn/uncrate-clone",
-        link: "https://github.com/g-wn/uncrate-clone",
+        name: "https://github.com/risclover/reduncrate",
+        link: "https://github.com/risclover/reduncrate",
       },
       url: {
         name: "https://reduncrate.herokuapp.com",
@@ -84,12 +84,14 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Airbnbeezy",
       projectInfo: "A pixel-perfect clone of Airbnb's website.",
-      client: "Spots, Reviews, Images, Bookings, Google Maps",
-      technologies: "React.js, Redux.js, Express.js, Sequelize",
+      client:
+        "Listings, Listing Images, Reviews, Bookings, User Profiles, Image Uploads",
+      technologies:
+        "React.js, Redux.js, Express.js, Sequelize, Google Maps API, AWS",
       industry: "Art & Design",
       repo: {
-        name: "https://github.com/Risclover/API-Project",
-        link: "https://github.com/Risclover/API-Project",
+        name: "https://github.com/Risclover/airbnbeezy",
+        link: "https://github.com/Risclover/airbnbeezy",
       },
       url: {
         name: "https://air-bnbeezy.herokuapp.com",

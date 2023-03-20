@@ -68,7 +68,9 @@ const Services = ({ classicHeader, darkTheme }) => {
           <Tooltip text="JavaScript" placement="top">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
           </Tooltip>
-
+          <Tooltip text="TypeScript" placement="top">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+          </Tooltip>
           <Tooltip text="Python" placement="top">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
           </Tooltip>
